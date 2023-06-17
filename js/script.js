@@ -3,7 +3,7 @@ slider.style.left = 400 + "px";
 let startX;
 let isUserTouching = false;
 let left;
-
+let item
 let sliderItems = document.querySelectorAll(".slider__item");
 
 console.log(sliderItems);
