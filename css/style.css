@@ -7,7 +7,6 @@ body {
     font-family: Arial, serif;
 }
 .slider__container {
-    margin-top: 500px;
     overflow: hidden;
     position: relative;
     width: 100%;
