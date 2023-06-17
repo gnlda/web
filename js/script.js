@@ -1,5 +1,5 @@
 let slider = document.querySelector(".slider");
-slider.style.left = 4000;
+slider.style.left = 400 + "px";
 let startX;
 let isUserTouching = false;
 let left;
