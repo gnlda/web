@@ -1,24 +1,3 @@
-.slider {
-    width: 1600px;
-    height: 200px;
-    overflow: hidden;
-  }
-  
-  .slider-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    overflow: hidden;
-  }
-  
-  .slider-wrapper {
-    display: flex;
-  }
-  
-  .slider-item {
-    flex: 0 0 400px;
-    height: 100%;
-    scroll-snap-align: start;
-    border: 1px solid #ccc;
-    padding: 20px;
-  }
+body p {
+  font-size: 100px;
+}
