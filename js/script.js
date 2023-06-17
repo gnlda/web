@@ -18,6 +18,6 @@ document.addEventListener("mousemove", (e) => {
         let delta = e.clientX - startX + "px";
         console.log(slider.style.left);
         slider.style.left = delta;
-
+        
     }
 });
