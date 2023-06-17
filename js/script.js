@@ -1,42 +1,38 @@
-const slider = document.getElementById('slider');
-const sliderContent = document.getElementById('slider-content');
-let isMouseDown = false;
+let slider = document.querySelector(".slider");
+slider.style.left = 400 + "px";
 let startX;
-let scrollLeft;
+let isUserTouching = false;
+let left;
 
-slider.addEventListener('mousedown', (e) => {
-  isMouseDown = true;
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
+let sliderItems = document.querySelectorAll(".slider__item");
+
+console.log(sliderItems);
+
+slider.addEventListener("mousedown", (e) => {
+    if (e.target.className !== 'dd') {
+        left = +slider.style.left.substring(0, slider.style.left.length - 2);
+        startX = e.clientX;
+        isUserTouching = true;
+    }
 });
 
-slider.addEventListener('mouseleave', () => {
-  isMouseDown = false;
+document.addEventListener("mouseup", (e) => {
+   isUserTouching = false;
 });
 
-slider.addEventListener('mouseup', () => {
-  isMouseDown = false;
-});
+document.addEventListener("mousemove", (e) => {
+    if (startX && isUserTouching === true) {
+        slider.style.left = left + e.clientX - startX + "px";
+    }
+    if (+slider.style.left.substring(0, slider.style.left.length - 2) < 300) {
+        
+        //sliderItems[sliderItems.length] = sliderItems[0];
+        //sliderItems[0].remove();
+        const sliderItemsArray = Array.from(sliderItems); // Преобразование NodeList в массив
+        const firstItem = sliderItemsArray.shift(); // Удаление первого элемента массива и сохранение его
+        sliderItemsArray.push(firstItem); // Добавление удаленного элемента в конец массива
+        sliderItems = document.querySelectorAll(".slider__item"); // Преобразование массива обратно в NodeList
+        console.log(sliderItems);
 
-slider.addEventListener('mousemove', (e) => {
-  if (!isMouseDown) return;
-  e.preventDefault();
-  const x = e.pageX - slider.offsetLeft;
-  const walk = (x - startX) * 3; // Adjust the scroll speed here
-  slider.scrollLeft = scrollLeft - walk;
-});
-
-slider.addEventListener('scroll', () => {
-  const { scrollLeft, scrollWidth, clientWidth } = slider;
-  const firstSlide = sliderContent.querySelector('.slide');
-  
-  if (scrollLeft === 0) {
-    // First slide is out of view on the left, move it to the right side
-    sliderContent.appendChild(firstSlide);
-    slider.scrollLeft = 1; // Set scrollLeft to 1 to prevent jumpy behavior
-  } else if (scrollLeft + clientWidth === scrollWidth) {
-    // Last slide is out of view on the right, move it to the left side
-    sliderContent.insertBefore(firstSlide, sliderContent.firstChild);
-    slider.scrollLeft = slider.scrollLeft - 1; // Adjust scrollLeft accordingly
-  }
+    }
 });
