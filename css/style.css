@@ -18,6 +18,7 @@ body {
     justify-content: center;
     width: fit-content;
     position: absolute;
+    border: 1px solid green;
 }
 .slider__item {
     width: 100px;
