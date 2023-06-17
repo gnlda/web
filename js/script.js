@@ -35,5 +35,8 @@ document.addEventListener("mousemove", (e) => {
     }
     if (+slider.style.left.substring(0, slider.style.left.length - 2) < 300) {
         const firstItem = items.shift(); // Удаление первого элемента массива и сохранение его
-        slider = document.querySelector(".")
+        slider = document.querySelector(".slider");
+        for (let i = 0; i < items.length; i++) {
+            slider.insertAdjacentHTML('beforeend', items[i])
+        }
 }});
