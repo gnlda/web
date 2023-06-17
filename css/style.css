@@ -9,8 +9,9 @@
     height: 100%;
     display: flex;
     overflow-x: scroll;
-    scroll-snap-type: x proximity;
-    scroll-behavior: smooth;
+    overflow-y: hidden;
+    /* scroll-snap-type: x proximity; */
+    /* scroll-behavior: smooth; */
   }
   
   .slider-wrapper {
