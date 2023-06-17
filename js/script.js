@@ -14,7 +14,7 @@ let items = [
     '<div class="slider__item"><p class="dd">8</p></div>',
 ]
 
-slider.insertAdjacentHTML
+slider.insertAdjacentHTML('beforeend')
 
 console.log(sliderItems);
 
