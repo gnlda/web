@@ -9,12 +9,12 @@ slider.addEventListener("mousedown", (e) => {
 });
 
 slider.addEventListener("mouseup", (e) => {
-    startX = e.clientX;
+   isUserTouching = false;
 });
 
 
 document.addEventListener("mousemove", (e) => {
-    if (startX && isUserTouching == true) {
+    if (startX && isUserTouching === true) {
         slider.style.left = e.clientX - startX + "px";
     }
 });
