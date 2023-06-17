@@ -5,3 +5,10 @@ let startX;
 slider.addEventListener("mousedown", (e) => {
     startX = e.clientX;
 });
+
+
+document.addEventListener("mousemove", (e) => {
+    if (startX) {
+        
+    }
+});
