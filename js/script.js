@@ -38,5 +38,4 @@ document.addEventListener("mousemove", (e) => {
         //sliderItems[0].remove();
         const firstItem = items.shift(); // Удаление первого элемента массива и сохранение его
         items.push(firstItem); // Добавление удаленного элемента в конец массива
-        slider.insertAdjacentHTML('beforeend', sliderItemsArray[0])
 }});
