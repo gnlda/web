@@ -27,6 +27,5 @@ document.addEventListener("mousemove", (e) => {
     }
     if (left < 300) {
         sliderItems[0].remove();
-        
     }
 });
