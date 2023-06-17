@@ -69,3 +69,7 @@ for(let i = 0; i < connect_wallet_choose_item2.length; i++) {
         connect_wallet_choose_item2[i].style.background = "var(--pink-ci)";
     });
 }
+
+const fdsaf =docxsca;
+
+fdsaf
