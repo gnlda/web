@@ -9,6 +9,6 @@ slider.addEventListener("mousedown", (e) => {
 
 document.addEventListener("mousemove", (e) => {
     if (startX) {
-        
+        slider.style.left = e.clientX - startX + "px";
     }
 });
