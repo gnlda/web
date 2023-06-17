@@ -1,4 +1,4 @@
-let menu_lists = document.getElementsByClassName("menu_list");
+let menu_lists = document.getElementsByClassName("data-type='menu_list'");
 let menu_arrow_container = document.getElementsByClassName("menu_arrow_container");
 
 for (let i = 0; i < menu_lists.length; i++) {
