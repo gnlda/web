@@ -6,6 +6,7 @@ let left;
 
 let sliderItems = document.querySelectorAll(".slider__item");
 
+console.log(sliderItems);
 
 slider.addEventListener("mousedown", (e) => {
     if (e.target.className !== 'dd') {
