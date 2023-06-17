@@ -8,7 +8,7 @@ slider.addEventListener("mousedown", (e) => {
     isUserTouching = true;
 });
 
-slider.addEventListener("mouseup", (e) => {
+document.addEventListener("mouseup", (e) => {
    isUserTouching = false;
 });
 
