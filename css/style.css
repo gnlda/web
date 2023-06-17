@@ -10,6 +10,7 @@ body {
     margin: 150px auto;
     transform: translateY(-50%);
     display: flex;
+    width: fit-content;
 }
 .slider__item {
     height: 70px;
