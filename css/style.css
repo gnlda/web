@@ -28,6 +28,3 @@ body {
     align-items: center;
     justify-content: center;
 }
-.slider__container::-webkit-scrollbar {
-    width: 0px;
-}
