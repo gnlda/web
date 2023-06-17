@@ -6,6 +6,11 @@
 body {
     font-family: Arial, serif;
 }
+.slider {
+    margin: 50% auto;
+    transform: translateY(-50%);
+    display: flex;
+}
 .slider__item {
     height: 70px;
     width: 300px;
