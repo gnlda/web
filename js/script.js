@@ -34,7 +34,7 @@ sliderContainer.addEventListener('scroll', () => {
   if (sliderContainer.scrollLeft === 0) {
     sliderContainer.scrollLeft = 100;
   } else if (sliderContainer.scrollLeft >= sliderWrapper.scrollWidth - sliderContainer.offsetWidth) {
-    sliderContainer.scrollLeft = 0;
+    sliderContainer.scrollLeft = 100;
   } else if (sliderContainer.scrollLeft < sliderWrapper.offsetWidth) {
     sliderContainer.scrollLeft = sliderContainer.scrollLeft + sliderWrapper.offsetWidth;
   }
