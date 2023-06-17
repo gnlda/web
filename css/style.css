@@ -13,7 +13,6 @@ body {
     width: 100%;
 }
 .slider {
-    transform: translateY(-50%);
     display: flex;
     align-items: center;
     justify-content: center;
