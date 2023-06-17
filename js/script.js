@@ -26,8 +26,7 @@ document.addEventListener("mousemove", (e) => {
     }
     if (+slider.style.left.substring(0, slider.style.left.length - 2) < 300) {
         
-        const firstItem = sliderItems[0];
-        firstItem.remove();
+        sliderItems[0].remove();
     
     }
 });
