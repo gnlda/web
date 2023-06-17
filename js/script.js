@@ -17,8 +17,6 @@ for (let i = 0; i < items.length; i++) {
     slider.insertAdjacentHTML('beforeend', items[i])
 }
 
-console.log(sliderItems);
-
 slider.addEventListener("mousedown", (e) => {
     if (e.target.className !== 'dd') {
         left = +slider.style.left.substring(0, slider.style.left.length - 2);
