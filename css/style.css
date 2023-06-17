@@ -7,13 +7,13 @@ body {
     font-family: Arial, serif;
 }
 .slider__container {
-    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: hidden;
     position: relative;
     height: 70px;
     width: 100%;
 }
 .slider {
-    transform: translateY(-50%);
     display: flex;
     align-items: center;
     justify-content: center;
