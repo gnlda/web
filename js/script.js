@@ -5,8 +5,7 @@ let isUserTouching = false;
 let left;
 
 slider.addEventListener("mousedown", (e) => {
-    console.log(e)
-    if (e.target.class !== 'dd') {
+    if (e.target.className !== 'dd') {
         left = +slider.style.left.substring(0, slider.style.left.length - 2);
         startX = e.clientX;
         isUserTouching = true;
