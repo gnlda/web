@@ -7,6 +7,7 @@ body {
     font-family: Arial, serif;
 }
 .slider__container {
+    margin-top: 500px;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -25,5 +26,5 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 40px 20px;
 }
