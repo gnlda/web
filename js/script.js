@@ -4,6 +4,9 @@ let startX;
 let isUserTouching = false;
 let left;
 
+let sliderItems = document.querySelector(".slider__item");
+
+
 slider.addEventListener("mousedown", (e) => {
     if (e.target.className !== 'dd') {
         left = +slider.style.left.substring(0, slider.style.left.length - 2);
