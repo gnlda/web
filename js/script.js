@@ -1,38 +1,25 @@
-let slider = document.querySelector(".slider");
-slider.style.left = 400 + "px";
-let startX;
-let isUserTouching = false;
-let left;
+const sliderContainer = document.querySelector('.slider-container');
+const sliderWrapper = document.querySelector('.slider-wrapper');
+const sliderItems = Array.from(document.querySelectorAll('.slider-item'));
 
-let sliderItems = document.querySelectorAll(".slider__item");
+sliderWrapper.innerHTML += sliderWrapper.innerHTML;
 
-console.log(sliderItems);
-
-slider.addEventListener("mousedown", (e) => {
-    if (e.target.className !== 'dd') {
-        left = +slider.style.left.substring(0, slider.style.left.length - 2);
-        startX = e.clientX;
-        isUserTouching = true;
-    }
+sliderContainer.addEventListener('scroll', () => {
+  if (sliderContainer.scrollLeft === 0) {
+    sliderContainer.scrollLeft = sliderWrapper.offsetWidth / 2;
+  } else if (sliderContainer.scrollLeft >= sliderWrapper.scrollWidth - sliderContainer.offsetWidth) {
+    sliderContainer.scrollLeft = sliderWrapper.offsetWidth / 2 - sliderContainer.offsetWidth;
+  }
 });
 
-document.addEventListener("mouseup", (e) => {
-   isUserTouching = false;
-});
+sliderContainer.addEventListener('mousemove', (event) => {
+  const containerWidth = sliderContainer.offsetWidth;
+  const mouseX = event.pageX - sliderContainer.offsetLeft;
+  const scrollSpeed = 3;
 
-document.addEventListener("mousemove", (e) => {
-    if (startX && isUserTouching === true) {
-        slider.style.left = left + e.clientX - startX + "px";
-    }
-    if (+slider.style.left.substring(0, slider.style.left.length - 2) < 300) {
-        
-        //sliderItems[sliderItems.length] = sliderItems[0];
-        //sliderItems[0].remove();
-        const sliderItemsArray = Array.from(sliderItems); // Преобразование NodeList в массив
-        const firstItem = sliderItemsArray.shift(); // Удаление первого элемента массива и сохранение его
-        sliderItemsArray.push(firstItem); // Добавление удаленного элемента в конец массива
-        sliderItems = document.querySelectorAll(".slider__item"); // Преобразование массива обратно в NodeList
-        console.log(sliderItems);
-
-    }
+  if (mouseX < containerWidth * 0.25) {
+    sliderContainer.scrollLeft -= scrollSpeed;
+  } else if (mouseX > containerWidth * 0.75) {
+    sliderContainer.scrollLeft += scrollSpeed;
+  }
 });
