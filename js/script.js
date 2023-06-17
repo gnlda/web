@@ -1,8 +1,8 @@
 let slider = document.querySelector(".slider");
-slider.style.left = 0;
+slider.style.left = 4000;
 let startX;
 let isUserTouching = false;
-let left = 400;
+let left;
 
 slider.addEventListener("mousedown", (e) => {
     if (e.target.className !== 'dd') {
