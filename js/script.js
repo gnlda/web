@@ -33,6 +33,6 @@ document.addEventListener("mousemove", (e) => {
         sliderItemsArray.push(firstItem); // Добавление удаленного элемента в конец массива
         sliderItems = document.querySelectorAll(".slider__item"); // Преобразование массива обратно в NodeList
         console.log(sliderItemsArray);
-        sliderItems = 
+        sliderItems = [...sliderItemsArray];
     }
 });
