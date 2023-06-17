@@ -26,15 +26,14 @@ sliderContainer.addEventListener('mousemove', (event) => {
   if (!isDown) return;
   event.preventDefault();
   const x = event.pageX - sliderContainer.offsetLeft;
-  const walk = (x - startX) * 3;
+  const walk = x - startX;
   sliderContainer.scrollLeft = scrollLeft - walk;
 });
 
 sliderContainer.addEventListener('scroll', () => {
   if (sliderContainer.scrollLeft === 0) {
-    sliderContainer.scrollLeft = sliderWrapper.offsetWidth;
-  } else if (sliderContainer.scrollLeft >= sliderWrapper.offsetWidth * 2 - sliderContainer.offsetWidth) {
-    sliderContainer.scrollLeft = sliderWrapper.offsetWidth;
+    sliderContainer.scrollLeft = sliderWrapper.scrollWidth / 2;
+  } else if (sliderContainer.scrollLeft >= sliderWrapper.scrollWidth - sliderContainer.offsetWidth) {
+    sliderContainer.scrollLeft = sliderWrapper.scrollWidth / 2 - sliderContainer.offsetWidth;
   }
 });
-
