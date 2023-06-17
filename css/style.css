@@ -8,6 +8,9 @@ body {
 }
 .slider__container {
     overflow: hidden;
+    position: relative;
+    height: 70px;
+    width: 100%;
 }
 .slider {
     margin: 150px auto;
@@ -16,6 +19,7 @@ body {
     align-items: center;
     justify-content: center;
     width: fit-content;
+    position: absolute;
 }
 .slider__item {
     height: 70px;
