@@ -5,13 +5,13 @@ let isUserTouching = false;
 let left;
 let items = [
     '<div class="slider__item"><p class="dd">1</p></div>',
-    '<div class="slider__item"><p class="dd">1</p></div>',
-    '<div class="slider__item"><p class="dd">1</p></div>',
-    '<div class="slider__item"><p class="dd">1</p></div>',
-    '<div class="slider__item"><p class="dd">1</p></div>',
-    '<div class="slider__item"><p class="dd">1</p></div>',
-    '<div class="slider__item"><p class="dd">1</p></div>',
-    '<div class="slider__item"><p class="dd">1</p></div>',
+    '<div class="slider__item"><p class="dd">2</p></div>',
+    '<div class="slider__item"><p class="dd">3</p></div>',
+    '<div class="slider__item"><p class="dd">4</p></div>',
+    '<div class="slider__item"><p class="dd">5</p></div>',
+    '<div class="slider__item"><p class="dd">6</p></div>',
+    '<div class="slider__item"><p class="dd">7</p></div>',
+    '<div class="slider__item"><p class="dd">8</p></div>',
 ]
 let sliderItems = document.querySelectorAll(".slider__item");
 
