@@ -1,26 +1,25 @@
 const sliderContainer = document.querySelector('.slider-container');
-let isDown = false;
-let startX;
-let scrollLeft;
+const sliderWrapper = document.querySelector('.slider-wrapper');
+const sliderItems = Array.from(document.querySelectorAll('.slider-item'));
 
-sliderContainer.addEventListener('mousedown', (event) => {
-  isDown = true;
-  startX = event.pageX - sliderContainer.offsetLeft;
-  scrollLeft = sliderContainer.scrollLeft;
-});
+sliderWrapper.innerHTML += sliderWrapper.innerHTML;
 
-sliderContainer.addEventListener('mouseleave', () => {
-  isDown = false;
-});
-
-sliderContainer.addEventListener('mouseup', () => {
-  isDown = false;
+sliderContainer.addEventListener('scroll', () => {
+  if (sliderContainer.scrollLeft === 0) {
+    sliderContainer.scrollLeft = sliderWrapper.offsetWidth / 2;
+  } else if (sliderContainer.scrollLeft >= sliderWrapper.scrollWidth - sliderContainer.offsetWidth) {
+    sliderContainer.scrollLeft = sliderWrapper.offsetWidth / 2 - sliderContainer.offsetWidth;
+  }
 });
 
 sliderContainer.addEventListener('mousemove', (event) => {
-  if (!isDown) return;
-  event.preventDefault();
-  const x = event.pageX - sliderContainer.offsetLeft;
-  const walk = x - startX;
-  sliderContainer.scrollLeft = scrollLeft - walk;
+  const containerWidth = sliderContainer.offsetWidth;
+  const mouseX = event.pageX - sliderContainer.offsetLeft;
+  const scrollSpeed = 3;
+
+  if (mouseX < containerWidth * 0.25) {
+    sliderContainer.scrollLeft -= scrollSpeed;
+  } else if (mouseX > containerWidth * 0.75) {
+    sliderContainer.scrollLeft += scrollSpeed;
+  }
 });
