@@ -19,7 +19,7 @@ sliderContainer.addEventListener('mouseup', () => {
 
 sliderContainer.addEventListener('mousemove', (event) => {
   if (!isDown) return;
-//   event.preventDefault();
+  event.preventDefault();
   const x = event.pageX - sliderContainer.offsetLeft;
   const walk = x - startX;
   sliderContainer.scrollLeft = scrollLeft - walk;
