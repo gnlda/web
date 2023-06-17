@@ -8,28 +8,28 @@ let isDown = false;
 let startX;
 let scrollLeft;
 let isScrolling = false;
-let velocity = 0;
-let lastPosX = 0;
-let timestamp = 0;
+let lastScrollX = 0;
+let scrollVelocity = 0;
 
 sliderContainer.addEventListener('mousedown', (event) => {
   isDown = true;
   startX = event.pageX - sliderContainer.offsetLeft;
   scrollLeft = sliderContainer.scrollLeft;
-  velocity = 0;
-  isScrolling = false;
-  lastPosX = event.pageX;
-  timestamp = Date.now();
+  isScrolling = true;
+  lastScrollX = event.pageX;
+  sliderContainer.classList.add('scrolling');
 });
 
 sliderContainer.addEventListener('mouseleave', () => {
   isDown = false;
-  handleInertiaScroll();
+  isScrolling = false;
+  sliderContainer.classList.remove('scrolling');
 });
 
 sliderContainer.addEventListener('mouseup', () => {
   isDown = false;
-  handleInertiaScroll();
+  isScrolling = false;
+  sliderContainer.classList.remove('scrolling');
 });
 
 sliderContainer.addEventListener('mousemove', (event) => {
@@ -38,39 +38,25 @@ sliderContainer.addEventListener('mousemove', (event) => {
   const x = event.pageX - sliderContainer.offsetLeft;
   const walk = x - startX;
   sliderContainer.scrollLeft = scrollLeft - walk;
-
-  const currentPosX = event.pageX;
-  const currentTime = Date.now();
-  const timeDiff = currentTime - timestamp;
-  if (timeDiff > 0) {
-    velocity = (currentPosX - lastPosX) / timeDiff;
-    lastPosX = currentPosX;
-    timestamp = currentTime;
-  }
+  isScrolling = true;
+  scrollVelocity = event.pageX - lastScrollX;
+  lastScrollX = event.pageX;
 });
-
-function handleInertiaScroll() {
-  if (!isScrolling && Math.abs(velocity) > 0.2) {
-    isScrolling = true;
-    requestAnimationFrame(inertiaScroll);
-  }
-}
-
-function inertiaScroll() {
-  sliderContainer.scrollLeft += velocity;
-  velocity *= 0.95;
-  
-  if (Math.abs(velocity) > 0.2) {
-    requestAnimationFrame(inertiaScroll);
-  } else {
-    isScrolling = false;
-  }
-}
 
 sliderContainer.addEventListener('scroll', () => {
   if (sliderContainer.scrollLeft === 0) {
     sliderContainer.scrollLeft = sliderWrapper.offsetWidth / 2;
   } else if (sliderContainer.scrollLeft >= sliderWrapper.scrollWidth - sliderContainer.offsetWidth) {
     sliderContainer.scrollLeft = sliderWrapper.offsetWidth / 2 - sliderContainer.offsetWidth;
+  }
+
+  if (!isScrolling) {
+    scrollVelocity *= 0.95;
+    if (Math.abs(scrollVelocity) < 0.5) {
+      isScrolling = false;
+      sliderContainer.classList.remove('scrolling');
+    } else {
+      sliderContainer.scrollLeft += scrollVelocity;
+    }
   }
 });
