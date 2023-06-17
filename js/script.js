@@ -20,7 +20,7 @@ sliderContainer.addEventListener('mouseup', () => {
 sliderContainer.addEventListener('mousemove', (event) => {
   if (!isDown) return;
   event.preventDefault();
-  const x = event.pageX;
-  const walk = (x - startX) * 2;
+  const x = event.pageX - sliderContainer.offsetLeft;
+  const walk = x - startX;
   sliderContainer.scrollLeft = scrollLeft - walk;
 });
