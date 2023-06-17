@@ -18,7 +18,7 @@ document.addEventListener("mouseup", (e) => {
 document.addEventListener("mousemove", (e) => {
     if (startX && isUserTouching === true) {
         console.log(left);
+        slider.style.left = left + "px";
         slider.style.left = left + e.clientX - startX + "px";
-        left = 0;
     }
 });
