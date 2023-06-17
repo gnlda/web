@@ -17,5 +17,6 @@ document.addEventListener("mousemove", (e) => {
     if (startX && isUserTouching === true) {
         console.log(slider.style.left);
         slider.style.left =  e.clientX - startX + "px";
+        
     }
 });
