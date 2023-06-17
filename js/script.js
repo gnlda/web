@@ -7,13 +7,11 @@ sliderWrapper.innerHTML += sliderWrapper.innerHTML;
 let isDown = false;
 let startX;
 let scrollLeft;
-let scrollWidth;
 
 sliderContainer.addEventListener('mousedown', (event) => {
   isDown = true;
   startX = event.pageX - sliderContainer.offsetLeft;
   scrollLeft = sliderContainer.scrollLeft;
-  scrollWidth = sliderWrapper.scrollWidth / 2;
 });
 
 sliderContainer.addEventListener('mouseleave', () => {
@@ -33,9 +31,9 @@ sliderContainer.addEventListener('mousemove', (event) => {
 });
 
 sliderContainer.addEventListener('scroll', () => {
-  if (sliderContainer.scrollLeft <= 0) {
-    sliderContainer.scrollLeft = scrollWidth;
-  } else if (sliderContainer.scrollLeft >= scrollWidth) {
+  if (sliderContainer.scrollLeft + sliderContainer.offsetWidth >= sliderWrapper.scrollWidth) {
     sliderContainer.scrollLeft = 0;
+  } else if (sliderContainer.scrollLeft <= 0) {
+    sliderContainer.scrollLeft = sliderWrapper.scrollWidth - sliderContainer.offsetWidth;
   }
 });
