@@ -3,7 +3,9 @@ slider.style.left = 400 + "px";
 let startX;
 let isUserTouching = false;
 let left;
-let items = []
+let items = [
+    ''
+]
 let sliderItems = document.querySelectorAll(".slider__item");
 
 console.log(sliderItems);
