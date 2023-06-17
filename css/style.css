@@ -6,3 +6,8 @@
 body {
     font-family: Arial, serif;
 }
+.slider__item {
+    height: 70px;
+    width: 300px;
+    border: 1px solid red;
+}
