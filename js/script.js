@@ -28,11 +28,11 @@ document.addEventListener("mousemove", (e) => {
         
         //sliderItems[sliderItems.length] = sliderItems[0];
         //sliderItems[0].remove();
+        const sliderItemsArray = Array.from(sliderItems); // Преобразование NodeList в массив
+        const firstItem = sliderItemsArray.shift(); // Удаление первого элемента массива и сохранение его
+        sliderItemsArray.push(firstItem); // Добавление удаленного элемента в конец массива
+        sliderItems = document.querySelectorAll(".slider__item"); // Преобразование массива обратно в NodeList
         
-        const firstItem = sliderItems[0];
-        firstItem.shift();
-        sliderItems.push(firstItem);
-        console.log(sliderItems);
 
     }
 });
