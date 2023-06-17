@@ -25,4 +25,8 @@ document.addEventListener("mousemove", (e) => {
     if (startX && isUserTouching === true) {
         slider.style.left = left + e.clientX - startX + "px";
     }
+    if (left < 300) {
+        sliderItems[0].remove();
+        
+    }
 });
