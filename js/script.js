@@ -18,8 +18,8 @@ document.addEventListener("mouseup", (e) => {
 
 document.addEventListener("mousemove", (e) => {
     if (startX && isUserTouching === true) {
-        // console.log(slider.style.left);
         slider.style.left = delta + e.clientX - startX + "px";
+        console.log(delta)
         delta = 0;
     }
 });
