@@ -22,11 +22,10 @@ document.addEventListener("mouseup", (e) => {
 
 
 document.addEventListener("mousemove", (e) => {
-    console.log(left);
     if (startX && isUserTouching === true) {
         slider.style.left = left + e.clientX - startX + "px";
     }
-    if (left < 300) {
+    if (+slider.style.left.substring(0, slider.style.left.length - 2) < 300) {
         sliderItems[0].remove();
     }
 });
