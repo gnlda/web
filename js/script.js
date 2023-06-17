@@ -31,9 +31,9 @@ sliderContainer.addEventListener('mousemove', (event) => {
 });
 
 sliderContainer.addEventListener('scroll', () => {
-  if (sliderContainer.scrollLeft === 0) {
-    sliderContainer.scrollLeft = sliderWrapper.scrollWidth / 2;
+  if (sliderContainer.scrollLeft <= 0) {
+    sliderContainer.scrollLeft = sliderWrapper.scrollWidth - sliderContainer.offsetWidth;
   } else if (sliderContainer.scrollLeft >= sliderWrapper.scrollWidth - sliderContainer.offsetWidth) {
-    sliderContainer.scrollLeft = sliderWrapper.scrollWidth / 2 - sliderContainer.offsetWidth;
+    sliderContainer.scrollLeft = 0;
   }
 });
