@@ -4,7 +4,7 @@ let startX;
 let isUserTouching = false;
 let left;
 
-let sliderItems = document.querySelector(".slider__item");
+let sliderItems = document.querySelectorAll(".slider__item");
 
 
 slider.addEventListener("mousedown", (e) => {
