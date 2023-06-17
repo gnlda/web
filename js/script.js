@@ -6,6 +6,7 @@ let delta;
 
 slider.addEventListener("mousedown", (e) => {
     delta = +slider.style.left.substring(0, slider.style.left.length - 2);
+    console.log(delta)
     startX = e.clientX;
     isUserTouching = true;
 });
