@@ -9,7 +9,6 @@ body {
 .slider__container {
     overflow: hidden;
     position: relative;
-    height: 70px;
     width: 100%;
 }
 .slider {
@@ -26,4 +25,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.slider__item p {
+    padding: 20px;
 }
