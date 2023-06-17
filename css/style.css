@@ -5,15 +5,21 @@
 }
 body {
     font-family: Arial, serif;
+    overflow: hidden;
 }
 .slider {
     margin: 150px auto;
     transform: translateY(-50%);
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: fit-content;
 }
 .slider__item {
     height: 70px;
     width: 300px;
     border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
