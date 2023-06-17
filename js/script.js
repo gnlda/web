@@ -1,3 +1,8 @@
 let slider = document.querySelector(".slider");
 
-console.log(slider);
+let startX;
+
+slider.addEventListener("mousedown", (e) => {
+    console.log(e);
+    //startX = e
+});
