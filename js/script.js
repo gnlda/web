@@ -13,7 +13,8 @@ let items = [
     '<div class="slider__item"><p class="dd">7</p></div>',
     '<div class="slider__item"><p class="dd">8</p></div>',
 ]
-let sliderItems = document.querySelectorAll(".slider__item");
+
+slider.insertAdjacentHTML
 
 console.log(sliderItems);
 
