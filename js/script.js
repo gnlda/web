@@ -70,6 +70,13 @@ function startInertia() {
       clearInterval(inertiaInterval);
       isScrolling = false;
       sliderContainer.classList.remove('scrolling');
+
+      // Откат в противоположную сторону
+      if (sliderContainer.scrollLeft === 0) {
+        sliderContainer.scrollLeft = sliderWrapper.scrollWidth / 2 - sliderContainer.offsetWidth;
+      } else if (sliderContainer.scrollLeft >= sliderWrapper.scrollWidth - sliderContainer.offsetWidth) {
+        sliderContainer.scrollLeft = sliderWrapper.scrollWidth / 2 - sliderContainer.offsetWidth - sliderContainer.scrollWidth;
+      }
     }
   }, 10);
 }
