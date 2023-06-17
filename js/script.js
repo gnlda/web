@@ -31,5 +31,5 @@ document.addEventListener("mousemove", (e) => {
         const sliderItemsArray = Array.from(sliderItems); // Преобразование NodeList в массив
         const firstItem = sliderItemsArray.shift(); // Удаление первого элемента массива и сохранение его
         sliderItemsArray.push(firstItem); // Добавление удаленного элемента в конец массива
-        slider.insertAdjacentHTML('beforeend', sl)
+        slider.insertAdjacentHTML('beforeend', sliderItemsArray[0])
 }});
