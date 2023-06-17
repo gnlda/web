@@ -6,6 +6,9 @@
 body {
     font-family: Arial, serif;
 }
+.slider__container {
+    overflow: hidden;
+}
 .slider {
     margin: 150px auto;
     transform: translateY(-50%);
@@ -13,7 +16,6 @@ body {
     align-items: center;
     justify-content: center;
     width: fit-content;
-    overflow: hidden;
 }
 .slider__item {
     height: 70px;
