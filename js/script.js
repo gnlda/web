@@ -1,6 +1,6 @@
 let slider = document.querySelector(".slider");
 //slider.style.left = 0;
-
+console(slider.style.left);
 let startX;
 let isUserTouching = false;
 
@@ -16,6 +16,6 @@ document.addEventListener("mouseup", (e) => {
 
 document.addEventListener("mousemove", (e) => {
     if (startX && isUserTouching === true) {
-        slider.style.left = slider.style.left + e.clientX - startX + "px";
+        slider.style.left =  e.clientX - startX + "px";
     }
 });
