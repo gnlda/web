@@ -28,6 +28,6 @@ document.addEventListener("mousemove", (e) => {
     if (+slider.style.left.substring(0, slider.style.left.length - 2) < 300) {
         sliderItems = Array.from(sliderItems);
         sliderItems.push(sliderItems[0]);
-        sliderItems[0].remove();
+        //sliderItems[0].remove();
     }
 });
