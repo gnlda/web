@@ -4,7 +4,8 @@ let startX;
 let isUserTouching = false;
 let left;
 let items = [
-    ''
+    '<div class="slider__item"><p class="dd">1</p></div>',
+    '<div class="slider__item"><p class="dd">1</p></div>'
 ]
 let sliderItems = document.querySelectorAll(".slider__item");
 
