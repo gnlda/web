@@ -20,7 +20,6 @@ document.addEventListener("mouseup", (e) => {
    isUserTouching = false;
 });
 
-
 document.addEventListener("mousemove", (e) => {
     if (startX && isUserTouching === true) {
         slider.style.left = left + e.clientX - startX + "px";
@@ -29,7 +28,6 @@ document.addEventListener("mousemove", (e) => {
         
         const firstItem = sliderItems[0];
         firstItem.remove();
-        sliderItems.push(firstItem);
     
     }
 });
