@@ -22,6 +22,7 @@ document.addEventListener("mouseup", (e) => {
 
 
 document.addEventListener("mousemove", (e) => {
+    console.log(left);
     if (startX && isUserTouching === true) {
         slider.style.left = left + e.clientX - startX + "px";
     }
