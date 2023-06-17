@@ -68,6 +68,8 @@ function startInertia() {
     scrollVelocity *= 0.95;
     if (Math.abs(scrollVelocity) < 0.5) {
       clearInterval(inertiaInterval);
+      isScrolling = false;
+      sliderContainer.classList.remove('scrolling');
     }
   }, 10);
 }
