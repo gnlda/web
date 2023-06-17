@@ -32,7 +32,7 @@ document.addEventListener("mousemove", (e) => {
         const firstItem = sliderItemsArray.shift(); // Удаление первого элемента массива и сохранение его
         sliderItemsArray.push(firstItem); // Добавление удаленного элемента в конец массива
         sliderItems = document.querySelectorAll(".slider__item"); // Преобразование массива обратно в NodeList
-        console.log(sliderItems);
+        console.log(sliderItemsArray);
 
     }
 });
