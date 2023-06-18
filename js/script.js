@@ -53,9 +53,6 @@ sliderContainer.addEventListener('scroll', () => {
   } else if (sliderContainer.scrollLeft <= 0) {
     sliderContainer.scrollLeft = sliderWrapper.scrollWidth - sliderContainer.offsetWidth;
   }
-<<<<<<< HEAD
-});
-=======
 
   if (!isScrolling) {
     startInertia();
@@ -76,4 +73,3 @@ function startInertia() {
     }
   }, 10);
 }
->>>>>>> 17a91f3f3aae342d1f536c00e8223348b4fd44c9
