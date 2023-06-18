@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const sliderContainer = document.querySelector('.slider-container');
 const sliderWrapper = document.querySelector('.slider-wrapper');
 const sliderItems = Array.from(document.querySelectorAll('.slider-item'));
@@ -80,3 +81,5 @@ function startInertia() {
     }
   }, 10);
 }
+=======
+>>>>>>> ae097e300a34e56f99692c506f18654d093da021
