@@ -80,7 +80,7 @@ header {
   line-height: 22px;
   cursor: pointer;
 }
-.menu__button__container button button:first-child {
+.menu__button__container button:first-child {
   background: transparent;
   border: 1px solid #ffffff;
 }

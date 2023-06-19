@@ -48,7 +48,7 @@ header {
         color: $text;
         @include font('Sofia Pro', 14px, 600, 22px);
         cursor: pointer;
-        & button:first-child {
+        &:first-child {
             background: transparent;
             border: 1px solid $white;
         }
