@@ -18,7 +18,6 @@ document.addEventListener("mouseup", e => {
 
 const sliderLength = sliderItems.length / 2 * (parseInt(sliderItems[0].style.width) + gap);
 console.log(sliderLength);
-slider.style.left = -sliderLength;
 
 slider.addEventListener("mousemove", e => {
     if (isTouch === true) {
