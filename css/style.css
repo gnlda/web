@@ -53,6 +53,7 @@ header {
   display: flex;
 }
 .menu__header ul {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

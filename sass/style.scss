@@ -33,6 +33,7 @@ header {
 .menu__header {
     display: flex;
     & ul {
+        height: 100%;
         @include flex-center(space-between)
     }
     & li {
