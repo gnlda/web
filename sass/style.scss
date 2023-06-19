@@ -86,7 +86,7 @@ body {
 }
 .hero__container {
     margin-top: 70px;
-    @include flex-center(space-between);
+    @include flex-center(start);
     & .hero__text {
         & h1 {
             margin-top: 24px;
