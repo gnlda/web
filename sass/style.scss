@@ -41,7 +41,7 @@ body {
 /* Header */
 .header__wrap {
     padding: 24px;
-    @include flex-center(space-between);
+    @include flex(space-between, center);
 }
 .logo__header {
     @include flex-center(start);
