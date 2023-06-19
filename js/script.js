@@ -3,7 +3,6 @@ let sliderItems = document.querySelectorAll(".slider__item");
 sliderItems.forEach(sliderItem => {
     sliderItem.style.width = 370;
 });
-console.log(sliderItems);
 let startLeft = 0;
 let isTouch = false;
 
@@ -19,6 +18,7 @@ document.addEventListener("mouseup", e => {
 slider.style.left = -2196 + "px";
 
 let sliderLength = sliderItems.length / 2 * parseInt(sliderItems[0].style.width);
+console.log(parseInt(sliderItems[0].style.width));
 
 slider.addEventListener("mousemove", e => {
     if (isTouch === true) {
