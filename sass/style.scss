@@ -92,7 +92,6 @@ body {
     padding: 0 24px;
 }
 .hero__container {
-    margin-top: 70px;
     @include flex-center(start);
     & .hero__text {
         & h1 {
