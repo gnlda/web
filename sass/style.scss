@@ -44,7 +44,7 @@ body {
     @include flex(space-between, center);
 }
 .logo__header {
-    @include flex-center(start);
+    @include flex(start, center);
     & h2 {
         @include font('Sora', 18px, 700, 23px, $text);
     }
@@ -53,7 +53,7 @@ body {
     display: flex;
     & ul {
         height: 100%;
-        @include flex-center(space-between)
+        @include flex(space-between, center)
     }
     & li {
         display: inline-block;
@@ -68,7 +68,7 @@ body {
 }
 .menu__button__container {
     margin-left: 32px;
-    @include flex-center(start);
+    @include flex(start, center);
     & button {
         height: 100%;
         padding: 12px 24px;
@@ -92,9 +92,10 @@ body {
     padding: 0 24px;
 }
 .hero__container {
-    @include flex-center(start);
+    @include flex(start, top);
     & .hero__text {
         & h1 {
+            margin-top: 48px;
             width: 638px;
             @include font('Sofia Pro', 61px, 700, 110%, $text);
         }
