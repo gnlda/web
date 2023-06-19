@@ -75,7 +75,7 @@ body {
         }
         &:last-child {
             margin-left: 16px;
-            @include button();
+            @include button(12px, 24px);
         }
     }
 }
