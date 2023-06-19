@@ -5,10 +5,12 @@
 }
 :root {
     --BG: #1D1F25;
+    --text: #ffffff;
 }
 body {
     font-family: 'Graphik';
     background: var(--BG);
+    color: var(--text);
 }
 
 
