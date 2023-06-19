@@ -35,13 +35,15 @@ slider.addEventListener("mousemove", e => {
 
 
 setInterval(() => {
-    slider.style.left = parseInt(slider.style.left) - 1 + "px"
-    let left = parseInt(slider.style.left);
-    if (left < -2630) {
-        left = left + sliderLength;
-        slider.style.left = left - startLeft + "px";
-    } else if (left > -410) {
-        left = left - sliderLength;
-        slider.style.left = left - startLeft + "px";
+    if (isTouch === false) {
+        slider.style.left = parseInt(slider.style.left) - 1 + "px"
+        let left = parseInt(slider.style.left);
+        if (left < -2630) {
+            left = left + sliderLength;
+            slider.style.left = left - startLeft + "px";
+        } else if (left > -410) {
+            left = left - sliderLength;
+            slider.style.left = left - startLeft + "px";
+        }
     }
 }, 10);
