@@ -46,14 +46,14 @@ header {
 .logo__header h2 {
   font-family: "Sora", arial;
 }
-.logo__header li {
-  display: inline-block;
-}
 
 .menu__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.menu__header li {
+  display: inline-block;
 }
 .menu__header button {
   height: 100%;
