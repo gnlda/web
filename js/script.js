@@ -24,7 +24,7 @@ slider.addEventListener("mousemove", e => {
             console.log(left);
         }
         if (left < -420 && left <= -2630) {
-            left = -421;
+            left = -430;
             slider.style.left = left + e.offsetX - startLeft + "px";
             console.log(left);
         }
