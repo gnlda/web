@@ -165,6 +165,6 @@ body {
         margin-left: 24px;
     }
     .info__slider {
-        @include flex(space-between);
+        @include flex(space-between, start);
     }
 }

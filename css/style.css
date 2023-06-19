@@ -259,3 +259,14 @@ body {
 .slider__item:not(:first-child) {
   margin-left: 24px;
 }
+.slider__item .info__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
