@@ -178,9 +178,6 @@ body {
       -ms-transform: translateX(100px);
           transform: translateX(100px);
 }
-.hero__container .hero__image img {
-  width: 100%;
-}
 
 .button {
   padding: 18px 75px;
