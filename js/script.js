@@ -19,7 +19,8 @@ document.addEventListener("mouseup", e => {
     isTouch = false;
 });
 
-const sliderLength = sliderItems.length / 2 * (parseInt(sliderItems[0].style.width) + gap);
+//const sliderLength = sliderItems.length / 2 * (parseInt(sliderItems[0].style.width) + gap);
+const sliderLength = -2220;
 slider.style.left = -sliderLength + gap + "px";
 console.log(sliderLength);
 
