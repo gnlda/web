@@ -80,9 +80,7 @@ header {
   margin-left: 32px;
 }
 .menu__button__container button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   height: 100%;
   padding: 12px 24px;
   border-radius: 100px;
