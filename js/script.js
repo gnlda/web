@@ -26,10 +26,10 @@ console.log(sliderLength);
 slider.addEventListener("mousemove", e => {
     if (isTouch === true) {
         let left = parseInt(slider.style.left);
-        if (left <= -offcet && left >= -sliderLength - gap) {
+        if (left <= -offcet && left >= -sliderLength - offcet) {
             slider.style.left = left + e.offsetX - startLeft + "px";
             console.log(left);
-        } else if (left < -sliderLength - gap) {
+        } else if (left < -sliderLength - offcet) {
             left = left + sliderLength;
             slider.style.left = left + e.offsetX - startLeft + "px";
             console.log(left);
