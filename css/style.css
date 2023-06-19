@@ -68,6 +68,9 @@ header {
 .menu__header li {
   display: inline-block;
 }
+.menu__header li:not(:first-child) {
+  margin-left: 48px;
+}
 
 .menu__button__container {
   margin-left: 32px;

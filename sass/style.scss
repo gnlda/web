@@ -38,6 +38,9 @@ header {
     }
     & li {
         display: inline-block;
+        &:not(:first-child) {
+            margin-left: 48px;
+        }
     }
 }
 .menu__button__container {
