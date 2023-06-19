@@ -14,7 +14,7 @@ document.addEventListener("mouseup", e => {
 slider.style.left = -2196 + "px";
 let sliderLength = 2220;
 
-const move = () => {
+const move = (e) => {
     if (isTouch === true) {
         let left = parseInt(slider.style.left);
             if (left <= -410 && left >= -2630) {
@@ -33,7 +33,7 @@ const move = () => {
 }
 
 
-slider.addEventListener("mousemove", move);
+slider.addEventListener("mousemove", move(e));
 
 setInterval(move, 10)
 
