@@ -205,6 +205,8 @@ body {
 /* Slider */
 .slider__main-container {
   position: relative;
+  width: 1440px;
+  overflow: hidden;
 }
 
 .slider {
