@@ -1,8 +1,10 @@
 let slider = document.querySelector(".slider");
 let sliderItems = document.querySelectorAll(".slider__item");
+
 sliderItems.forEach(item => {
     item.style.width = 346 + "px";
 });
+
 let gap = 24;
 let startLeft = 0;
 let isTouch = false;
