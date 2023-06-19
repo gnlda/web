@@ -210,7 +210,7 @@ body {
   overflow: hidden;
   height: 178px;
 }
-.slider__main-container::before {
+.slider__main-container:before {
   height: inherit;
   width: 89px;
 }
