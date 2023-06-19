@@ -33,8 +33,8 @@ const move = () => {
 }
 
 
-slider.addEventListener("mousemove", move());
+slider.addEventListener("mousemove", move);
 
-setInterval(move(), 10)
+setInterval(move, 10)
 
 
