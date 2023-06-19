@@ -46,11 +46,7 @@ header {
         background: transparent;
         border: 1px solid $white;
         color: $text;
-        font-family: 'Sofia Pro';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 22px;
+        @include font('Sofia Pro', 14px, 600, 22px);
         cursor: pointer;
     }
 }

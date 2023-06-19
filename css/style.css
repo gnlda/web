@@ -76,9 +76,8 @@ header {
   border: 1px solid #ffffff;
   color: #ffffff;
   font-family: "Sofia Pro";
-  font-style: normal;
-  font-weight: 600;
   font-size: 14px;
+  font-weight: 600;
   line-height: 22px;
   cursor: pointer;
 }
