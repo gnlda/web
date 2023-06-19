@@ -1,4 +1,5 @@
 let slider = document.querySelector(".slider");
+let sliderItems = document.querySelectorAll(".slider__item");
 let startLeft = 0;
 let isTouch = false;
 
@@ -13,8 +14,7 @@ document.addEventListener("mouseup", e => {
 
 slider.style.left = -2196 + "px";
 
-
-let sliderLength = 2220;
+let sliderLength = sliderItems.length / 2 * parseInt(sliderItems[0].style.width);
 
 slider.addEventListener("mousemove", e => {
     if (isTouch === true) {
