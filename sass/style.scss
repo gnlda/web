@@ -45,22 +45,22 @@ body {
 }
 .logo__header {
     @include flex(start, center);
-    & h2 {
+    h2 {
         @include font('Sora', 18px, 700, 23px, $text);
     }
 }
 .menu__header {
     display: flex;
-    & ul {
+    ul {
         height: 100%;
         @include flex(space-between, center)
     }
-    & li {
+    li {
         display: inline-block;
         &:not(:first-child) {
             margin-left: 48px;
         }
-        & a {
+        a {
             text-decoration: none;
             color: $text;
         }
