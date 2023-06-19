@@ -203,6 +203,12 @@ body {
 }
 
 /* Slider */
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .slider__item {
   width: 346px;
   height: 178px;

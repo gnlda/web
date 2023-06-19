@@ -120,6 +120,9 @@ body {
 
 /* Slider */
 
+.slider {
+    display: flex;
+}
 .slider__item {
     width: 346px;
     height: 178px;
