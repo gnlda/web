@@ -203,6 +203,10 @@ body {
 }
 
 /* Slider */
+.slider__main-container {
+  position: relative;
+}
+
 .slider {
   display: -webkit-box;
   display: -ms-flexbox;

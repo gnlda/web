@@ -120,6 +120,9 @@ body {
 
 /* Slider */
 
+.slider__main-container {
+    position: relative;
+}
 .slider {
     display: flex;
     width: fit-content;
