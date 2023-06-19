@@ -175,6 +175,9 @@ body {
     }
     .indicator__slider {
         @include flex(space-between, center);
+        p {
+            margin-left: 10px;
+        }
     }
     .balance__slider {
         @include flex(space-between, center);
