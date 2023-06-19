@@ -18,6 +18,9 @@ body {
 }
 
 
+header {
+    padding: 24px;
+}
 .header__wrap {
     @include flex-center(space-between);
 }

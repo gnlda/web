@@ -16,6 +16,10 @@ body {
   margin: 0 auto;
 }
 
+header {
+  padding: 24px;
+}
+
 .header__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
