@@ -35,5 +35,5 @@ slider.addEventListener("mousemove", e => {
 });
 
 setInterval(() => {
-    left--;
+    slider.style.left = parseInt(slider.style.left) - 1 + "px";
 }, 15)
