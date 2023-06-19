@@ -88,6 +88,7 @@ body {
     @include flex-center(space-between);
     & .hero__text {
         & h1 {
+            width: 638px;
             @include font('Sofia Pro', 61px, 700, 110%, $text);
         }
         & p {
