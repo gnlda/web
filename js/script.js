@@ -36,8 +36,7 @@ slider.addEventListener("mousemove", e => {
 
 setInterval(() => {
     if (isTouch === false) {
-        slider.style.left = parseInt(slider.style.left) - 0,6 + "px"
-        console.log(slider.style.left);
+        slider.style.left = parseInt(slider.style.left) - 1 + "px";
         let left = parseInt(slider.style.left);
         if (left < -2630) {
             left = left + sliderLength;
