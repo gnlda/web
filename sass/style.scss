@@ -1,17 +1,15 @@
+@import '_vars';
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-:root {
-    --BG: #1D1F25;
-    --text: #ffffff;
-    --blue: #1A82FF;
-}
+
 body {
     font-family: 'Graphik';
-    background: var(--BG);
-    color: var(--text);
+    background: $bg;
+    color: $text;
 }
 .wrapper {
     width: 1440px;

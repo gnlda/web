@@ -5,16 +5,10 @@
           box-sizing: border-box;
 }
 
-:root {
-  --BG: #1D1F25;
-  --text: #ffffff;
-  --blue: #1A82FF;
-}
-
 body {
   font-family: "Graphik";
-  background: var(--BG);
-  color: var(--text);
+  background: #1D1F25;
+  color: #ffffff;
 }
 
 .wrapper {
