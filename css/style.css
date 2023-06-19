@@ -145,9 +145,6 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.hero__container .hero__text {
-  width: 638px;
-}
 .hero__container .hero__text h1 {
   font-family: "Sofia Pro";
   font-size: 61px;
