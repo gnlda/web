@@ -177,6 +177,7 @@ body {
         @include flex(space-between, center);
         p {
             margin-left: 10px;
+            @include font('Graphik', 18px, 600, 27px, $green-primary);
         }
     }
     .balance__slider {
