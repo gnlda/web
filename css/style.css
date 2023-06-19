@@ -61,6 +61,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 23px;
+  color: #ffffff;
 }
 
 .menu__header {
@@ -112,6 +113,7 @@ body {
   font-size: 14px;
   font-weight: 600;
   line-height: 22px;
+  color: #ffffff;
   cursor: pointer;
 }
 .menu__button__container button:first-child {
@@ -142,10 +144,12 @@ body {
   font-size: 61px;
   font-weight: 700;
   line-height: 110%;
+  color: #ffffff;
 }
 .hero__container .hero__text p {
   font-family: "Graphik";
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
+  color: #E5E6ED;
 }
