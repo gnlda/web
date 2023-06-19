@@ -82,6 +82,9 @@ body {
 }
 
 /* Hero */
+.hero__wrap {
+    padding: 0 24px;
+}
 .hero__container {
     @include flex-center(space-between);
     & .hero__text {
