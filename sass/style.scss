@@ -41,6 +41,10 @@ header {
         &:not(:first-child) {
             margin-left: 48px;
         }
+        & a {
+            text-decoration: none;
+            color: $text;
+        }
     }
 }
 .menu__button__container {

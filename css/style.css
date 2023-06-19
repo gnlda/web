@@ -71,6 +71,10 @@ header {
 .menu__header li:not(:first-child) {
   margin-left: 48px;
 }
+.menu__header li a {
+  text-decoration: none;
+  color: #ffffff;
+}
 
 .menu__button__container {
   margin-left: 32px;
