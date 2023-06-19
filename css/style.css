@@ -245,6 +245,10 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .slider__item {
@@ -255,10 +259,6 @@ body {
           backdrop-filter: blur(2px);
   border-radius: 8px;
   padding: 24px;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 .slider__item:not(:first-child) {
   margin-left: 24px;
