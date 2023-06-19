@@ -4,8 +4,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --BG: #1D1F25;
+}
+
 body {
   font-family: "Graphik";
+  background: var(--BG);
 }
 
 .logo__header h2 {
