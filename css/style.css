@@ -153,6 +153,7 @@ body {
   color: #ffffff;
 }
 .hero__container .hero__text p {
+  margin-top: 24px;
   font-family: "Graphik";
   font-size: 18px;
   font-weight: 400;
@@ -160,6 +161,7 @@ body {
   color: #E5E6ED;
 }
 .hero__container .hero__text button {
+  margin-top: 48px;
   font-family: "Graphik";
   font-size: 18px;
   font-weight: 400;
