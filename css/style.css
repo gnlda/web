@@ -154,7 +154,7 @@ body {
   color: #E5E6ED;
 }
 .hero__container .hero__image {
-  -webkit-transform: translateX(42px);
-      -ms-transform: translateX(42px);
-          transform: translateX(42px);
+  -webkit-transform: translateX(100px);
+      -ms-transform: translateX(100px);
+          transform: translateX(100px);
 }
