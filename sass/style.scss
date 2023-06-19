@@ -173,6 +173,9 @@ body {
             @include font('Graphik', 16px, 400, 24px, $text-grey-40);
         }
     }
+    .indicator__slider {
+        @include flex(space-between, center);
+    }
     .balance__slider {
         @include flex(space-between, center);
     }
