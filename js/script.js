@@ -13,6 +13,8 @@ slider.addEventListener("mouseup", e => {
 
 slider.addEventListener("mousemove", e => {
     if (isTouch === true){
+        //let left = slider.getPropertyValue("left");
+        console.log(slider.getPropertyValue("left"));
         slider.style.left = e.offsetX + "px";
     }
 });
