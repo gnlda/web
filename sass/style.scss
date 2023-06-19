@@ -172,6 +172,8 @@ body {
         p {
             margin-top: 24px;
             @include font('Graphik', 16px, 400, 24px, $text-grey-40);
+    user-select: none;
+
         }
     }
     .indicator__slider {
@@ -180,6 +182,8 @@ body {
         p {
             margin-left: 10px;
             @include font('Graphik', 18px, 600, 27px, $green-primary);
+    user-select: none;
+
         }
     }
     .balance__slider {
