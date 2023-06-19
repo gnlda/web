@@ -217,6 +217,7 @@ body {
   background: -o-linear-gradient(left, #1D1F25 0%, transparent 100%);
   background: linear-gradient(90deg, #1D1F25 0%, transparent 100%);
 }
+
 .slider {
   position: absolute;
   top: 0;
