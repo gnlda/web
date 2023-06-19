@@ -16,7 +16,7 @@ document.addEventListener("mouseup", e => {
 });
 
 slider.style.left = -2196 + "px";
-const sliderLength = sliderItems.length / 2 * parseInt(sliderItems[0].style.width);
+const sliderLength = sliderItems.length / 2 * (parseInt(sliderItems[0].style.width) + 24);
 console.log(sliderLength);
 
 slider.addEventListener("mousemove", e => {
