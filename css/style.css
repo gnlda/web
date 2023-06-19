@@ -69,6 +69,9 @@ header {
   display: inline-block;
 }
 
+.menu__button__container {
+  margin-left: 32px;
+}
 .menu__button__container button {
   height: 100%;
   padding: 12px 24px;
