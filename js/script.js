@@ -11,6 +11,9 @@ document.addEventListener("mouseup", e => {
     isTouch = false;
 });
 
+slider.style.left = -2196 + "px";
+let sliderLength = 2220;
+
 const move = () => {
     if (isTouch === true) {
         let left = parseInt(slider.style.left);
@@ -29,8 +32,6 @@ const move = () => {
         }
 }
 
-slider.style.left = -2196 + "px";
-let sliderLength = 2220;
 
 slider.addEventListener("mousemove", move());
 
