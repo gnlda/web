@@ -14,6 +14,7 @@ document.addEventListener("mouseup", e => {
 
 
 slider.style.left = -2196 + "px";
+let sliderLength = 2220;
 
 slider.addEventListener("mousemove", e => {
     if (isTouch === true) {
