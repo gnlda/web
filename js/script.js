@@ -20,7 +20,7 @@ slider.addEventListener("mousemove", e => {
     if (isTouch === true && left > -2224){
         slider.style.left = left + e.offsetX - startLeft + "px";
         console.log(left);
-    } else if (isTouch === true && left < -2224) {
+    } else if (isTouch === true && left <= -2224) {
         left = -4;
         slider.style.left = left + e.offsetX - startLeft + "px";
         console.log(left);
