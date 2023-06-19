@@ -104,6 +104,7 @@ body {
         }
     }
     & .hero__image {
+        transform: translateX(100px);
         & img {
             width: 100%;
         }
