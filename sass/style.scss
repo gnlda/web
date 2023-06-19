@@ -27,3 +27,8 @@ body {
         font-family: 'Sora', arial;
     }
 }
+.menu__header {
+    & li {
+        display: inline-block;
+    }
+}
