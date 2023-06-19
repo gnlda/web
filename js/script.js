@@ -34,7 +34,3 @@ const move = (e) => {
 
 
 slider.addEventListener("mousemove", move(e));
-
-//setInterval(move(e), 10)
-
-
