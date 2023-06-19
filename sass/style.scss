@@ -32,6 +32,9 @@ header {
 }
 .menu__header {
     display: flex;
+    & ul {
+        @include flex-center(space-between)
+    }
     & li {
         display: inline-block;
     }
