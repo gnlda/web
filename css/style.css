@@ -213,9 +213,6 @@ body {
 .slider__main-container::before {
   height: inherit;
   width: 89px;
-  background: -webkit-gradient(linear, left top, right top, from(#1D1F25), to(transparent));
-  background: -o-linear-gradient(left, #1D1F25 0%, transparent 100%);
-  background: linear-gradient(90deg, #1D1F25 0%, transparent 100%);
 }
 
 .slider {
