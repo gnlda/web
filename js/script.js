@@ -46,4 +46,4 @@ setInterval(() => {
             slider.style.left = left - startLeft + "px";
         }
     }
-}, 1);
+}, 15);
