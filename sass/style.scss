@@ -161,6 +161,9 @@ body {
     backdrop-filter: blur(2px);
     border-radius: 8px;
     padding: 24px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;  
     &:not(:first-child) {
         margin-left: 24px;
     }
