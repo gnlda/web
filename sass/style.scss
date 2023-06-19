@@ -38,7 +38,7 @@ body {
 .logo__header {
     @include flex-center(start);
     & h2 {
-        font-family: 'Sora', arial;
+        @include font('Sora', 18px, 700, 23px);
     }
 }
 .menu__header {
