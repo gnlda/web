@@ -7,6 +7,10 @@ slider.addEventListener("mousedown", e => {
     isTouch = true;
 });
 
+slider.addEventListener("mouseup", e => {
+    isTouch = false;
+});
+
 slider.addEventListener("mousemove", e => {
-    slider.style.left = startLeft - e.offsetX;
+    slider.style.left = startLeft - e.offsetX + "px";
 });
