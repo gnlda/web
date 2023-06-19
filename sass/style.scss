@@ -167,4 +167,10 @@ body {
     .info__slider {
         @include flex(space-between, start);
     }
+    .left__slider {
+        p {
+            margin-top: 24px;
+            @include font('Graphik', 16px, 400, 24px, $text);
+        }
+    }
 }
