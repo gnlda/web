@@ -160,6 +160,7 @@ body {
     background: rgba(47, 50, 65, 0.5);
     backdrop-filter: blur(2px);
     border-radius: 8px;
+    padding: 24px;
     &:not(:first-child) {
         margin-left: 24px;
     }

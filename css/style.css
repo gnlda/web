@@ -254,6 +254,7 @@ body {
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   border-radius: 8px;
+  padding: 24px;
 }
 .slider__item:not(:first-child) {
   margin-left: 24px;
