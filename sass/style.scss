@@ -101,7 +101,10 @@ body {
         }
     }
     & .hero__image {
-        transform: translateX(100px);
+        width: 560px;
+        & img {
+            width: 100%;
+        }
     }
 }
 .button {
