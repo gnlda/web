@@ -155,6 +155,7 @@ body {
 }
 .hero__container .hero__text p {
   margin-top: 24px;
+  width: 521px;
   font-family: "Graphik";
   font-size: 18px;
   font-weight: 400;
