@@ -22,8 +22,7 @@ body {
     @include flex-center(space-between);
 }
 .logo__header {
-    display: flex;
-    align-items: center;
+    @include flex-center(start);
     & h2 {
         font-family: 'Sora', arial;
     }
