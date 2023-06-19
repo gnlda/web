@@ -68,16 +68,19 @@ header {
 .menu__header li {
   display: inline-block;
 }
-.menu__header button {
+
+.menu__button__container button {
   height: 100%;
   padding: 12px 24px;
   border-radius: 100px;
-  background: transparent;
-  border: 1px solid #ffffff;
   color: #ffffff;
   font-family: "Sofia Pro";
   font-size: 14px;
   font-weight: 600;
   line-height: 22px;
   cursor: pointer;
+}
+.menu__button__container button button:first-child {
+  background: transparent;
+  border: 1px solid #ffffff;
 }
