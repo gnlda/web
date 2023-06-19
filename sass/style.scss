@@ -31,10 +31,8 @@ body {
 }
 
 /* Header */
-header {
-    padding: 24px 0;
-}
 .header__wrap {
+    padding: 24px;
     @include flex-center(space-between);
 }
 .logo__header {

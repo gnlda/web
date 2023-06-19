@@ -31,11 +31,8 @@ body {
 }
 
 /* Header */
-header {
-  padding: 24px 0;
-}
-
 .header__wrap {
+  padding: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
