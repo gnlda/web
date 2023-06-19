@@ -105,5 +105,4 @@ body {
 }
 .button {
     @include button(18px, 75px);
-    @include font('Sofia Pro', 18px, 600, 160%, $text);
 }
