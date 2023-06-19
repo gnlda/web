@@ -178,7 +178,7 @@ body {
     }
     .indicator__slider {
         margin-top: 8px;
-        @include flex(space-between, center);
+        @include flex(end, center);
         p {
             margin-left: 10px;
             @include font('Graphik', 18px, 600, 27px, $green-primary);
@@ -187,6 +187,7 @@ body {
         }
     }
     .balance__slider {
+        margin-top: 11px;
         @include flex(space-between, center);
     }
 }
