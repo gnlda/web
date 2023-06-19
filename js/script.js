@@ -19,7 +19,7 @@ document.addEventListener("mouseup", e => {
 
 slider.style.left = -2196 + "px";
 
-let sliderLength = sliderItems.length / 2 * parseInt(sliderItems[0].style.width);
+const sliderLength = sliderItems.length / 2 * parseInt(sliderItems[0].style.width);
 
 slider.addEventListener("mousemove", e => {
     if (isTouch === true) {
@@ -28,11 +28,12 @@ slider.addEventListener("mousemove", e => {
             slider.style.left = left + e.offsetX - startLeft + "px";
             console.log(left);
         } else if (left < -2630) {
-            left = left + sliderLength;
+            //left = left + sliderLength;
+            left = left + 2220;
             slider.style.left = left + e.offsetX - startLeft + "px";
             console.log(left);
         } else if (left > -410) {
-            left = left - sliderLength;
+            //left = left - sliderLength;
             slider.style.left = left + e.offsetX - startLeft + "px";
             console.log(left);
         }
