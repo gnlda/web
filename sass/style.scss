@@ -17,6 +17,10 @@ body {
 }
 
 
-.logo__header h2 {
-    font-family: 'Sora', arial;
+.logo__header {
+    display: flex;
+    align-items: center;
+    & h2 {
+        font-family: 'Sora', arial;
+    }
 }
