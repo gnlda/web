@@ -42,16 +42,16 @@ slider.addEventListener("mousemove", e => {
 });
 
 
-// setInterval(() => {
-//     if (isTouch === false) {
-//         slider.style.left = parseInt(slider.style.left) - 1 + "px";
-//         let left = parseInt(slider.style.left);
-//         if (left < -sliderLength - gap) {
-//             left = left + sliderLength;
-//             slider.style.left = left - startLeft + "px";
-//         } else if (left > -gap) {
-//             left = left - sliderLength;
-//             slider.style.left = left - startLeft + "px";
-//         }
-//     }
-// }, 15);
+setInterval(() => {
+    if (isTouch === false) {
+        slider.style.left = parseInt(slider.style.left) - 1 + "px";
+        let left = parseInt(slider.style.left);
+        if (left < -sliderLength - gap) {
+            left = left + sliderLength;
+            slider.style.left = left - startLeft + "px";
+        } else if (left > -gap) {
+            left = left - sliderLength;
+            slider.style.left = left - startLeft + "px";
+        }
+    }
+}, 15);
