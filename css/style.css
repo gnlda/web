@@ -170,9 +170,6 @@ body {
   line-height: 27px;
   color: #E5E6ED;
 }
-.hero__container .hero__image {
-  width: 560px;
-}
 .hero__container .hero__image img {
   width: 100%;
 }
