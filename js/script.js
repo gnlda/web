@@ -33,3 +33,7 @@ slider.addEventListener("mousemove", e => {
         }
     }
 });
+
+setInterval(() => {
+    left--;
+}, 15)
