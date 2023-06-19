@@ -17,12 +17,17 @@ slider.style.left = 0 + "px";
 slider.addEventListener("mousemove", e => {
     let left = parseInt(slider.style.left);
     console.log(left);
-    if (isTouch === true && left > -2224){
+    if (isTouch === true){
         slider.style.left = left + e.offsetX - startLeft + "px";
         console.log(left);
-    } else if (isTouch === true && left <= -2224) {
-        left = -4;
-        slider.style.left = left + e.offsetX - startLeft + "px";
-        console.log(left);
-    }
+    } 
+    // else if (isTouch === true && left <= -2224 && left > -410) {
+    //     left = -4;
+    //     slider.style.left = left + e.offsetX - startLeft + "px";
+    //     console.log(left);
+    // } else if (isTouch === true && left <= -2224 && left <= -410) {
+    //     left = -4;
+    //     slider.style.left = left + e.offsetX - startLeft + "px";
+    //     console.log(left);
+    // }
 });
