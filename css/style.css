@@ -72,4 +72,11 @@ header {
   padding: 12px 24px;
   border-radius: 100px;
   background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: "Sofia Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
 }
