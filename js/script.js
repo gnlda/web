@@ -65,10 +65,10 @@ setInterval(() => {
         slider.style.left = parseInt(slider.style.left) - 1 + "px";
         let left = parseInt(slider.style.left);
         console.log(left);
-        if (left < -sliderLength - gap) {
+        if (left < -sliderLength - offcet) {
             left = left + sliderLength;
             slider.style.left = left - startLeft + "px";
-        } else if (left > -gap) {
+        } else if (left > -offcet) {
             left = left - sliderLength;
             slider.style.left = left - startLeft + "px";
         }
