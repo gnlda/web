@@ -44,10 +44,10 @@ setInterval(() => {
     if (isTouch === false) {
         slider.style.left = parseInt(slider.style.left) - 1 + "px";
         let left = parseInt(slider.style.left);
-        if (left < -2630) {
+        if (left < -sliderLength - gap) {
             left = left + sliderLength;
             slider.style.left = left - startLeft + "px";
-        } else if (left > -410) {
+        } else if (left > -gap) {
             left = left - sliderLength;
             slider.style.left = left - startLeft + "px";
         }
