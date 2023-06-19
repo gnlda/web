@@ -3,6 +3,7 @@ let sliderItems = document.querySelectorAll(".slider__item");
 sliderItems.forEach(item => {
     item.style.width = 346 + "px";
 });
+let gap = 24;
 let startLeft = 0;
 let isTouch = false;
 
@@ -16,7 +17,7 @@ document.addEventListener("mouseup", e => {
 });
 
 slider.style.left = -2196 + "px";
-const sliderLength = sliderItems.length / 2 * (parseInt(sliderItems[0].style.width) + 24);
+const sliderLength = sliderItems.length / 2 * (parseInt(sliderItems[0].style.width) + gap);
 console.log(sliderLength);
 
 slider.addEventListener("mousemove", e => {
