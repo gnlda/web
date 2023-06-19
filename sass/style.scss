@@ -69,7 +69,7 @@ body {
 .menu__button__container {
     margin-left: 32px;
     @include flex(start, center);
-    & button {
+    button {
         height: 100%;
         padding: 12px 24px;
         border-radius: 100px;
