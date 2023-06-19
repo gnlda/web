@@ -6,6 +6,7 @@ sliderItems.forEach(item => {
 let gap = 24;
 let startLeft = 0;
 let isTouch = false;
+let offcet = 410;
 
 slider.addEventListener("mousedown", e => {
     startLeft = e.offsetX;
