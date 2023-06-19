@@ -15,8 +15,8 @@ slider.addEventListener("mousemove", e => {
     if (isTouch === true){
         let left = parseInt(slider.style.left);
         console.log(left);
-        if (left){
+        //if (left){
             slider.style.left = e.offsetX + "px";
-        }
+        //}
     }
 });
