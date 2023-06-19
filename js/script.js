@@ -1,5 +1,6 @@
 let slider = document.querySelector(".slider");
 let sliderItems = document.querySelectorAll(".slider__item");
+console.log(sliderItems);
 let startLeft = 0;
 let isTouch = false;
 
