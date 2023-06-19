@@ -211,6 +211,7 @@ body {
   height: 178px;
 }
 .slider__main-container:before {
+  content: "";
   height: inherit;
   width: 89px;
 }

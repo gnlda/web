@@ -127,6 +127,7 @@ body {
     overflow: hidden;
     height: 178px;
     &:before {
+        content: '';
         height: inherit;
         width: 89px;
         //background: linear-gradient(90deg, $bg 0%, transparent 100%);
