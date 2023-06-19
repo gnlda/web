@@ -32,8 +32,11 @@ header {
     & li {
         display: inline-block;
     }
+}
+.menu__header {
     & button {
         height: 100%;
         padding: 12px 24px;
+        border-radius: 100px;
     }
 }

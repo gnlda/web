@@ -49,7 +49,9 @@ header {
 .logo__header li {
   display: inline-block;
 }
-.logo__header button {
+
+.menu__header button {
   height: 100%;
   padding: 12px 24px;
+  border-radius: 100px;
 }
