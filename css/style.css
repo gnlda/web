@@ -204,6 +204,7 @@ body {
 
 /* Slider */
 .slider__main-container {
+  margin: 0 auto;
   position: relative;
   width: 1440px;
   overflow: hidden;
