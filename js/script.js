@@ -1,7 +1,7 @@
 let slider = document.querySelector(".slider");
 let sliderItems = document.querySelectorAll(".slider__item");
-sliderItems.forEach(sliderItem => {
-    sliderItem.style.width = 370;
+sliderItems.forEach(item => {
+    item.style.width = 370;
 });
 let startLeft = 0;
 let isTouch = false;
