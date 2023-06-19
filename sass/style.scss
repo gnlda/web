@@ -170,7 +170,7 @@ body {
     .left__slider {
         p {
             margin-top: 24px;
-            @include font('Graphik', 16px, 400, 24px, $text);
+            @include font('Graphik', 16px, 400, 24px, $text-grey-40);
         }
     }
 }
