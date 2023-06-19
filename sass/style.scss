@@ -89,7 +89,6 @@ body {
     @include flex-center(start);
     & .hero__text {
         & h1 {
-            margin-top: 24px;
             width: 638px;
             @include font('Sofia Pro', 61px, 700, 110%, $text);
         }
@@ -104,7 +103,7 @@ body {
         }
     }
     & .hero__image {
-        transform: translateX(100px);
+        transform: translateX(-100px);
     }
 }
 .button {
