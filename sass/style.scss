@@ -19,9 +19,7 @@ body {
 
 
 .header__wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex-center(space-between);
 }
 .logo__header {
     display: flex;
