@@ -34,6 +34,7 @@ header {
     }
 }
 .menu__header {
+    display: flex;
     & button {
         height: 100%;
         padding: 12px 24px;
