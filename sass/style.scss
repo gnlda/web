@@ -155,7 +155,6 @@ body {
     width: fit-content;
 }
 .slider__item {
-    user-select: none;
     width: 346px;
     height: 178px;
     background: rgba(47, 50, 65, 0.5);
@@ -172,8 +171,6 @@ body {
         p {
             margin-top: 24px;
             @include font('Graphik', 16px, 400, 24px, $text-grey-40);
-    user-select: none;
-
         }
     }
     .indicator__slider {
@@ -182,8 +179,6 @@ body {
         p {
             margin-left: 10px;
             @include font('Graphik', 18px, 600, 27px, $green-primary);
-    user-select: none;
-
         }
     }
     .balance__slider {
