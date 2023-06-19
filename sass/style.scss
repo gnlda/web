@@ -29,9 +29,11 @@ header {
     & h2 {
         font-family: 'Sora', arial;
     }
-}
-.menu__header {
     & li {
         display: inline-block;
+    }
+    & button {
+        height: 100%;
+        padding: 12px 24px;
     }
 }
