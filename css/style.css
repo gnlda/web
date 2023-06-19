@@ -201,3 +201,9 @@ body {
   line-height: 160%;
   color: #ffffff;
 }
+
+/* Slider */
+.slider__item {
+  width: 346px;
+  height: 178px;
+}

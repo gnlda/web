@@ -117,3 +117,10 @@ body {
     @include button(18px, 75px);
     @include font('Sofia Pro', 18px, 600, 160%, $text);
 }
+
+/* Slider */
+
+.slider__item {
+    width: 346px;
+    height: 178px;
+}
