@@ -50,6 +50,7 @@ header {
 .menu__button__container {
     margin-left: 32px;
     & button {
+        display: flex;
         height: 100%;
         padding: 12px 24px;
         border-radius: 100px;
