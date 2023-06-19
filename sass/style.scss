@@ -80,3 +80,8 @@ body {
         }
     }
 }
+
+/* Hero */
+.hero__container {
+    @include flex-center(space-between);
+}
