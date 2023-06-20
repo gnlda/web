@@ -7,6 +7,7 @@ const sliderLength = (slider.offsetWidth + gap) / 2;
 slider.style.left = -sliderLength + gap + "px";
 let left = parseInt(slider.style.left);
 let isTouch = false;
+let isMouseOver = false;
 const offset = 20;
 let velocity = 0;
 let previousOffset = 0;
@@ -30,6 +31,12 @@ const mouseupHandler = (e) => {
 const documentMouseupHandler = (e) => {
     isTouch = false;
 
+
+    console.log(`left = ${left}, isTouch = ${isTouch}, velocity = ${velocity}, previousOffset = ${previousOffset}`);
+}
+
+const mouseoverHandler= (e) => {
+    
 
     console.log(`left = ${left}, isTouch = ${isTouch}, velocity = ${velocity}, previousOffset = ${previousOffset}`);
 }
@@ -70,7 +77,7 @@ const velocityFunction = () => {
 
 sliderCover.addEventListener("mousedown", mousedownHandler);
 sliderCover.addEventListener("mouseup", mouseupHandler);
-sliderCover.addEventListener("mouseover", mouseleaveHandler);
+sliderCover.addEventListener("mouseover", mouseoverHandler);
 sliderCover.addEventListener("mouseleave", mouseleaveHandler);
 sliderCover.addEventListener("mousemove", mousemoveHandler);
 document.addEventListener("mouseup", documentMouseupHandler);
