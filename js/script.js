@@ -32,6 +32,8 @@ document.addEventListener("mouseup", e => {
 sliderCover.addEventListener("mousedown", e => {
     isTouch = true;
     previousOffcet = 0;
+    clearInterval(autoScroll);
+    clearInterval(velocityInterval);
 });
 
 
