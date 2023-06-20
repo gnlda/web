@@ -76,6 +76,7 @@ const velocityFunction = () => {
         setTimeout(() => {
             autoScrollInt = setInterval(autoScroll, 20);
         }, 100);
+        return 0;
     }
 };
 
