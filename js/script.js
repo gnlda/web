@@ -88,7 +88,7 @@ const mousemoveHandler = (e) => {
 
 const autoScroll = () => {
     
-
+    let left = parseInt(slider.style.left);
 
     
 };
