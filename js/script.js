@@ -13,7 +13,7 @@ let left = parseInt(slider.style.left);
 let isTouch = false;
 let offcet = 20;
 let velocity = 0;
-let innerVelocity = 10;
+let innerVelocity = 0;
 let momentum = 0.8;
 let previousOffcet = 0;
 let velocityInterval;
