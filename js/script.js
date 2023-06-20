@@ -57,4 +57,4 @@ setInterval(() => {
             slider.style.left = left + "px";
         }
     }
-}, 35);
+}, 200);
