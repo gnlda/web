@@ -25,7 +25,7 @@ document.addEventListener("mouseup", e => {
                 innerVelocity *= 0.99;
                 slider.style.left = parseInt(slider.style.left) + innerVelocity + "px";
                 console.log(`slider.style.left + innerVelocity = ${slider.style.left}, innerVelocity = ${innerVelocity}`);
-                if (Math.abs(innerVelocity) < 1) {
+                if (Math.abs(innerVelocity) < 2) {
                     console.log("bye");
                     clearInterval(velocityInterval);
                     previousOffcet = 0;
