@@ -22,11 +22,11 @@ document.addEventListener("mouseup", e => {
     isTouch = false;
     velocity *= 10;
     if(e.target == sliderCover) {
-        console.log(Math.abs(velocity));
         if (Math.abs(velocity) > 1) {
             console.log("in");
             let velocityInterval = setInterval(() => {
                 velocity *= momentum;
+                console.log(velocity);
                 slider.style.left = parseInt(slider.style.left) - velocity + "px";
                 if (velocity < 0.1) {
                     clearInterval(velocityInterval);
