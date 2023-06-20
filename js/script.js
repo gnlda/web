@@ -22,8 +22,15 @@ const mousedownHandler = (e) => {
     clearInterval(velocityInterval);
 }
 
-
 const mouseupHandler = (e) => {
+    isTouch = false;
+    innerVelocity = velocity;
+    if (Math.abs(innerVelocity) !== 0) {
+        velocityInterval = setInterval(velocityFunction, 20);
+    }
+}
+
+const documentMouseupHandler = (e) => {
     isTouch = false;
     innerVelocity = velocity;
     if (Math.abs(innerVelocity) !== 0) {
