@@ -29,7 +29,7 @@ const mousedownHandler = (e) => {
 const mouseupHandler = (e) => {
     isTouch = false;
     if (delta != 0) {
-        velocity = delta * 30;
+        velocity = delta * 10;
 
     }
 }
@@ -92,7 +92,8 @@ const autoScroll = () => {
 
 
 const velocityFunction = () => {
-    
+
+    left = parseInt(slider.style.left);
 
 
     
