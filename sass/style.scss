@@ -213,7 +213,6 @@ h3 {
         @include flex(space-between, center);
         p {
             color: $text-grey-60;
-            /*fsdfsaf*/
         }
     }
 }
@@ -245,7 +244,7 @@ h3 {
             border-radius: 50%;
             @include flex(center, center);  
             margin-bottom: 40px;
-            
+
         }
     }
     
