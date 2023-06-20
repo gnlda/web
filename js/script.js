@@ -33,6 +33,7 @@ sliderCover.addEventListener("mousedown", e => {
     clearInterval(autoScroll);
     innerVelocity = 0;
     previousOffcet = 0;
+    console.log(`left = ${left}, innerVelocity = ${innerVelocity}`);
 });
 
 
