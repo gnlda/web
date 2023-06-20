@@ -79,14 +79,9 @@ const mousemoveHandler = (e) => {
             left += sliderLength;
             slider.style.left = `${left}px`;
         }
-        //console.log(`delta = ${delta}`);
     }
     previousOffset = e.offsetX;
 }
-
-
-
-
 const autoScroll = () => {
     if (isTouch === false) {
         let left = parseInt(slider.style.left) - 1;
@@ -103,7 +98,6 @@ const autoScroll = () => {
     }
 };
 autoscrollInterval = setInterval(autoScroll, 20)
-
 
 const velocityFunction = () => {
     velocity *= velocityMultiplier;
@@ -125,7 +119,6 @@ const velocityFunction = () => {
         console.log("completed");
         return 0;
     }
-    
 };
 
 
