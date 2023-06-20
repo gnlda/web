@@ -29,17 +29,17 @@ sliderCover.addEventListener("mousemove", e => {
     if (isTouch === true) {
         let left = parseInt(slider.style.left);
         if (left <= -offcet && left >= -sliderLength - gap) {
-            slider.style.left = left + e.offsetX - startLeft - previousOffcet + "px";
+            slider.style.left = left + e.offsetX - startLeft + previousOffcet + "px";
             //console.log(left);
             console.log(previousOffcet);
         } else if (left < -sliderLength - gap) {
             left = left + sliderLength;
-            slider.style.left = left + e.offsetX - startLeft - previousOffcet + "px";
+            slider.style.left = left + e.offsetX - startLeft + previousOffcet + "px";
             //console.log(left);
             console.log(previousOffcet);
         } else if (left > -offcet) {
             left = left - sliderLength;
-            slider.style.left = left + e.offsetX - startLeft - previousOffcet + "px";
+            slider.style.left = left + e.offsetX - startLeft + previousOffcet + "px";
             //console.log(left);
             console.log(previousOffcet);
         }
