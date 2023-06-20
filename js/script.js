@@ -19,7 +19,7 @@ let previousOffcet = 0;
 let velocityInterval;
 
 
-document.addEventListener("mouseup", e => {
+sliderCover.addEventListener("mouseup", e => {
     isTouch = false;
     if (Math.abs(velocity) !== 0) {
         innerVelocity = velocity;
