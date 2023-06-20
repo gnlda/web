@@ -165,7 +165,7 @@ body {
     -khtml-user-select: none;
     user-select: none;
 }
-.slider__item {
+.item__slider {
     width: 346px;
     height: 178px;
     background: rgba(47, 50, 65, 0.5);
@@ -175,28 +175,28 @@ body {
     &:not(:first-child) {
         margin-left: 24px;
     }
-    .info__slider {
+    .slider__info {
         @include flex(space-between, start);
     }
-    .left__slider {
+    .slider__left {
         p {
             margin-top: 24px;
             @include font('Graphik', 16px, 400, 24px, $text-grey-40);
 
         }
     }
-    .indicator__slider {
+    .slider__indicator {
         margin-top: 8px;
         @include flex(end, center);
         p {
             margin-left: 10px;
             @include font('Graphik', 18px, 600, 27px, $green-primary);
         }
-        .minus__slider {
+        .slider__minus {
             color: $text-red;
         }
     }
-    .balance__slider {
+    .slider__balance {
         margin-top: 11px;
         @include flex(space-between, center);
         p {
