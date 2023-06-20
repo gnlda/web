@@ -19,13 +19,12 @@ slider.style.left = -sliderLength + gap + "px";
 
 document.addEventListener("mouseup", e => {
     isTouch = false;
-    if (Math.abs(velocity) > sliderLength) {
-
-    }
-    innerVelocity = velocity;
-    console.log(`innerVelocity = ${innerVelocity}`);
-    if(Math.abs(innerVelocity) > 1) {
-        setInterval(velocityInterval, 20);
+    if (Math.abs(velocity) !== 0) {
+        innerVelocity = velocity;
+        console.log(`innerVelocity = ${innerVelocity}`);
+        if(Math.abs(innerVelocity) > 1) {
+            setInterval(velocityInterval, 20);
+        }
     }
 });
 
