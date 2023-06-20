@@ -98,7 +98,7 @@ const velocityFunction = () => {
     slider.style.left = `${left}px`;
     console.log(`velocity = ${velocity}`);
 
-    if (velocity < 2) {
+    if (Math.abs(velocity) < 2) {
         clearInterval(velocityInterval);
         console.log("completed");
         return 0;
