@@ -100,6 +100,7 @@ const velocityFunction = () => {
 
     if (velocity < 2) {
         clearInterval(velocityInterval);
+        console.log("completed");
     }
     
 };
