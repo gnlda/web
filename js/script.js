@@ -77,10 +77,8 @@ const mousemoveHandler = (e) => {
             slider.style.left = `${left}px`;
             console.log(slider.style.left);
         }
+        console.log(`delta = ${delta}`);
     }
-
-
-    console.log(`delta = ${delta}`);
     previousOffset = e.offsetX;
 }
 
