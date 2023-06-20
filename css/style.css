@@ -92,12 +92,15 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
 }
-.logo__header h2 {
+.logo__header p {
   font-family: "Sora";
   font-size: 18px;
   font-weight: 700;
   line-height: 23px;
   color: #ffffff;
+}
+.logo__header p span {
+  color: #1A82FF;
 }
 
 .menu__header {
