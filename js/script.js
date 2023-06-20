@@ -58,22 +58,19 @@ const mousemoveHandler = (e) => {
 
 const touchmoveHandler = (e) => {
     e.preventDefault();
-
-    const touch = e.touches[0];
-    delta = touch.clientX - previousOffset;
-    let left = left + delta;
-        
+    delta = e.touches[0].clientX - previousOffset;
+    let left = parseInt(slider.style.left) + delta;
     if (left < -offset && left > -sliderLength - offset) {
         slider.style.left = `${left}px`;
     } else if (left >= -offset) {
         left -= sliderLength;
         slider.style.left = `${left}px`;
-    } else if (left <= -sliderLength - offset) {
+    } else if (left <= -sliderLength -offset) {
         left += sliderLength;
         slider.style.left = `${left}px`;
     }
-    
-    previousOffset = touch.clientX;
+    console.log(`left = ${left}`);
+    previousOffset = e.touches[0].clientX;
 }
 
 const autoScroll = () => {
