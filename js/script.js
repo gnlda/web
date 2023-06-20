@@ -62,8 +62,6 @@ const mousemoveHandler = (e) => {
     if(isTouch === true) {
         delta = e.offsetX - previousOffset;
         let left = parseInt(slider.style.left) + delta;
-
-
         if (left < -offset && left > -sliderLength - offset) {
             slider.style.left = `${left}px`;
             console.log(slider.style.left);
