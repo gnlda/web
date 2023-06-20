@@ -18,18 +18,18 @@ const mousedownHandler = (e) => {
 }
 
 const mouseupHandler = (e) => {
-
-}
-
-const mouseleaveHandler = (e) => {
-    
-}
-
-const mousemoveHandler = (e) => {
-    
+    isTouch = false;
 }
 
 const documentMouseupHandler = (e) => {
+    isTouch = false;
+}
+
+const mouseleaveHandler = (e) => {
+    isTouch = false;
+}
+
+const mousemoveHandler = (e) => {
     
 }
 
