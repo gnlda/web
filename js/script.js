@@ -6,6 +6,8 @@ sliderItems.forEach(item => {
     item.style.width = 346 + "px";
 });
 
+console.log(sliderItems[0].offsetWidth);
+
 let gap = 24;
 const sliderLength = (sliderItems.length / 2) * (parseInt(sliderItems[0].style.width) + gap);
 slider.style.left = -sliderLength + gap + "px";
