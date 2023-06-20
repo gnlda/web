@@ -13,6 +13,7 @@ let velocity = 0;
 let innerVelocity = 10;
 let momentum = 0.8;
 let previousOffcet = 0;
+let velocityInterval;
 
 // const sliderLength = sliderItems.length / 2 * (parseInt(sliderItems[0].style.width) + gap);
 // slider.style.left = -sliderLength + gap + "px";
@@ -22,7 +23,7 @@ document.addEventListener("mouseup", e => {
     //if (Math.abs(velocity) !== 0) {
         innerVelocity = velocity;
         console.log(`innerVelocity = ${innerVelocity}`);
-        let velocityInterval = setInterval(velocityFunction, 20);
+        velocityInterval = setInterval(velocityFunction, 20);
     //}
 });
 
