@@ -27,7 +27,7 @@ sliderCover.addEventListener("mousedown", e => {
 sliderCover.addEventListener("mouseup", e => {
     isTouch = false;
     innerVelocity = velocity;
-    if (Math.abs(velocity) !== 0) {
+    if (Math.abs(innerVelocity) !== 0) {
         velocityInterval = setInterval(velocityFunction, 20);
     }
 });
@@ -75,8 +75,8 @@ const autoScroll = () => {
 let autoScrollInt = setInterval(autoScroll, 20);
 
 const velocityFunction = () => {
-    velocity *= 0.95;
-    left = parseInt(slider.style.left) + velocity;
+    innerVelocity *= 0.95;
+    left = parseInt(slider.style.left) + innerVelocity;
     slider.style.left = left + "px";
     if (left < -sliderLength - offset) {
         left = left + sliderLength;
@@ -85,7 +85,7 @@ const velocityFunction = () => {
         left = left - sliderLength;
         slider.style.left = left + "px";
     }
-    if (Math.abs(velocity) < 2) {
+    if (Math.abs(innerVelocity) < 2) {
         clearInterval(velocityInterval);
         setTimeout(() => {
             autoScrollInt = setInterval(autoScroll, 20);
