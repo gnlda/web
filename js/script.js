@@ -74,7 +74,7 @@ document.addEventListener("mouseup", e => {
 
 const velocityFunction = () => {
     innerVelocity *= 0.99;
-    //slider.style.left = parseInt(slider.style.left) + innerVelocity + "px";
+    slider.style.left = parseInt(slider.style.left) + innerVelocity + "px";
     console.log(`slider.style.left + innerVelocity = , innerVelocity = ${innerVelocity}`);
     //clearInterval(autoScroll);
     if (Math.abs(innerVelocity) < 2) {
