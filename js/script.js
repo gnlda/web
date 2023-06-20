@@ -28,6 +28,7 @@ document.addEventListener("mouseup", e => {
                 if (Math.abs(innerVelocity) < 2) {
                     console.log("bye");
                     clearInterval(velocityInterval);
+                    setInterval(autoScroll, 30);
                     previousOffcet = 0;
                 }
             }, 30);
@@ -64,7 +65,7 @@ sliderCover.addEventListener("mousemove", e => {
     previousOffcet = e.offsetX;
 });
 
-const autoScroll = setInterval(() => {
+const autoScroll = () => {
     if (isTouch === false) {
         slider.style.left = parseInt(slider.style.left) - 1 + "px";
         let left = parseInt(slider.style.left);
@@ -77,4 +78,6 @@ const autoScroll = setInterval(() => {
             slider.style.left = left + "px";
         }
     }
-}, 30);
+}
+
+setInterval(autoScroll, 30);
