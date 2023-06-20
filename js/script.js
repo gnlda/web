@@ -16,7 +16,7 @@ let previousOffcet = 0;
 
 document.addEventListener("mouseup", e => {
     isTouch = false;
-    innerVelocity = (-previousOffcet + e.offsetX) * 3;
+    innerVelocity = velocity;
     console.log(`innerVelocity = ${innerVelocity}`);
     if(Math.abs(innerVelocity) > 1) {
         setInterval(velocityInterval, 20);
