@@ -305,10 +305,9 @@ body {
   font-weight: 600;
   line-height: 27px;
   color: #11CABE;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+}
+.slider__item .indicator__slider p .minus__slider {
+  color: #FA2256;
 }
 .slider__item .balance__slider {
   margin-top: 11px;
