@@ -15,7 +15,6 @@ let offset = 20;
 let velocity = 0;
 let previousOffset = 0;
 let velocityInterval;
-let autoScrollInt = setInterval(autoScroll, 20);
 
 
 sliderCover.addEventListener("mousedown", e => {
@@ -71,6 +70,7 @@ const autoScroll = () => {
         }
     }
 };
+let autoScrollInt = setInterval(autoScroll, 20);
 
 const velocityFunction = () => {
     velocity *= 0.95;
