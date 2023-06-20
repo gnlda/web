@@ -9,7 +9,7 @@ sliderItems.forEach(item => {
 let gap = 24;
 let isTouch = false;
 let offcet = 20;
-let momentum = 0.9;
+let momentum = 0.99;
 let previousOffcet = 0;
 
 sliderCover.addEventListener("mousedown", e => {
