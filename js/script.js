@@ -14,8 +14,14 @@ let innerVelocity = 0;
 let momentum = 0.99;
 let previousOffcet = 0;
 
+const sliderLength = sliderItems.length / 2 * (parseInt(sliderItems[0].style.width) + gap);
+slider.style.left = -sliderLength + gap + "px";
+
 document.addEventListener("mouseup", e => {
     isTouch = false;
+    if (Math.abs(velocity) > sliderLength) {
+
+    }
     innerVelocity = velocity;
     console.log(`innerVelocity = ${innerVelocity}`);
     if(Math.abs(innerVelocity) > 1) {
@@ -28,8 +34,6 @@ sliderCover.addEventListener("mousedown", e => {
     previousOffcet = 0;
 });
 
-const sliderLength = sliderItems.length / 2 * (parseInt(sliderItems[0].style.width) + gap);
-slider.style.left = -sliderLength + gap + "px";
 
 sliderCover.addEventListener("mousemove", e => {
     if (isTouch === true) {
