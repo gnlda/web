@@ -21,7 +21,7 @@ document.addEventListener("mouseup", e => {
         if (Math.abs(innerVelocity) > 1) {
             console.log("in");
             clearInterval(autoScroll);
-            
+            setInterval(velocityInterval, 20);
         }
     }
 });
