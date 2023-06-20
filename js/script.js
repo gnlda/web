@@ -91,6 +91,15 @@ const autoScroll = () => {
     if (isTouch === false) {
         let left = parseInt(slider.style.left) - 1;
         slider.style.left = `${left}px`;
+
+        if (left >= -offset) {
+            left -= sliderLength;
+            slider.style.left = `${left}px`;
+            console.log(slider.style.left);
+        } else if (left <= -sliderLength -offset) {
+            left += sliderLength;
+            slider.style.left = `${left}px`;
+        }
     }
 };
 autoscrollInterval = setInterval(autoScroll, 20)
