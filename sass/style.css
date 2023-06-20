@@ -261,3 +261,7 @@ body {
 .slider__item .slider__balance p {
   color: #5D6588;
 }
+
+.features__wrap {
+  display: flex;
+}
