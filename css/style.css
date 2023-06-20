@@ -348,6 +348,10 @@ h3 {
 .slider__item .slider__balance p {
   color: #5D6588;
 }
+.slider__item .slider__balance h3 {
+  font-weight: 600;
+  line-height: 27px;
+}
 
 .features__wrap {
   display: -webkit-box;
