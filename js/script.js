@@ -7,12 +7,10 @@ sliderItems.forEach(item => {
 });
 
 let gap = 24;
-let startLeft = 0;
 let isTouch = false;
 let offcet = 20;
 
 sliderCover.addEventListener("mousedown", e => {
-    startLeft = e.offsetX;
     isTouch = true;
 });
 
