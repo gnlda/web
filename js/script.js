@@ -87,11 +87,11 @@ const velocityFunction = () => {
     if (Math.abs(innerVelocity) < 2) {
         console.log("bye");
         clearInterval(velocityInterval);
+        setInterval(autoScroll, 20);
         return 0;
-        //setInterval(autoScroll, 2);
         //previousOffcet = 0;
     }
 }
 
 
-//setInterval(autoScroll, 20);
+setInterval(autoScroll, 20);
