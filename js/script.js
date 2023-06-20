@@ -72,6 +72,10 @@ const mousemoveHandler = (e) => {
             left -= sliderLength;
             slider.style.left = `${left}px`;
             console.log(slider.style.left);
+        } else if (left <= -sliderLength -offset) {
+            left += sliderLength;
+            slider.style.left = `${left}px`;
+            console.log(slider.style.left);
         }
     }
 
