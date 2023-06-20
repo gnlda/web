@@ -9,7 +9,7 @@ sliderItems.forEach(item => {
 let gap = 24;
 let startLeft = 0;
 let isTouch = false;
-let offcet = 410;
+let offcet = 20;
 
 sliderCover.addEventListener("mousedown", e => {
     startLeft = e.offsetX;
@@ -27,8 +27,10 @@ console.log(`start ${slider.style.left}`);
 sliderCover.addEventListener("mousemove", e => {
     if (isTouch === true) {
         let left = parseInt(slider.style.left);
-        if(left) {
-            
+        if(left < -offcet && left > sliderLength ) {
+            slider.style.left = left + e.offsetX - startLeft + previousOffcet + "px";
+            //console.log(left);
+            console.log(previousOffcet);
         }
     }
 });
