@@ -11,6 +11,7 @@ const offset = 20;
 let velocity = 0;
 const velocityMultiplier = 0.9;
 let previousOffset = 0;
+let velocityInterval;
 
 console.log(sliderLength);
 
@@ -30,7 +31,7 @@ const mouseupHandler = (e) => {
     isTouch = false;
     if (delta != 0) {
         velocity = delta * 10;
-
+        velocityInterval = setInterval(velocityFunction, 20);
     }
 }
 
@@ -96,7 +97,9 @@ const velocityFunction = () => {
     left = parseInt(slider.style.left) + velocity * velocityMultiplier;
     slider.style.left = `${left}px`;
 
-
+    if (velocity < 2) {
+        clearInterval(velocityInterval);
+    }
     
 };
 
