@@ -152,9 +152,9 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  -webkit-box-align: top;
-      -ms-flex-align: top;
-          align-items: top;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 .hero__container .hero__text h1 {
   margin-top: 72px;
