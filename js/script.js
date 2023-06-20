@@ -22,7 +22,7 @@ document.addEventListener("mouseup", e => {
     if (Math.abs(velocity) !== 0) {
         innerVelocity = velocity;
         console.log(`innerVelocity = ${innerVelocity}`);
-        setInterval(velocityInterval, 20);
+        let velocityInterval = setInterval(velocityFunction, 20);
     }
 });
 
@@ -71,7 +71,7 @@ const autoScroll = () => {
     }
 }
 
-const velocityInterval = () => {
+const velocityFunction = () => {
     innerVelocity *= 0.99;
     slider.style.left = parseInt(slider.style.left) + innerVelocity + "px";
     console.log(`slider.style.left + innerVelocity = ${slider.style.left}, innerVelocity = ${innerVelocity}`);
