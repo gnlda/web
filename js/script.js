@@ -7,7 +7,7 @@ const sliderLength = (slider.offsetWidth + gap) / 2;
 slider.style.left = -sliderLength + gap + "px";
 let left = parseInt(slider.style.left);
 let isTouch = false;
-let offset = 20;
+const offset = 20;
 let velocity = 0;
 let previousOffset = 0;
 let velocityInterval;
@@ -15,6 +15,9 @@ let velocityInterval;
 
 const mousedownHandler = (e) => {
     isTouch = true;
+
+
+    console.log(`left = ${left}, isTouch = ${isTouch}, velocity = ${velocity}, previousOffset = ${previousOffset}`);
 }
 
 const mouseupHandler = (e) => {
