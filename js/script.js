@@ -43,7 +43,7 @@ console.log("start = " + -sliderLength);
 //     }
 // });
 
-slider.addEventListener("mousemove", e => {
+sliderCover.addEventListener("mousemove", e => {
     if (isTouch === true) {
         let left = parseInt(slider.style.left);
         if (left <= -410 && left >= -2630) {
