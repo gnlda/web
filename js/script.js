@@ -11,7 +11,6 @@ let left = parseInt(slider.style.left);
 let isTouch = false;
 let offset = 20;
 let velocity = 0;
-let innerVelocity = 0;
 let previousOffset = 0;
 let velocityInterval;
 
@@ -21,6 +20,7 @@ const mousedownHandler = (e) => {
 }
 
 const mouseupHandler = (e) => {
+    
 }
 
 const mouseleaveHandler = (e) => {
