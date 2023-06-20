@@ -32,6 +32,9 @@ const mouseupHandler = (e) => {
     isTouch = false;
     if (delta != 0) {
         velocity = delta * 10;
+        if(velocity > 1000) {
+            velocity = 1000;
+        }
         velocityInterval = setInterval(velocityFunction, 20);
     }
     delta = 0;
