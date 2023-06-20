@@ -88,8 +88,10 @@ const mousemoveHandler = (e) => {
 
 
 const autoScroll = () => {
-    let left = parseInt(slider.style.left) - 1;
-    slider.style.left = `${left}px`;
+    if (isTouch === false) {
+        let left = parseInt(slider.style.left) - 1;
+        slider.style.left = `${left}px`;
+    }
 };
 autoscrollInterval = setInterval(autoScroll, 20)
 
