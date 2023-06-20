@@ -50,7 +50,7 @@ const documentMouseupHandler = (e) => {
 
 
 const mouseoverHandler= (e) => {
-    isMouseOver = true;
+    //isMouseOver = true;
 
 
     
@@ -59,14 +59,14 @@ const mouseoverHandler= (e) => {
 
 const mouseleaveHandler = (e) => {
     isTouch = false;
-    isMouseOver = false;
+    //isMouseOver = false;
 
     
 }
 
 
 const mousemoveHandler = (e) => {
-    if(isTouch === true && isMouseOver === true) {
+    if(isTouch === true) {
         delta = e.offsetX - previousOffset;
         let left = parseInt(slider.style.left) + delta;
         if (left < -offset && left > -sliderLength - offset) {
