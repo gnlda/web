@@ -42,7 +42,7 @@ const mouseleaveHandler = (e) => {
 }
 
 const mousemoveHandler = (e) => {
-    
+    if(isTouch === true)
 
 
     console.log(`left = ${left}, isTouch = ${isTouch}, velocity = ${velocity}, previousOffset = ${previousOffset}`);
@@ -70,6 +70,7 @@ const velocityFunction = () => {
 
 sliderCover.addEventListener("mousedown", mousedownHandler);
 sliderCover.addEventListener("mouseup", mouseupHandler);
+sliderCover.addEventListener("mouseover", mouseleaveHandler);
 sliderCover.addEventListener("mouseleave", mouseleaveHandler);
 sliderCover.addEventListener("mousemove", mousemoveHandler);
 document.addEventListener("mouseup", documentMouseupHandler);
