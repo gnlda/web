@@ -75,7 +75,7 @@ const autoScroll = () => {
 
 const velocityFunction = () => {
     innerVelocity *= 0.99;
-    left = parseInt(slider.style.left) + innerVelocity;
+    left = parseInt(slider.style.left);
     slider.style.left = left + "px";
     console.log(`left = ${left}, innerVelocity = ${innerVelocity}`);
     //clearInterval(autoScroll);
