@@ -21,6 +21,7 @@ let delta = 0;
 
 const mousedownHandler = (e) => {
     isTouch = true;
+    clearInterval(velocityInterval);
 
 
     
