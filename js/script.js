@@ -1,6 +1,6 @@
 let slider = document.querySelector(".slider");
-let sliderCover = document.querySelector(".slidercover");
-let sliderItems = document.querySelectorAll(".slideritem");
+let sliderCover = document.querySelector(".slider__cover");
+let sliderItems = document.querySelectorAll(".slider__item");
 
 sliderItems.forEach(item => {
     item.style.width = 346 + "px";
