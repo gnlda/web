@@ -7,41 +7,58 @@ sliderItems.forEach(item => {
 });
 
 let gap = 24;
+const sliderLength = sliderItems.length / 2 * (parseInt(sliderItems[0].style.width) + gap);
+slider.style.left = -sliderLength + gap + "px";
+let left = parseInt(slider.style.left);
 let isTouch = false;
 let offcet = 20;
+let velocity = 0;
+let innerVelocity = 0;
+let momentum = 0.8;
+let previousOffcet = 0;
+let velocityInterval;
 
-sliderCover.addEventListener("mousedown", e => {
-    isTouch = true;
-});
 
 document.addEventListener("mouseup", e => {
     isTouch = false;
+    if (Math.abs(velocity) !== 0) {
+        innerVelocity = velocity;
+        console.log(`innerVelocity = ${innerVelocity}`);
+        velocityInterval = setInterval(velocityFunction, 20);
+    }
 });
 
-const sliderLength = sliderItems.length / 2 * (parseInt(sliderItems[0].style.width) + gap);
-slider.style.left = -sliderLength + gap + "px";
+sliderCover.addEventListener("mousedown", e => {
+    isTouch = true;
+    previousOffcet = 0;
+    clearInterval(autoScroll);
+    innerVelocity = 0;
+    previousOffcet = 0;
+    console.log(`left = ${left}, innerVelocity = ${innerVelocity}`);
+});
 
-let previousOffcet = 0;
+
 sliderCover.addEventListener("mousemove", e => {
     if (isTouch === true) {
-        let left = parseInt(slider.style.left);
+        left = parseInt(slider.style.left);
         if(left < -offcet && left > -sliderLength - offcet) {
             slider.style.left = left - previousOffcet + e.offsetX  + "px";
-            //console.log(slider.style.left);
+            console.log(slider.style.left);
         } else if(left >= -offcet) {
             left = left - sliderLength;
             slider.style.left = left - previousOffcet + e.offsetX  + "px";
-            //console.log(slider.style.left);
+            console.log(slider.style.left);
         } else if(left <= -sliderLength - offcet) {
             left = left + sliderLength;
             slider.style.left = left - previousOffcet + e.offsetX  + "px";
-            //console.log(slider.style.left);
+            console.log(slider.style.left);
         }
     }
+    velocity = (-previousOffcet + e.offsetX) * 3;
     previousOffcet = e.offsetX;
 });
 
-setInterval(() => {
+const autoScroll = () => {
     if (isTouch === false) {
         slider.style.left = parseInt(slider.style.left) - 1 + "px";
         let left = parseInt(slider.style.left);
@@ -54,4 +71,29 @@ setInterval(() => {
             slider.style.left = left + "px";
         }
     }
-}, 30);
+}
+
+
+const velocityFunction = () => {
+    innerVelocity *= 0.99;
+    left = parseInt(slider.style.left) + innerVelocity;
+    slider.style.left = left + "px";
+    console.log(`left = ${left}, innerVelocity = ${innerVelocity}`);
+    //clearInterval(autoScroll);
+    if (left < -sliderLength - offcet) {
+        left = left + sliderLength;
+        slider.style.left = left + "px";
+    } else if (left > -offcet) {
+        left = left - sliderLength;
+        slider.style.left = left + "px";
+    }
+    if (Math.abs(innerVelocity) < 2) {
+        console.log("bye");
+        //setInterval(autoScroll, 20);
+        //previousOffcet = 0;
+        clearInterval(velocityInterval);
+    }
+}
+
+
+//setInterval(autoScroll, 20);
