@@ -47,8 +47,8 @@ sliderCover.addEventListener("mousemove", e => {
             //console.log(slider.style.left);
         }
     }
-    previousOffcet = e.offsetX;
     velocity = (-previousOffcet + e.offsetX) * 3;
+    previousOffcet = e.offsetX;
 });
 
 const autoScroll = () => {
