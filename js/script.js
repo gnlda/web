@@ -19,11 +19,11 @@ let previousOffcet = 0;
 
 document.addEventListener("mouseup", e => {
     isTouch = false;
-    if (Math.abs(velocity) !== 0) {
+    //if (Math.abs(velocity) !== 0) {
         innerVelocity = velocity;
         console.log(`innerVelocity = ${innerVelocity}`);
         let velocityInterval = setInterval(velocityFunction, 20);
-    }
+    //}
 });
 
 // sliderCover.addEventListener("mousedown", e => {
