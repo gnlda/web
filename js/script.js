@@ -13,6 +13,7 @@ let left = parseInt(slider.style.left);
 let isTouch = false;
 let offset = 20;
 let velocity = 0;
+let innerVelocity = 0;
 let previousOffset = 0;
 let velocityInterval;
 
@@ -25,6 +26,7 @@ sliderCover.addEventListener("mousedown", e => {
 
 sliderCover.addEventListener("mouseup", e => {
     isTouch = false;
+    innerVelocity = velocity;
     if (Math.abs(velocity) !== 0) {
         velocityInterval = setInterval(velocityFunction, 20);
     }
