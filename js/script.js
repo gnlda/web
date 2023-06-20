@@ -93,4 +93,4 @@ const velocityFunction = () => {
 }
 
 
-setInterval(autoScroll, 20);
+let autoScrollInt = setInterval(autoScroll, 20);
