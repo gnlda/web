@@ -9,6 +9,7 @@ sliderItems.forEach(item => {
 let gap = 24;
 let isTouch = false;
 let offcet = 20;
+let momentum = 0.9;
 
 sliderCover.addEventListener("mousedown", e => {
     isTouch = true;
@@ -16,9 +17,12 @@ sliderCover.addEventListener("mousedown", e => {
 
 document.addEventListener("mouseup", e => {
     isTouch = false;
-    if (previousOffcet != 0) {
-        setInterval(() => {
-            slider.style.left = parseInt(slider.style.left) - 1 + "px";
+    if (previousOffcet > 1) {
+        let velocity = setInterval(() => {
+            slider.style.left = parseInt(slider.style.left) - previousOffcet * momentum + "px";
+            if (previousOffcet < 1) {
+                clearInterval(velocity);
+            }
         }, 20);
     }
 });
