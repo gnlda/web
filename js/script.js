@@ -54,6 +54,25 @@ const mousemoveHandler = (e) => {
     }
     previousOffset = e.offsetX;
 }
+
+const touchmoveHandler = (e) => {
+    if(isTouch === true) {
+        delta = e.touches[0].clientX - previousOffset;
+        let left = parseInt(slider.style.left) + delta;
+        if (left < -offset && left > -sliderLength - offset) {
+            slider.style.left = `${left}px`;
+        } else if (left >= -offset) {
+            left -= sliderLength;
+            slider.style.left = `${left}px`;
+        } else if (left <= -sliderLength -offset) {
+            left += sliderLength;
+            slider.style.left = `${left}px`;
+        }
+    }
+    previousOffset = e.touches[0].clientX;
+    e.preventDefault();
+}
+
 const autoScroll = () => {
     if (isTouch === false) {
         let left = parseInt(slider.style.left) - 1;
@@ -101,5 +120,5 @@ document.addEventListener("mouseup", documentMouseupHandler);
 
 sliderCover.addEventListener("touchstart", mousedownHandler);
 sliderCover.addEventListener("touchend", mouseupHandler);
-sliderCover.addEventListener("touchmove", mousemoveHandler);
+sliderCover.addEventListener("touchmove", touchmoveHandler);
 document.addEventListener("touchend", documentMouseupHandler);
