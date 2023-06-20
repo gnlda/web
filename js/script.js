@@ -31,21 +31,6 @@ document.addEventListener("mouseup", e => {
                     previousOffcet = 0;
                 }
             }, 30);
-            console.log("now");
-            setInterval(() => {
-                if (isTouch === false) {
-                    slider.style.left = parseInt(slider.style.left) - 1 + "px";
-                    let left = parseInt(slider.style.left);
-                    //console.log(left);
-                    if (left < -sliderLength - offcet) {
-                        left = left + sliderLength;
-                        slider.style.left = left + "px";
-                    } else if (left > -offcet) {
-                        left = left - sliderLength;
-                        slider.style.left = left + "px";
-                    }
-                }
-            }, 30);
         }
     }
 });
