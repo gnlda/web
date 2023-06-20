@@ -21,7 +21,7 @@ document.addEventListener("mouseup", e => {
     if(e.target == sliderCover) {
         if (Math.abs(innerVelocity) > 1) {
             console.log("in");
-            setInterval(velocityInterval, 20);
+            setInterval(velocityInterval);
         }
     }
 });
