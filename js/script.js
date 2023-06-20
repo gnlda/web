@@ -29,7 +29,6 @@ document.addEventListener("mouseup", e => {
                     console.log("bye");
                     clearInterval(velocityInterval);
                     previousOffcet = 0;
-                    autoScroll();
                 }
             }, 30);
             setInterval(() => {
