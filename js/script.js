@@ -18,7 +18,8 @@ const mousedownHandler = (e) => {
     isTouch = true;
 
 
-    console.log(`left = ${left}, isTouch = ${isTouch}, velocity = ${velocity}, previousOffset = ${previousOffset}`);
+    console.log(`left = ${left}, isTouch = ${isTouch}, velocity = ${velocity}, previousOffset = ${previousOffset}, 
+    isMouseOver = ${isMouseOver}`);
 }
 
 
