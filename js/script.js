@@ -33,12 +33,13 @@ const mouseupHandler = (e) => {
         velocity = delta * 10;
         velocityInterval = setInterval(velocityFunction, 20);
     }
+    delta = 0;
 }
 
 
 const documentMouseupHandler = (e) => {
     isTouch = false;
-
+    delta = 0;
 
     
 }
