@@ -306,7 +306,7 @@ body {
   line-height: 27px;
   color: #11CABE;
 }
-.slider__item .indicator__slider p .minus__slider p {
+.slider__item .indicator__slider p .minus__slider {
   color: #FA2256;
 }
 .slider__item .balance__slider {
