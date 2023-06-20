@@ -79,7 +79,7 @@ const velocityFunction = () => {
         console.log("bye");
         //setInterval(autoScroll, 20);
         previousOffcet = 0;
-        clearInterval(velocityInterval);
+        clearInterval(this);
     }
 }
 
