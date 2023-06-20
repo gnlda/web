@@ -15,6 +15,7 @@ let previousOffcet = 0;
 
 document.addEventListener("mouseup", e => {
     isTouch = false;
+    velocity *= 3;
     console.log(velocity);
 });
 
