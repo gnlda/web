@@ -102,11 +102,11 @@ body {
         p {
             margin-top: 24px;
             width: 521px;
-            @include font('Graphik', 18px, 400, 27px, $text-grey);
+            @include font('Graphik', 18px, 400, 27px, $text-grey-20);
         }
         button {
             margin-top: 48px;
-            @include font('Graphik', 18px, 400, 27px, $text-grey);
+            @include font('Graphik', 18px, 400, 27px, $text-grey-20);
         }
     }
     .hero__image {
