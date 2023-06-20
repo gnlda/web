@@ -58,7 +58,7 @@ const mouseleaveHandler = (e) => {
 
 
 const mousemoveHandler = (e) => {
-    if(isTouch && isMouseOver) {
+    if(isTouch === true && isMouseOver === true) {
         delta = e.offsetX - previousOffset;
         let left = parseInt(slider.style.left) + delta;
         if (left < -offset && left > -sliderLength - offset) {
