@@ -102,4 +102,4 @@ const velocityFunction = () => {
 
 
 
-sliderCover.addEventListener("mousedown", mousedownHandler(e));
+sliderCover.addEventListener("mousedown", mousedownHandler());
