@@ -74,7 +74,8 @@ const autoScroll = () => {
 
 const velocityFunction = () => {
     innerVelocity *= 0.99;
-    slider.style.left = parseInt(slider.style.left) + innerVelocity + "px";
+    left = parseInt(slider.style.left) + innerVelocity;
+    slider.style.left = left + "px";
     console.log(`slider.style.left + innerVelocity = , innerVelocity = ${innerVelocity}`);
     //clearInterval(autoScroll);
     if (Math.abs(innerVelocity) < 2) {
