@@ -16,11 +16,6 @@ sliderCover.addEventListener("mousedown", e => {
 
 document.addEventListener("mouseup", e => {
     isTouch = false;
-    if (previousOffcet != 0) {
-        setInterval(() => {
-            slider.style.left = parseInt(slider.style.left) - 1 + "px";
-        }, 20);
-    }
 });
 
 const sliderLength = sliderItems.length / 2 * (parseInt(sliderItems[0].style.width) + gap);
