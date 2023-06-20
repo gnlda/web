@@ -93,8 +93,8 @@ const autoScroll = () => {
 
 
 const velocityFunction = () => {
-
-    left = parseInt(slider.style.left) + velocity * velocityMultiplier;
+    velocity *= velocityMultiplier;
+    left = parseInt(slider.style.left) + velocity;
     slider.style.left = `${left}px`;
     console.log(`velocity = ${velocity}`);
 
