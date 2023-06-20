@@ -10,26 +10,16 @@ let gap = 24;
 let isTouch = false;
 let offcet = 20;
 let velocity = 0;
-let innerVelocity = 0;
 let momentum = 0.99;
 let previousOffcet = 0;
 
 document.addEventListener("mouseup", e => {
     isTouch = false;
-    innerVelocity = velocity * 2;
-    console.log(innerVelocity);
-    if(e.target == sliderCover) {
-        if (Math.abs(innerVelocity) > 1) {
-            console.log("in");
-            setInterval(velocityInterval);
-        }
-    }
 });
 
 sliderCover.addEventListener("mousedown", e => {
     isTouch = true;
     previousOffcet = 0;
-    clearInterval(velocityInterval);
 });
 
 const sliderLength = sliderItems.length / 2 * (parseInt(sliderItems[0].style.width) + gap);
