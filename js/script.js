@@ -34,19 +34,7 @@ const mouseleaveHandler = (e) => {
     isTouch = false;
 }
 
-const documentMouseupHandler = (e) => {
-    isTouch = false;
-    innerVelocity = velocity;
-    if (Math.abs(innerVelocity) !== 0) {
-        velocityInterval = setInterval(velocityFunction, 20);
-    }
-}
-
-
-
-
-
-sliderCover.addEventListener("mousemove", e => {
+const mousemoveHandler = (e) => {
     if (isTouch === true) {
         left = parseInt(slider.style.left);
         if (left < -offset && left > -sliderLength - offset) {
@@ -61,7 +49,23 @@ sliderCover.addEventListener("mousemove", e => {
     }
     velocity = (-previousOffset + e.offsetX) * 3;
     previousOffset = e.offsetX;
-});
+}
+
+
+
+
+
+
+
+const documentMouseupHandler = (e) => {
+    isTouch = false;
+    innerVelocity = velocity;
+    if (Math.abs(innerVelocity) !== 0) {
+        velocityInterval = setInterval(velocityFunction, 20);
+    }
+}
+
+
 
 const autoScroll = () => {
     if (isTouch === false) {
@@ -105,4 +109,5 @@ const velocityFunction = () => {
 sliderCover.addEventListener("mousedown", mousedownHandler);
 sliderCover.addEventListener("mouseup", mouseupHandler);
 sliderCover.addEventListener("mouseleave", mouseleaveHandler);
+sliderCover.addEventListener("mousemove", mousemoveHandler);
 document.addEventListener("mouseup", documentMouseupHandler);
