@@ -24,28 +24,36 @@ const sliderLength = sliderItems.length / 2 * (parseInt(sliderItems[0].style.wid
 slider.style.left = -sliderLength + gap + "px";
 console.log(`start ${slider.style.left}`);
 
-let previousOffcet = 0;
 sliderCover.addEventListener("mousemove", e => {
     if (isTouch === true) {
         let left = parseInt(slider.style.left);
-        if (left <= -offcet && left >= -sliderLength - gap) {
-            slider.style.left = left + e.offsetX - startLeft + previousOffcet + "px";
-            //console.log(left);
-            console.log(previousOffcet);
-        } else if (left < -sliderLength - gap) {
-            left = left + sliderLength;
-            slider.style.left = left + e.offsetX - startLeft + previousOffcet + "px";
-            //console.log(left);
-            console.log(previousOffcet);
-        } else if (left > -offcet) {
-            left = left - sliderLength;
-            slider.style.left = left + e.offsetX - startLeft + previousOffcet + "px";
-            //console.log(left);
-            console.log(previousOffcet);
-        }
     }
-    previousOffcet = e.offsetX;
 });
+
+
+
+// let previousOffcet = 0;
+// sliderCover.addEventListener("mousemove", e => {
+//     if (isTouch === true) {
+//         let left = parseInt(slider.style.left);
+//         if (left <= -offcet && left >= -sliderLength - gap) {
+//             slider.style.left = left + e.offsetX - startLeft + previousOffcet + "px";
+//             //console.log(left);
+//             console.log(previousOffcet);
+//         } else if (left < -sliderLength - gap) {
+//             left = left + sliderLength;
+//             slider.style.left = left + e.offsetX - startLeft + previousOffcet + "px";
+//             //console.log(left);
+//             console.log(previousOffcet);
+//         } else if (left > -offcet) {
+//             left = left - sliderLength;
+//             slider.style.left = left + e.offsetX - startLeft + previousOffcet + "px";
+//             //console.log(left);
+//             console.log(previousOffcet);
+//         }
+//     }
+//     previousOffcet = e.offsetX;
+// });
 
 // slider.addEventListener("mousemove", e => {
 //     if (isTouch === true) {
