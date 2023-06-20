@@ -22,18 +22,30 @@ const mousedownHandler = (e) => {
 
 const mouseupHandler = (e) => {
     isTouch = false;
+
+
+    console.log(`left = ${left}, isTouch = ${isTouch}, velocity = ${velocity}, previousOffset = ${previousOffset}`);
 }
 
 const documentMouseupHandler = (e) => {
     isTouch = false;
+
+
+    console.log(`left = ${left}, isTouch = ${isTouch}, velocity = ${velocity}, previousOffset = ${previousOffset}`);
 }
 
 const mouseleaveHandler = (e) => {
     isTouch = false;
+
+
+    console.log(`left = ${left}, isTouch = ${isTouch}, velocity = ${velocity}, previousOffset = ${previousOffset}`);
 }
 
 const mousemoveHandler = (e) => {
     
+
+
+    console.log(`left = ${left}, isTouch = ${isTouch}, velocity = ${velocity}, previousOffset = ${previousOffset}`);
 }
 
 
@@ -41,11 +53,17 @@ const mousemoveHandler = (e) => {
 
 const autoScroll = () => {
     
+
+
+    console.log(`left = ${left}, isTouch = ${isTouch}, velocity = ${velocity}, previousOffset = ${previousOffset}`);
 };
 
 
 const velocityFunction = () => {
     
+
+
+    console.log(`left = ${left}, isTouch = ${isTouch}, velocity = ${velocity}, previousOffset = ${previousOffset}`);
 };
 
 
