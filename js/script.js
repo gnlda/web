@@ -18,7 +18,7 @@ let velocityInterval;
 
 sliderCover.addEventListener("mousedown", e => {
     isTouch = true;
-    clearInterval(autoScrollInt);
+    //clearInterval(autoScrollInt);
     clearInterval(velocityInterval);
 });
 
@@ -36,7 +36,7 @@ document.addEventListener("mouseup", e => {
 
 sliderCover.addEventListener("mouseleave", e => {
     isTouch = false;
-    clearInterval(autoScrollInt);
+    //clearInterval(autoScrollInt);
     //autoScrollInt = setInterval(autoScroll, 20);
 });
 
