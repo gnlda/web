@@ -2,12 +2,8 @@ let slider = document.querySelector(".slider");
 let sliderCover = document.querySelector(".slider__cover");
 let sliderItems = document.querySelectorAll(".slider__item");
 
-sliderItems.forEach(item => {
-    item.style.width = 346 + "px";
-});
 
-console.log(sliderItems[0].offsetWidth);
-
+console.log(slider.offsetWifth);
 let gap = 24;
 const sliderLength = (sliderItems.length / 2) * (parseInt(sliderItems[0].style.width) + gap);
 slider.style.left = -sliderLength + gap + "px";
