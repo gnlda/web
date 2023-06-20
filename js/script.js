@@ -69,7 +69,7 @@ const touchmoveHandler = (e) => {
         left += sliderLength;
         slider.style.left = `${left}px`;
     }
-    console.log(`left = ${left}`);
+    console.log(`delta = ${delta}`);
     previousOffset = e.touches[0].clientX;
 }
 
