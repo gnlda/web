@@ -33,7 +33,7 @@ const mouseupHandler = (e) => {
     if (delta != 0) {
         velocity = delta * 10;
         while(Math.abs(velocity) > 1000) {
-            console.log(`was ${velocity}, became ${$velocity / 10}`)
+            console.log(`was ${velocity}, became ${velocity / 10}`)
             velocity /= 10;
         }
         velocityInterval = setInterval(velocityFunction, 20);
