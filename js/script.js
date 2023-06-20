@@ -9,6 +9,7 @@ sliderItems.forEach(item => {
 let gap = 24;
 let isTouch = false;
 let offcet = 20;
+let velocity = 0;
 let innerVelocity = 0;
 let momentum = 0.99;
 let previousOffcet = 0;
@@ -47,6 +48,7 @@ sliderCover.addEventListener("mousemove", e => {
         }
     }
     previousOffcet = e.offsetX;
+    velocity = (-previousOffcet + e.offsetX) * 3;
 });
 
 const autoScroll = () => {
