@@ -51,12 +51,6 @@ const mousemoveHandler = (e) => {
     previousOffset = e.offsetX;
 }
 
-
-
-
-
-
-
 const documentMouseupHandler = (e) => {
     isTouch = false;
     innerVelocity = velocity;
@@ -64,6 +58,7 @@ const documentMouseupHandler = (e) => {
         velocityInterval = setInterval(velocityFunction, 20);
     }
 }
+
 
 
 
