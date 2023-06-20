@@ -18,7 +18,6 @@ console.log(sliderLength);
 
 const mousedownHandler = (e) => {
     isTouch = true;
-    clearInterval(velocityInterval);
 }
 
 const mouseupHandler = (e) => {
