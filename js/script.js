@@ -35,7 +35,6 @@ document.addEventListener("mouseup", e => {
 
 sliderCover.addEventListener("mouseleave", e => {
     isTouch = false;
-    autoScrollInt = setInterval(autoScroll, 20);
 });
 
 sliderCover.addEventListener("mousemove", e => {
