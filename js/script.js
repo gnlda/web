@@ -23,7 +23,7 @@ document.addEventListener("mouseup", e => {
         let velocity = setInterval(() => {
             previousOffcet *= momentum;
             slider.style.left = parseInt(slider.style.left) - previousOffcet + "px";
-            if (previousOffcet < 1) {
+            if (previousOffcet < 0.1) {
                 clearInterval(velocity);
             }
         }, 20);
