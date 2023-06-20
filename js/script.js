@@ -37,7 +37,7 @@ sliderCover.addEventListener("mousedown", e => {
 
 sliderCover.addEventListener("mousemove", e => {
     if (isTouch === true) {
-        left = parseIznt(slider.style.left);
+        left = parseInt(slider.style.left);
         if(left < -offcet && left > -sliderLength - offcet) {
             slider.style.left = left - previousOffcet + e.offsetX  + "px";
             console.log(slider.style.left);
