@@ -213,5 +213,15 @@ body {
 
 .features__card-container {
     display: flex;
+    .features__column:first-child {
+        margin-right: 24px;
+    }
+    .features__card {
+        width: 285px;
+        background: rgba(47, 50, 65, 0.5);
+        backdrop-filter: blur(2px);
+        border-radius: 12px;
+    }
+
 }
 
