@@ -49,23 +49,6 @@ const documentMouseupHandler = (e) => {
     
 }
 
-
-const mouseoverHandler= (e) => {
-    //isMouseOver = true;
-
-
-    
-}
-
-
-const mouseleaveHandler = (e) => {
-    isTouch = false;
-    //isMouseOver = false;
-
-    
-}
-
-
 const mousemoveHandler = (e) => {
     if(isTouch === true) {
         delta = e.offsetX - previousOffset;
@@ -125,7 +108,5 @@ const velocityFunction = () => {
 
 sliderCover.addEventListener("mousedown", mousedownHandler);
 sliderCover.addEventListener("mouseup", mouseupHandler);
-sliderCover.addEventListener("mouseover", mouseoverHandler);
-sliderCover.addEventListener("mouseleave", mouseleaveHandler);
 sliderCover.addEventListener("mousemove", mousemoveHandler);
 document.addEventListener("mouseup", documentMouseupHandler);
