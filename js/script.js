@@ -11,7 +11,7 @@ let isTouch = false;
 let offcet = 20;
 let velocity = 0;
 let innerVelocity = 0;
-let momentum = 0.99;
+let momentum = 0.8;
 let previousOffcet = 0;
 
 const sliderLength = sliderItems.length / 2 * (parseInt(sliderItems[0].style.width) + gap);
@@ -30,7 +30,6 @@ sliderCover.addEventListener("mousedown", e => {
     isTouch = true;
     previousOffcet = 0;
     clearInterval(autoScroll);
-    clearInterval(velocityInterval);
     innerVelocity = 0;
     previousOffcet = 0;
 });
