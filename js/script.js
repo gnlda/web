@@ -1,4 +1,5 @@
 let slider = document.querySelector(".slider");
+let sliderCover = document.querySelector(".slider__cover");
 let sliderItems = document.querySelectorAll(".slider__item");
 
 sliderItems.forEach(item => {
@@ -10,7 +11,7 @@ let startLeft = 0;
 let isTouch = false;
 let offcet = 410;
 
-slider.addEventListener("mousedown", e => {
+sliderCover.addEventListener("mousedown", e => {
     startLeft = e.offsetX;
     isTouch = true;
 });
