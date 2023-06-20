@@ -18,7 +18,7 @@ let previousOffset = 0;
 let velocityInterval;
 
 
-sliderCover.addEventListener("mousedown", e => {
+sliderCover.addEventListener("mousedown, touchstart", e => {
     isTouch = true;
     clearInterval(autoScrollInt);
     clearInterval(velocityInterval);
