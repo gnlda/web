@@ -23,11 +23,13 @@ document.addEventListener("mouseup", e => {
 const sliderLength = sliderItems.length / 2 * (parseInt(sliderItems[0].style.width) + gap);
 slider.style.left = -sliderLength + gap + "px";
 console.log(`start ${slider.style.left}`);
+console.log(`offcet ${offcet}`);
+console.log(`sliderLength - offcet ${sliderLength - offcet}`);
 
 sliderCover.addEventListener("mousemove", e => {
     if (isTouch === true) {
         let left = parseInt(slider.style.left);
-        if(left < -offcet && left > sliderLength -offcet) {
+        if(left < -offcet && left > sliderLength - offcet) {
             slider.style.left = left + e.offsetX - startLeft + previousOffcet + "px";
             //console.log(left);
             console.log(previousOffcet);
