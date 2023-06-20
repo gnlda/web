@@ -329,3 +329,9 @@ body {
   color: #5D6588;
   /*fsdfsaf*/
 }
+
+.features__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
