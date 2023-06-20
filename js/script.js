@@ -10,9 +10,11 @@ let gap = 24;
 let isTouch = false;
 let offcet = 20;
 let momentum = 0.5;
+let previousOffcet = 0;
 
 sliderCover.addEventListener("mousedown", e => {
     isTouch = true;
+    previousOffcet = 0;
 });
 
 document.addEventListener("mouseup", e => {
@@ -30,7 +32,6 @@ document.addEventListener("mouseup", e => {
 const sliderLength = sliderItems.length / 2 * (parseInt(sliderItems[0].style.width) + gap);
 slider.style.left = -sliderLength + gap + "px";
 
-let previousOffcet = 0;
 sliderCover.addEventListener("mousemove", e => {
     if (isTouch === true) {
         let left = parseInt(slider.style.left);
