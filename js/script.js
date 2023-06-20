@@ -41,15 +41,15 @@ sliderCover.addEventListener("mousemove", e => {
         let left = parseInt(slider.style.left);
         if(left < -offcet && left > -sliderLength - offcet) {
             slider.style.left = left - previousOffcet + e.offsetX  + "px";
-            //console.log(slider.style.left);
+            console.log(slider.style.left);
         } else if(left >= -offcet) {
             left = left - sliderLength;
             slider.style.left = left - previousOffcet + e.offsetX  + "px";
-            //console.log(slider.style.left);
+            console.log(slider.style.left);
         } else if(left <= -sliderLength - offcet) {
             left = left + sliderLength;
             slider.style.left = left - previousOffcet + e.offsetX  + "px";
-            //console.log(slider.style.left);
+            console.log(slider.style.left);
         }
     }
     velocity = (-previousOffcet + e.offsetX) * 3;
