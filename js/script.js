@@ -30,6 +30,10 @@ const mouseupHandler = (e) => {
     }
 }
 
+const mouseleaveHandler = (e) => {
+    isTouch = false;
+}
+
 const documentMouseupHandler = (e) => {
     isTouch = false;
     innerVelocity = velocity;
@@ -41,16 +45,6 @@ const documentMouseupHandler = (e) => {
 
 
 
-
-
-
-
-
-sliderCover.addEventListener("mouseleave", e => {
-    isTouch = false;
-    //clearInterval(autoScrollInt);
-    //autoScrollInt = setInterval(autoScroll, 20);
-});
 
 sliderCover.addEventListener("mousemove", e => {
     if (isTouch === true) {
@@ -110,4 +104,5 @@ const velocityFunction = () => {
 
 sliderCover.addEventListener("mousedown", mousedownHandler);
 sliderCover.addEventListener("mouseup", mouseupHandler);
+sliderCover.addEventListener("mouseleave", mouseleaveHandler);
 document.addEventListener("mouseup", documentMouseupHandler);
