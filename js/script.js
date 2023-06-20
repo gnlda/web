@@ -16,13 +16,15 @@ sliderCover.addEventListener("mousedown", e => {
 
 document.addEventListener("mouseup", e => {
     isTouch = false;
+    if (previousOffcet != 0) {
+        setInterval(() => {
+            slider.style.left = parseInt(slider.style.left) - 1 + "px";
+        }, 20);
+    }
 });
 
 const sliderLength = sliderItems.length / 2 * (parseInt(sliderItems[0].style.width) + gap);
 slider.style.left = -sliderLength + gap + "px";
-console.log(`start ${slider.style.left}`);
-console.log(`offcet ${offcet}`);
-console.log(`sliderLength - offcet ${sliderLength - offcet}`);
 
 let previousOffcet = 0;
 sliderCover.addEventListener("mousemove", e => {
