@@ -27,6 +27,9 @@ console.log(`start ${slider.style.left}`);
 sliderCover.addEventListener("mousemove", e => {
     if (isTouch === true) {
         let left = parseInt(slider.style.left);
+        if(left) {
+            
+        }
     }
 });
 
