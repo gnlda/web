@@ -30,9 +30,8 @@ sliderCover.addEventListener("mousemove", e => {
     if (isTouch === true) {
         let left = parseInt(slider.style.left);
         if(left < -offcet && left > -sliderLength - offcet) {
-            slider.style.left = left + e.offsetX - startLeft + previousOffcet + "px";
+            slider.style.left = left + e.offsetX - startLeft + "px";
             //console.log(left);
-            console.log(previousOffcet);
         }
     }
 });
