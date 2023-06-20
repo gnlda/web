@@ -15,7 +15,7 @@ let previousOffcet = 0;
 
 document.addEventListener("mouseup", e => {
     isTouch = false;
-    innerVelocity = (-previousOffcet + sliderCover.target.offsetX) * 3;
+    innerVelocity = (-previousOffcet + parseInt(sliderCover.offsetX)) * 3;
     console.log(`innerVelocity = ${innerVelocity}`);
     if(Math.abs(innerVelocity) > 1) {
         setInterval(velocityInterval, 20);
