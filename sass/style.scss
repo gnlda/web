@@ -45,8 +45,11 @@ body {
 }
 .logo__header {
     @include flex(start, center);
-    h2 {
+    p {
         @include font('Sora', 18px, 700, 23px, $white);
+        span {
+            color: $blue;
+        }
     }
 }
 .menu__header {

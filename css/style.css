@@ -66,12 +66,15 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.logo__header h2 {
+.logo__header p {
   font-family: "Sora";
   font-size: 18px;
   font-weight: 700;
   line-height: 23px;
   color: #ffffff;
+}
+.logo__header p span {
+  color: #1A82FF;
 }
 
 .menu__header {
@@ -334,7 +337,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
 }
 
 .features__card-container {
@@ -381,6 +383,4 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-=======
->>>>>>> 3b9bbc5099c35ad17940b4879aed826bca1be8ff
 }
