@@ -23,6 +23,10 @@ h2 {
     @include font('Sofia Pro', 49px, 700, 110%, $white);
 }
 
+h3 {
+    @include font('Sofia Pro', 25px, 700, 120%, $white);
+}
+
 .wrapper {
     width: 1155px;
     margin: 0 auto;
