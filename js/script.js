@@ -30,7 +30,7 @@ document.addEventListener("mouseup", e => {
 
 sliderCover.addEventListener("mousedown", e => {
     isTouch = true;
-    clearInterval(autoScroll);
+    clearInterval(autoScrollInt);
     clearInterval(velocityInterval);
     console.log(`left = ${left}, innerVelocity = ${innerVelocity}`);
 });
@@ -76,7 +76,7 @@ const velocityFunction = () => {
     left = parseInt(slider.style.left) + innerVelocity;
     slider.style.left = left + "px";
     console.log(`left = ${left}, innerVelocity = ${innerVelocity}`);
-    //clearInterval(autoScroll);
+    //clearInterval(autoScrollInt);
     if (left < -sliderLength - offcet) {
         left = left + sliderLength;
         slider.style.left = left + "px";
