@@ -30,16 +30,14 @@ document.addEventListener("mouseup", e => {
 
 sliderCover.addEventListener("mousedown", e => {
     isTouch = true;
-    previousOffcet = 0;
     clearInterval(autoScroll);
-    innerVelocity = 0;
     console.log(`left = ${left}, innerVelocity = ${innerVelocity}`);
 });
 
 
 sliderCover.addEventListener("mousemove", e => {
     if (isTouch === true) {
-        left = parseInt(slider.style.left);
+        left = parseIznt(slider.style.left);
         if(left < -offcet && left > -sliderLength - offcet) {
             slider.style.left = left - previousOffcet + e.offsetX  + "px";
             console.log(slider.style.left);
