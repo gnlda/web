@@ -44,17 +44,17 @@ sliderCover.addEventListener("mousemove", e => {
     previousOffcet = e.offsetX;
 });
 
-// setInterval(() => {
-//     if (isTouch === false) {
-//         slider.style.left = parseInt(slider.style.left) - 1 + "px";
-//         let left = parseInt(slider.style.left);
-//         console.log(left);
-//         if (left < -sliderLength - offcet) {
-//             left = left + sliderLength;
-//             slider.style.left = left - startLeft + "px";
-//         } else if (left > -offcet) {
-//             left = left - sliderLength;
-//             slider.style.left = left - startLeft + "px";
-//         }
-//     }
-// }, 15);
+setInterval(() => {
+    if (isTouch === false) {
+        slider.style.left = parseInt(slider.style.left) - 1 + "px";
+        let left = parseInt(slider.style.left);
+        console.log(left);
+        if (left < -sliderLength - offcet) {
+            left = left + sliderLength;
+            slider.style.left = left - startLeft + "px";
+        } else if (left > -offcet) {
+            left = left - sliderLength;
+            slider.style.left = left - startLeft + "px";
+        }
+    }
+}, 15);
