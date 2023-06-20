@@ -36,6 +36,10 @@ sliderCover.addEventListener("mousemove", e => {
             left = left - sliderLength;
             slider.style.left = left - previousOffcet + e.offsetX  + "px";
             console.log(slider.style.left);
+        } else if(left <= -sliderLength - offcet) {
+            left = left + sliderLength;
+            slider.style.left = left - previousOffcet + e.offsetX  + "px";
+            console.log(slider.style.left);
         }
     }
     previousOffcet = e.offsetX;
