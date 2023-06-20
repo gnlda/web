@@ -184,7 +184,7 @@ body {
         p {
             margin-left: 10px;
             @include font('Graphik', 18px, 600, 27px, $green-primary);
-        .minus__slider {
+        .minus__slider p {
             color: $text-red;
         }
         }
