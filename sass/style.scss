@@ -221,15 +221,15 @@ body {
         background: rgba(47, 50, 65, 0.5);
         backdrop-filter: blur(2px);
         border-radius: 12px;
+        @include flex(center, center);
+        flex-direction: column;
         .card__img-block {
             width: 90px;
             height: 90px;
             background: #34384C;
             backdrop-filter: blur(7px);
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex(center, center);  
         }
     }
     
