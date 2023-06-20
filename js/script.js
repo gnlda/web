@@ -60,7 +60,7 @@ sliderCover.addEventListener("mousemove", e => {
 
 const autoScroll = () => {
     if (isTouch === false) {
-        slider.style.left = parseInt(slider.style.left) - 1 + "px";
+        slider.style.left = parseInt(slider.style.left) - 20 + "px";
         let left = parseInt(slider.style.left);
         //console.log(left);
         if (left < -sliderLength - offcet) {
@@ -89,7 +89,7 @@ const velocityFunction = () => {
     }
     if (Math.abs(innerVelocity) < 2) {
         console.log("bye");
-        setInterval(autoScroll, 2);
+        //setInterval(autoScroll, 2);
         //previousOffcet = 0;
         clearInterval(velocityInterval);
     }
