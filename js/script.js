@@ -33,6 +33,10 @@ document.addEventListener("mouseup", e => {
     isTouch = false;
 });
 
+sliderCover.addEventListener("mouseleave", e => {
+    isTouch = false;
+});
+
 sliderCover.addEventListener("mousemove", e => {
     if (isTouch === true) {
         left = parseInt(slider.style.left);
