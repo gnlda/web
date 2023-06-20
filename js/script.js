@@ -55,7 +55,11 @@ const mouseleaveHandler = (e) => {
 
 
 const mousemoveHandler = (e) => {
-    if(isTouch === true)
+    if(isTouch === true) {
+        if (left > offset && left < sliderLength + offset) {
+            console.log("fsdf");
+        }
+    }
 
 
     console.log(`left = ${left}, isTouch = ${isTouch}, velocity = ${velocity}, previousOffset = ${previousOffset}, isMouseOver = ${isMouseOver}`);
