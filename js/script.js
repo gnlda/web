@@ -61,11 +61,11 @@ const mouseleaveHandler = (e) => {
 
 const mousemoveHandler = (e) => {
     if(isTouch === true) {
-        let left = parseInt(slider.style.left);
+        let left = parseInt(slider.style.left + e.offsetX);
 
 
         if (left < -offset && left > -sliderLength - offset) {
-            slider.style.left = `${left + e.offsetX}px`;
+            slider.style.left = `${left}px`;
         }
     }
 
