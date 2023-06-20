@@ -28,6 +28,7 @@ console.log(`sliderLength - offcet ${sliderLength - offcet}`);
 
 let previousOffcet = 0;
 sliderCover.addEventListener("mousemove", e => {
+    console.log(`previousOffcet = ${slider.style.left}, e.offsetX = ${e.offsetX}`);
     if (isTouch === true) {
         let left = parseInt(slider.style.left);
         if(left < -offcet && left > -sliderLength - offcet) {
@@ -35,8 +36,7 @@ sliderCover.addEventListener("mousemove", e => {
             console.log(slider.style.left);
         }
     }
-    previousOffcet = previousOffcet - e.offsetX;
-    console.log(`previousOffcet = ${slider.style.left}, e.offsetX - startLeft = ${e.offsetX - startLeft}`);
+    previousOffcet = e.offsetX;
 });
 
 
