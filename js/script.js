@@ -57,7 +57,6 @@ const mousemoveHandler = (e) => {
 }
 
 const touchmoveHandler = (e) => {
-    if(isTouch === true) {
         e.preventDefault();
         delta = e.touches[0].clientX - previousOffset;
         let left = parseInt(slider.style.left) + delta;
@@ -71,7 +70,6 @@ const touchmoveHandler = (e) => {
             slider.style.left = `${left}px`;
         }
         console.log(`left = ${left}`);
-    }
     previousOffset = e.touches[0].clientX;
 }
 
