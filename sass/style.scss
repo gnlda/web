@@ -10,7 +10,7 @@
 body {
     font-family: 'Graphik';
     background: $bg;
-    color: $text;
+    color: $white;
 }
 .wrapper {
     width: 1155px;
@@ -46,7 +46,7 @@ body {
 .logo__header {
     @include flex(start, center);
     h2 {
-        @include font('Sora', 18px, 700, 23px, $text);
+        @include font('Sora', 18px, 700, 23px, $white);
     }
 }
 .menu__header {
@@ -62,7 +62,7 @@ body {
         }
         a {
             text-decoration: none;
-            color: $text;
+            color: $white;
         }
     }
 }
@@ -73,8 +73,8 @@ body {
         height: 100%;
         padding: 12px 24px;
         border-radius: 100px;
-        color: $text;
-        @include font('Sofia Pro', 14px, 600, 22px, $text);
+        color: $white;
+        @include font('Sofia Pro', 14px, 600, 22px, $white);
         cursor: pointer;
         &:first-child {
             background: transparent;
@@ -97,7 +97,7 @@ body {
         h1 {
             margin-top: 72px;
             width: 638px;
-            @include font('Sofia Pro', 61px, 700, 110%, $text);
+            @include font('Sofia Pro', 61px, 700, 110%, $white);
         }
         p {
             margin-top: 24px;
@@ -115,7 +115,7 @@ body {
 }
 .button {
     @include button(18px, 75px);
-    @include font('Sofia Pro', 18px, 600, 160%, $text);
+    @include font('Sofia Pro', 18px, 600, 160%, $white);
 }
 
 /* Slider */
@@ -182,7 +182,6 @@ body {
         p {
             margin-top: 24px;
             @include font('Graphik', 16px, 400, 24px, $text-grey-40);
-    user-select: none;
 
         }
     }
@@ -200,5 +199,8 @@ body {
     .balance__slider {
         margin-top: 11px;
         @include flex(space-between, center);
+        p {
+            color: $text-grey-60;
+        }
     }
 }
