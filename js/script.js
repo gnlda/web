@@ -26,11 +26,15 @@ sliderCover.addEventListener("mouseup", e => {
     isTouch = false;
     if (Math.abs(velocity) !== 0) {
         velocityInterval = setInterval(velocityFunction, 20);
+        clearInterval(autoScrollInt);
+        autoScrollInt = setInterval(autoScroll, 20);
     }
 });
 
 document.addEventListener("mouseup", e => {
     isTouch = false;
+    clearInterval(autoScrollInt);
+    autoScrollInt = setInterval(autoScroll, 20);
 });
 
 sliderCover.addEventListener("mouseleave", e => {
