@@ -51,10 +51,10 @@ setInterval(() => {
         console.log(left);
         if (left < -sliderLength - offcet) {
             left = left + sliderLength;
-            slider.style.left = left - startLeft + "px";
+            slider.style.left = left + "px";
         } else if (left > -offcet) {
             left = left - sliderLength;
-            slider.style.left = left - startLeft + "px";
+            slider.style.left = left + "px";
         }
     }
 }, 15);
