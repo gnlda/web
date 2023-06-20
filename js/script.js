@@ -99,6 +99,15 @@ const velocityFunction = () => {
     slider.style.left = `${left}px`;
     console.log(`velocity = ${velocity}`);
 
+    if (left >= -offset) {
+        left -= sliderLength;
+        slider.style.left = `${left}px`;
+        console.log(slider.style.left);
+    } else if (left <= -sliderLength -offset) {
+        left += sliderLength;
+        slider.style.left = `${left}px`;
+    }
+        
     if (Math.abs(velocity) < 2) {
         clearInterval(velocityInterval);
         console.log("completed");
