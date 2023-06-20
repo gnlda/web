@@ -51,8 +51,9 @@ sliderCover.addEventListener("mousemove", e => {
             //console.log(slider.style.left);
         }
     }
-    previousOffcet = e.offsetX;
     velocity = - previousOffcet + e.offsetX;
+    previousOffcet = e.offsetX;
+    console.log(velocity);
 });
 
 setInterval(() => {
