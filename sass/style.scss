@@ -224,14 +224,25 @@ h3 {
 
 // Features
 
+.features {
+    padding: 120px 0;
+}
+
 .features__wrap {
     display: flex;
 }
 
 .features__card-container {
     display: flex;
+    margin-right: 70px;
     .features__column:first-child {
         margin-right: 24px;
+        .features__card:first-child {
+            margin-bottom: 24px;
+        }
+    }
+    .features__column:last-child {
+        @include flex(center, center);
     }
     .features__card {
         width: 285px;
@@ -252,5 +263,18 @@ h3 {
 
         }
     }
-    
 }
+
+.features__text-container {
+    position: relative;
+    img {
+        position: absolute;
+        z-index: -1;
+    }
+    p {
+        @include font('Graphik', 16px, 400, 24px, $text-grey-20);
+        margin: 24px 0 32px 0;
+        width: 448px;
+    }
+}
+
