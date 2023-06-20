@@ -70,10 +70,10 @@ const mousemoveHandler = (e) => {
             console.log(e.offsetX);
         }
     }
-    previousOffset = e.offsetX;
 
 
     console.log(`previousOffset = ${previousOffset}, e.offsetX = ${e.offsetX}`);
+    previousOffset = e.offsetX;
 }
 
 
