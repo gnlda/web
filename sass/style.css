@@ -259,5 +259,5 @@ body {
   align-items: center;
 }
 .slider__item .balance__slider p {
-  color: #5D6588;
+  color: #5D6588 !important;
 }
