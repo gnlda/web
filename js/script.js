@@ -17,6 +17,9 @@ document.addEventListener("mouseup", e => {
     isTouch = false;
     velocity *= 3;
     console.log(velocity);
+    if(Math.abs(velocity) > 1) {
+
+    }
 });
 
 sliderCover.addEventListener("mousedown", e => {
@@ -69,7 +72,6 @@ const velocityInterval = () => {
     if (Math.abs(innerVelocity) < 2) {
         console.log("bye");
         clearInterval(velocityInterval);
-        
         previousOffcet = 0;
     }
 }
