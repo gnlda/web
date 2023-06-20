@@ -1,6 +1,5 @@
 let slider = document.querySelector(".slider");
 let sliderCover = document.querySelector(".slider__cover");
-let sliderItems = document.querySelectorAll(".slider__item");
 
 let gap = 24;
 const sliderLength = (slider.offsetWidth + gap) / 2;
