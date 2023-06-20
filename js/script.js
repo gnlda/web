@@ -44,9 +44,7 @@ const documentMouseupHandler = (e) => {
 
 
 
-document.addEventListener("mouseup", e => {
-    isTouch = false;
-});
+
 
 sliderCover.addEventListener("mouseleave", e => {
     isTouch = false;
@@ -112,3 +110,4 @@ const velocityFunction = () => {
 
 sliderCover.addEventListener("mousedown", mousedownHandler());
 sliderCover.addEventListener("mouseup", mouseupHandler());
+document.addEventListener("mouseup", documentMouseupHandler());
