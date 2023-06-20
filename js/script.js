@@ -71,15 +71,15 @@ const mousemoveHandler = (e) => {
         let left = parseInt(slider.style.left) + delta;
         if (left < -offset && left > -sliderLength - offset) {
             slider.style.left = `${left}px`;
-            console.log(slider.style.left);
+            console.log(`slider-left = ${slider.style.left}`);
         } else if (left >= -offset) {
             left -= sliderLength;
             slider.style.left = `${left}px`;
-            console.log(slider.style.left);
+            console.log(`slider-left = ${slider.style.left}`);
         } else if (left <= -sliderLength -offset) {
             left += sliderLength;
             slider.style.left = `${left}px`;
-            console.log(slider.style.left);
+            console.log(`slider-left = ${slider.style.left}`);
         }
         //console.log(`delta = ${delta}`);
     }
