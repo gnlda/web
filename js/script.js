@@ -6,8 +6,10 @@ sliderItems.forEach(item => {
     item.style.width = 346 + "px";
 });
 
-let left = parseInt(slider.style.left);
 let gap = 24;
+const sliderLength = sliderItems.length / 2 * (parseInt(sliderItems[0].style.width) + gap);
+slider.style.left = -sliderLength + gap + "px";
+let left = parseInt(slider.style.left);
 let isTouch = false;
 let offcet = 20;
 let velocity = 0;
@@ -15,8 +17,6 @@ let innerVelocity = 10;
 let momentum = 0.8;
 let previousOffcet = 0;
 let velocityInterval;
-const sliderLength = sliderItems.length / 2 * (parseInt(sliderItems[0].style.width) + gap);
-slider.style.left = -sliderLength + gap + "px";
 
 
 document.addEventListener("mouseup", e => {
