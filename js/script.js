@@ -21,15 +21,16 @@ sliderCover.addEventListener("mousedown", e => {
 document.addEventListener("mouseup", e => {
     isTouch = false;
     velocity *= 100;
-    console.log(velocity);
+    let innerVelocity = velocity *= 100;
+    console.log(innerVelocity);
     if(e.target == sliderCover) {
-        if (Math.abs(velocity) > 1) {
+        if (Math.abs(innerVelocity) > 1) {
             console.log("in");
             let velocityInterval = setInterval(() => {
-                velocity *= 0.99;
-                slider.style.left = parseInt(slider.style.left) + velocity + "px";
-                console.log(`slider.style.left + velocity = ${slider.style.left}, velocity = ${velocity}`);
-                if (Math.abs(velocity) < 1) {
+                innerVelocity *= 0.99;
+                slider.style.left = parseInt(slider.style.left) + innerVelocity + "px";
+                console.log(`slider.style.left + innerVelocity = ${slider.style.left}, innerVelocity = ${innerVelocity}`);
+                if (Math.abs(innerVelocity) < 1) {
                     console.log("bye");
                     clearInterval(velocityInterval);
                     previousOffcet = 0;
