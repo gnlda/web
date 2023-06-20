@@ -136,6 +136,3 @@ sliderCover.addEventListener("mouseover", mouseoverHandler);
 sliderCover.addEventListener("mouseleave", mouseleaveHandler);
 sliderCover.addEventListener("mousemove", mousemoveHandler);
 document.addEventListener("mouseup", documentMouseupHandler);
-
-
-//console.log(`left = ${left}, isTouch = ${isTouch}, velocity = ${velocity}, previousOffset = ${previousOffset}, isMouseOver = ${isMouseOver}`);
