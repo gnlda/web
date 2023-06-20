@@ -21,17 +21,7 @@ document.addEventListener("mouseup", e => {
         if (Math.abs(innerVelocity) > 1) {
             console.log("in");
             clearInterval(autoScroll);
-            let velocityInterval = setInterval(() => {
-                innerVelocity *= 0.99;
-                slider.style.left = parseInt(slider.style.left) + innerVelocity + "px";
-                console.log(`slider.style.left + innerVelocity = ${slider.style.left}, innerVelocity = ${innerVelocity}`);
-                if (Math.abs(innerVelocity) < 2) {
-                    console.log("bye");
-                    clearInterval(velocityInterval);
-                    setInterval(autoScroll, 20);
-                    previousOffcet = 0;
-                }
-            }, 20);
+            
         }
     }
 });
@@ -77,6 +67,18 @@ const autoScroll = () => {
             left = left - sliderLength;
             slider.style.left = left + "px";
         }
+    }
+}
+
+const velocityInterval = () => {
+    innerVelocity *= 0.99;
+    slider.style.left = parseInt(slider.style.left) + innerVelocity + "px";
+    console.log(`slider.style.left + innerVelocity = ${slider.style.left}, innerVelocity = ${innerVelocity}`);
+    if (Math.abs(innerVelocity) < 2) {
+        console.log("bye");
+        clearInterval(velocityInterval);
+        setInterval(autoScroll, 20);
+        previousOffcet = 0;
     }
 }
 
