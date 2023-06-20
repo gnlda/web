@@ -16,6 +16,8 @@ let velocityInterval;
 console.log(sliderLength);
 
 
+let delta = 0;
+
 
 const mousedownHandler = (e) => {
     isTouch = true;
@@ -59,8 +61,11 @@ const mouseleaveHandler = (e) => {
 
 const mousemoveHandler = (e) => {
     if(isTouch === true) {
+        let left = parseInt(slider.style.left);
+
+
         if (left < -offset && left > -sliderLength - offset) {
-            console.log(123);
+            slider.style.left = `${left + e.offsetX}px`;
         }
     }
 
