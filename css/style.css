@@ -351,3 +351,20 @@ body {
           backdrop-filter: blur(2px);
   border-radius: 12px;
 }
+.features__card-container .features__card .card__img-block {
+  width: 90px;
+  height: 90px;
+  background: #34384C;
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
