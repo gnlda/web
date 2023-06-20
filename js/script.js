@@ -37,7 +37,7 @@ document.addEventListener("mouseup", e => {
 sliderCover.addEventListener("mouseleave", e => {
     isTouch = false;
     clearInterval(autoScrollInt);
-    autoScrollInt = setInterval(autoScroll, 20);
+    //autoScrollInt = setInterval(autoScroll, 20);
 });
 
 sliderCover.addEventListener("mousemove", e => {
@@ -70,7 +70,7 @@ const autoScroll = () => {
         }
     }
 };
-let autoScrollInt = setInterval(autoScroll, 20);
+//let autoScrollInt = setInterval(autoScroll, 20);
 
 const velocityFunction = () => {
     innerVelocity *= 0.95;
@@ -85,9 +85,9 @@ const velocityFunction = () => {
     }
     if (Math.abs(innerVelocity) < 2) {
         clearInterval(velocityInterval);
-        setTimeout(() => {
-            autoScrollInt = setInterval(autoScroll, 20);
-        }, 100);
+        //setTimeout(() => {
+            //autoScrollInt = setInterval(autoScroll, 20);
+        //}, 100);
         return 0;
     }
 };
