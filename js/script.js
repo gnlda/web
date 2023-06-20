@@ -20,7 +20,7 @@ sliderCover.addEventListener("mousedown", e => {
 
 document.addEventListener("mouseup", e => {
     isTouch = false;
-    velocity *= 10;
+    velocity *= 100;
     if(e.target == sliderCover) {
         if (Math.abs(velocity) > 1) {
             console.log("in");
