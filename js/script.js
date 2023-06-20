@@ -10,7 +10,6 @@ let isMouseOver = false;
 const offset = 20;
 let velocity = 0;
 let previousOffset = 0;
-let velocityInterval;
 
 console.log(sliderLength);
 
@@ -59,7 +58,7 @@ const mouseleaveHandler = (e) => {
 
 
 const mousemoveHandler = (e) => {
-    if(isTouch === true) {
+    if(isTouch && isMouseOver) {
         delta = e.offsetX - previousOffset;
         let left = parseInt(slider.style.left) + delta;
         if (left < -offset && left > -sliderLength - offset) {
