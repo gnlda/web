@@ -35,7 +35,7 @@ sliderCover.addEventListener("mousemove", e => {
             console.log(slider.style.left);
         }
     }
-    previousOffcet = e.offsetX;
+    previousOffcet = previousOffcet - e.offsetX;
     console.log(`previousOffcet = ${slider.style.left}, e.offsetX = ${e.offsetX}`);
 });
 
