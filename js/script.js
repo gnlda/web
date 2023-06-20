@@ -30,15 +30,15 @@ sliderCover.addEventListener("mousemove", e => {
         let left = parseInt(slider.style.left);
         if(left < -offcet && left > -sliderLength - offcet) {
             slider.style.left = left - previousOffcet + e.offsetX  + "px";
-            console.log(slider.style.left);
+            //console.log(slider.style.left);
         } else if(left >= -offcet) {
             left = left - sliderLength;
             slider.style.left = left - previousOffcet + e.offsetX  + "px";
-            console.log(slider.style.left);
+            //console.log(slider.style.left);
         } else if(left <= -sliderLength - offcet) {
             left = left + sliderLength;
             slider.style.left = left - previousOffcet + e.offsetX  + "px";
-            console.log(slider.style.left);
+            //console.log(slider.style.left);
         }
     }
     previousOffcet = e.offsetX;
@@ -48,7 +48,7 @@ setInterval(() => {
     if (isTouch === false) {
         slider.style.left = parseInt(slider.style.left) - 1 + "px";
         let left = parseInt(slider.style.left);
-        console.log(left);
+        //console.log(left);
         if (left < -sliderLength - offcet) {
             left = left + sliderLength;
             slider.style.left = left + "px";
@@ -57,4 +57,4 @@ setInterval(() => {
             slider.style.left = left + "px";
         }
     }
-}, 15);
+}, 35);
