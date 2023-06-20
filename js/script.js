@@ -87,10 +87,8 @@ const mousemoveHandler = (e) => {
 
 
 const autoScroll = () => {
-    
-    let left = parseInt(slider.style.left);
-
-    
+    let left = parseInt(slider.style.left) - 1;
+    slider.style.left = `${left}px`;
 };
 
 
