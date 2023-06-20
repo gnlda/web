@@ -31,6 +31,7 @@ document.addEventListener("mouseup", e => {
                     previousOffcet = 0;
                 }
             }, 30);
+            console.log("now");
             setInterval(() => {
                 if (isTouch === false) {
                     slider.style.left = parseInt(slider.style.left) - 1 + "px";
