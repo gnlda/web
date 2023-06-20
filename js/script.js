@@ -21,6 +21,7 @@ sliderCover.addEventListener("mousedown", e => {
 document.addEventListener("mouseup", e => {
     isTouch = false;
     velocity *= 10;
+    console.log(velocity);
     if (velocity > 1) {
         let velocityInterval = setInterval(() => {
             velocity *= momentum;
@@ -54,7 +55,6 @@ sliderCover.addEventListener("mousemove", e => {
     }
     velocity = - previousOffcet + e.offsetX;
     previousOffcet = e.offsetX;
-    console.log(velocity);
 });
 
 setInterval(() => {
