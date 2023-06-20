@@ -6,28 +6,20 @@ const sliderLength = (slider.offsetWidth + gap) / 2;
 slider.style.left = -sliderLength + gap + "px";
 let left = parseInt(slider.style.left);
 let isTouch = false;
-let isMouseOver = false;
 const offset = 20;
 let velocity = 0;
 const velocityMultiplier = 0.9;
+let delta = 0;
 let previousOffset = 0;
 let velocityInterval;
 let autoscrollInterval;
 
 console.log(sliderLength);
 
-
-let delta = 0;
-
-
 const mousedownHandler = (e) => {
     isTouch = true;
     clearInterval(velocityInterval);
-
-
-    
 }
-
 
 const mouseupHandler = (e) => {
     isTouch = false;
@@ -41,12 +33,9 @@ const mouseupHandler = (e) => {
     delta = 0;
 }
 
-
 const documentMouseupHandler = (e) => {
     isTouch = false;
     delta = 0;
-
-    
 }
 
 const mousemoveHandler = (e) => {
@@ -103,8 +92,6 @@ const velocityFunction = () => {
         return 0;
     }
 };
-
-
 
 sliderCover.addEventListener("mousedown", mousedownHandler);
 sliderCover.addEventListener("mouseup", mouseupHandler);
