@@ -97,3 +97,9 @@ sliderCover.addEventListener("mousedown", mousedownHandler);
 sliderCover.addEventListener("mouseup", mouseupHandler);
 sliderCover.addEventListener("mousemove", mousemoveHandler);
 document.addEventListener("mouseup", documentMouseupHandler);
+
+
+sliderCover.addEventListener("touchstart", mousedownHandler);
+sliderCover.addEventListener("touchend", mouseupHandler);
+sliderCover.addEventListener("touchmove", mousemoveHandler);
+document.addEventListener("touchend", documentMouseupHandler);
