@@ -10,12 +10,13 @@ let gap = 24;
 let isTouch = false;
 let offcet = 20;
 let velocity = 0;
+let innerVelocity = 0;
 let momentum = 0.99;
 let previousOffcet = 0;
 
 document.addEventListener("mouseup", e => {
     isTouch = false;
-    let innerVelocity = velocity * 2;
+    innerVelocity = velocity * 2;
     console.log(innerVelocity);
     if(e.target == sliderCover) {
         if (Math.abs(innerVelocity) > 1) {
