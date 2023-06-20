@@ -72,7 +72,7 @@ const mousemoveHandler = (e) => {
     }
 
 
-    console.log(`previousOffset = ${previousOffset}, e.offsetX = ${e.offsetX}`);
+    console.log(`delta = ${delta}`);
     previousOffset = e.offsetX;
 }
 
