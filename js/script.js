@@ -16,6 +16,7 @@ let previousOffcet = 0;
 sliderCover.addEventListener("mousedown", e => {
     isTouch = true;
     previousOffcet = 0;
+    clearInterval(velocityInterval);
 });
 
 document.addEventListener("mouseup", e => {
