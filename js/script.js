@@ -5,7 +5,6 @@ let sliderItems = document.querySelectorAll(".slider__item");
 
 console.log(slider.offsetWidth);
 let gap = 24;
-//const sliderLength = (sliderItems.length / 2) * parseInt(sliderItems[0].style.width + gap);
 const sliderLength = (slider.offsetWidth + gap) / 2;
 slider.style.left = -sliderLength + gap + "px";
 let left = parseInt(slider.style.left);
@@ -17,7 +16,7 @@ let previousOffset = 0;
 let velocityInterval;
 
 
-sliderCover.addEventListener("mousedown, touchstart", e => {
+sliderCover.addEventListener("mousedown", e => {
     isTouch = true;
     clearInterval(autoScrollInt);
     clearInterval(velocityInterval);
