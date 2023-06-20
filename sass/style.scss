@@ -234,7 +234,7 @@ body {
             margin-bottom: 40px;
         }
         h3 {
-            
+            @include font()
         }
     }
     
