@@ -260,12 +260,19 @@ h3 {
             border-radius: 50%;
             @include flex(center, center);  
             margin-bottom: 40px;
-
+        }
+        p {
+            @include font('Graphik', 16px, 400, 24px, $text-grey-40);
+            margin-top: 16px;
+            text-align: center;
         }
     }
 }
 
 .features__text-container {
+    display: flex;
+    @include flex(center, start);
+    flex-direction: column;
     position: relative;
     img {
         position: absolute;
@@ -275,6 +282,11 @@ h3 {
         @include font('Graphik', 16px, 400, 24px, $text-grey-20);
         margin: 24px 0 32px 0;
         width: 448px;
+    }
+    button {
+        @include button(16px, 54.5px);
+        @include font('Sofia Pro', 16px, 600, 160%, $white);
+
     }
 }
 

@@ -426,8 +426,31 @@ h3 {
           align-items: center;
   margin-bottom: 40px;
 }
+.features__card-container .features__card p {
+  font-family: "Graphik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #A5ADCF;
+  margin-top: 16px;
+  text-align: center;
+}
 
 .features__text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
 }
 .features__text-container img {
@@ -442,4 +465,17 @@ h3 {
   color: #E5E6ED;
   margin: 24px 0 32px 0;
   width: 448px;
+}
+.features__text-container button {
+  padding: 16px 54.5px;
+  background: -o-linear-gradient(184.44deg, #246CF9 -0.27%, #1E68F6 -0.26%, #0047D0 98.59%);
+  background: linear-gradient(265.56deg, #246CF9 -0.27%, #1E68F6 -0.26%, #0047D0 98.59%);
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  font-family: "Sofia Pro";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 160%;
+  color: #ffffff;
 }
