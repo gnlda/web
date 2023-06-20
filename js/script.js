@@ -23,18 +23,19 @@ const mousedownHandler = (e) => {
 }
 
 
-
-
-
-
-
-sliderCover.addEventListener("mouseup", e => {
+const mouseupHandler = (e) => {
     isTouch = false;
     innerVelocity = velocity;
     if (Math.abs(innerVelocity) !== 0) {
         velocityInterval = setInterval(velocityFunction, 20);
     }
-});
+}
+
+
+
+
+
+
 
 document.addEventListener("mouseup", e => {
     isTouch = false;
@@ -103,3 +104,4 @@ const velocityFunction = () => {
 
 
 sliderCover.addEventListener("mousedown", mousedownHandler());
+sliderCover.addEventListener("mouseup", mouseupHandler());
