@@ -12,6 +12,7 @@ let velocity = 0;
 const velocityMultiplier = 0.9;
 let previousOffset = 0;
 let velocityInterval;
+let autoscrollInterval;
 
 console.log(sliderLength);
 
@@ -90,6 +91,7 @@ const autoScroll = () => {
     let left = parseInt(slider.style.left) - 1;
     slider.style.left = `${left}px`;
 };
+autoscrollInterval = setInterval(autoScroll, 20)
 
 
 const velocityFunction = () => {
