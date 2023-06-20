@@ -335,3 +335,9 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+
+.features__card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
