@@ -76,7 +76,7 @@ const mousemoveHandler = (e) => {
             slider.style.left = `${left}px`;
             console.log(slider.style.left);
         }
-        console.log(`delta = ${delta}`);
+        //console.log(`delta = ${delta}`);
     }
     previousOffset = e.offsetX;
 }
@@ -96,6 +96,7 @@ const velocityFunction = () => {
 
     left = parseInt(slider.style.left) + velocity * velocityMultiplier;
     slider.style.left = `${left}px`;
+    console.log(`velocity = ${velocity}`);
 
     if (velocity < 2) {
         clearInterval(velocityInterval);
