@@ -19,7 +19,7 @@ console.log(sliderLength);
 const mousedownHandler = (e) => {
     isTouch = true;
     clearInterval(velocityInterval);
-    console.log(`left = ${left}`);
+    console.log(`left = ${left}, isTouch = ${isTouch}`);
 }
 
 const mouseupHandler = (e) => {
