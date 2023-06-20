@@ -60,9 +60,8 @@ sliderCover.addEventListener("mousemove", e => {
 
 const autoScroll = () => {
     if (isTouch === false) {
-        slider.style.left = parseInt(slider.style.left) - 20 + "px";
+        slider.style.left = parseInt(slider.style.left) - 1 + "px";
         let left = parseInt(slider.style.left);
-        //console.log(left);
         if (left < -sliderLength - offcet) {
             left = left + sliderLength;
             slider.style.left = left + "px";
