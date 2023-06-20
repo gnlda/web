@@ -20,7 +20,8 @@ sliderCover.addEventListener("mousedown", e => {
 
 document.addEventListener("mouseup", e => {
     isTouch = false;
-    if (previousOffcet > 1) {
+    velocity *= 10;
+    if (velocity > 1) {
         let velocityInterval = setInterval(() => {
             velocity *= momentum;
             slider.style.left = parseInt(slider.style.left) - velocity + "px";
