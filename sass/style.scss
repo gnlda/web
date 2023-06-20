@@ -223,6 +223,7 @@ body {
         border-radius: 12px;
         @include flex(center, center);
         flex-direction: column;
+        padding: 40px 28px;
         .card__img-block {
             width: 90px;
             height: 90px;
@@ -230,6 +231,7 @@ body {
             backdrop-filter: blur(7px);
             border-radius: 50%;
             @include flex(center, center);  
+            margin-bottom: 40px;
         }
     }
     
