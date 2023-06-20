@@ -6,6 +6,7 @@ sliderItems.forEach(item => {
     item.style.width = 346 + "px";
 });
 
+let left = parseInt(slider.style.left);
 let gap = 24;
 let isTouch = false;
 let offcet = 20;
@@ -39,7 +40,7 @@ sliderCover.addEventListener("mousedown", e => {
 
 sliderCover.addEventListener("mousemove", e => {
     if (isTouch === true) {
-        let left = parseInt(slider.style.left);
+        left = parseInt(slider.style.left);
         if(left < -offcet && left > -sliderLength - offcet) {
             slider.style.left = left - previousOffcet + e.offsetX  + "px";
             console.log(slider.style.left);
