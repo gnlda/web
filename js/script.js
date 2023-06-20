@@ -63,7 +63,7 @@ sliderCover.addEventListener("mousemove", e => {
     previousOffcet = e.offsetX;
 });
 
-setInterval(() => {
+const autoScroll = setInterval(() => {
     if (isTouch === false) {
         slider.style.left = parseInt(slider.style.left) - 1 + "px";
         let left = parseInt(slider.style.left);
