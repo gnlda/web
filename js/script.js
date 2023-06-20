@@ -83,7 +83,6 @@ const velocityFunction = () => {
         clearInterval(velocityInterval);
     }
 }
-let velocityInterval = setInterval(velocityFunction, 20);
 
 
 //setInterval(autoScroll, 20);
