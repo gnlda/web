@@ -20,6 +20,7 @@ document.addEventListener("mouseup", e => {
     if(e.target == sliderCover) {
         if (Math.abs(innerVelocity) > 1) {
             console.log("in");
+            clearInterval(autoScroll);
             let velocityInterval = setInterval(() => {
                 innerVelocity *= 0.99;
                 slider.style.left = parseInt(slider.style.left) + innerVelocity + "px";
