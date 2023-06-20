@@ -22,7 +22,7 @@ document.addEventListener("mouseup", e => {
     if (Math.abs(velocity) !== 0) {
         innerVelocity = velocity;
         console.log(`innerVelocity = ${innerVelocity}`);
-        if(Math.abs(innerVelocity) > 1) {
+        if(Math.abs(innerVelocity) < 1) {
             setInterval(velocityInterval, 20);
         }
     }
