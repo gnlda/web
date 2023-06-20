@@ -89,7 +89,6 @@ const velocityFunction = () => {
         clearInterval(velocityInterval);
         setInterval(autoScroll, 20);
         return 0;
-        //previousOffcet = 0;
     }
 }
 
