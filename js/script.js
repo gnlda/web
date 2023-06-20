@@ -16,11 +16,17 @@ let previousOffset = 0;
 let velocityInterval;
 
 
-sliderCover.addEventListener("mousedown", e => {
+const mousedownHandler = (e) => {
     isTouch = true;
     //clearInterval(autoScrollInt);
     clearInterval(velocityInterval);
-});
+}
+
+
+
+
+
+
 
 sliderCover.addEventListener("mouseup", e => {
     isTouch = false;
@@ -91,3 +97,9 @@ const velocityFunction = () => {
         return 0;
     }
 };
+
+
+
+
+
+sliderCover.addEventListener("mousedown", mousedownHandler(e));
