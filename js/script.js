@@ -6,25 +6,25 @@
 //     item.style.width = 346 + "px";
 // });
 
-// let gap = 24;
-// let isTouch = false;
-// let offcet = 20;
-// let velocity = 0;
-// let innerVelocity = 0;
-// let momentum = 0.8;
-// let previousOffcet = 0;
+let gap = 24;
+let isTouch = false;
+let offcet = 20;
+let velocity = 0;
+let innerVelocity = 10;
+let momentum = 0.8;
+let previousOffcet = 0;
 
 // const sliderLength = sliderItems.length / 2 * (parseInt(sliderItems[0].style.width) + gap);
 // slider.style.left = -sliderLength + gap + "px";
 
-// document.addEventListener("mouseup", e => {
-//     isTouch = false;
-//     if (Math.abs(velocity) !== 0) {
-//         innerVelocity = velocity;
-//         console.log(`innerVelocity = ${innerVelocity}`);
-//         let velocityInterval = setInterval(velocityFunction, 20);
-//     }
-// });
+document.addEventListener("mouseup", e => {
+    isTouch = false;
+    if (Math.abs(velocity) !== 0) {
+        innerVelocity = velocity;
+        console.log(`innerVelocity = ${innerVelocity}`);
+        let velocityInterval = setInterval(velocityFunction, 20);
+    }
+});
 
 // sliderCover.addEventListener("mousedown", e => {
 //     isTouch = true;
@@ -70,7 +70,6 @@
 //     }
 // }
 
-innerVelocity = 5;
 
 const velocityFunction = () => {
     innerVelocity *= 0.99;
