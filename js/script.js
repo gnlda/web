@@ -33,7 +33,6 @@ const mouseupHandler = (e) => {
     if (delta != 0) {
         velocity = delta * 10;
         while(Math.abs(velocity) > 1000) {
-            console.log(`was ${velocity}, became ${velocity / 10}`)
             velocity /= 10;
         }
         velocityInterval = setInterval(velocityFunction, 20);
@@ -72,15 +71,12 @@ const mousemoveHandler = (e) => {
         let left = parseInt(slider.style.left) + delta;
         if (left < -offset && left > -sliderLength - offset) {
             slider.style.left = `${left}px`;
-            console.log(`slider-left = ${slider.style.left}`);
         } else if (left >= -offset) {
             left -= sliderLength;
             slider.style.left = `${left}px`;
-            console.log(`slider-left = ${slider.style.left}`);
         } else if (left <= -sliderLength -offset) {
             left += sliderLength;
             slider.style.left = `${left}px`;
-            console.log(`slider-left = ${slider.style.left}`);
         }
         //console.log(`delta = ${delta}`);
     }
