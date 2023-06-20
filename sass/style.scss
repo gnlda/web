@@ -184,9 +184,9 @@ body {
         p {
             margin-left: 10px;
             @include font('Graphik', 18px, 600, 27px, $green-primary);
-        .minus__slider {
-            color: $text-red;
-        }
+            & .minus__slider {
+                color: $text-red;
+            }
         }
     }
     .balance__slider {
