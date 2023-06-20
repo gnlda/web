@@ -13,12 +13,6 @@ let velocity = 0;
 let momentum = 0.99;
 let previousOffcet = 0;
 
-sliderCover.addEventListener("mousedown", e => {
-    isTouch = true;
-    previousOffcet = 0;
-    clearInterval(velocityInterval);
-});
-
 document.addEventListener("mouseup", e => {
     isTouch = false;
     let innerVelocity = velocity *= 2;
@@ -38,6 +32,12 @@ document.addEventListener("mouseup", e => {
             }, 20);
         }
     }
+});
+
+sliderCover.addEventListener("mousedown", e => {
+    isTouch = true;
+    previousOffcet = 0;
+    clearInterval(velocityInterval);
 });
 
 const sliderLength = sliderItems.length / 2 * (parseInt(sliderItems[0].style.width) + gap);
