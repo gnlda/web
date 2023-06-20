@@ -1,3 +1,15 @@
+let slider = document.querySelector(".slider");
+let sliderCover = document.querySelector(".slider__cover");
+let sliderItems = document.querySelectorAll(".slider__item");
+
+sliderItems.forEach(item => {
+    item.style.width = 346 + "px";
+});
+
+let gap = 24;
+let isTouch = false;
+let offcet = 20;
+
 let velocity = 0; // переменная для хранения текущей скорости
 let momentum = 0.9; // коэффициент инерции, можно настроить по своему усмотрению
 
