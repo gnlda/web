@@ -27,9 +27,9 @@ const mousedownHandler = (e) => {
 
 const mouseupHandler = (e) => {
     isTouch = false;
+    if (delta != 0) {
 
-
-    
+    }
 }
 
 
