@@ -14,7 +14,7 @@ let velocityInterval;
 
 
 const mousedownHandler = (e) => {
-
+    isTouch = true;
 }
 
 const mouseupHandler = (e) => {
