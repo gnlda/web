@@ -65,10 +65,10 @@ const mousemoveHandler = (e) => {
         let left = parseInt(slider.style.left - delta);
 
 
-        if (left < -offset && left > -sliderLength - offset) {
+        //if (left < -offset && left > -sliderLength - offset) {
             slider.style.left = `${left}px`;
             console.log(slider.style.left);
-        }
+        //}
     }
 
 
