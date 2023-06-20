@@ -87,4 +87,4 @@ const velocityInterval = () => {
     }
 }
 
-setInterval(autoScroll, 20);
+//setInterval(autoScroll, 20);
