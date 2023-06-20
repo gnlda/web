@@ -23,6 +23,7 @@ document.addEventListener("mouseup", e => {
     velocity *= 10;
     console.log(Math.abs(velocity));
     if (Math.abs(velocity) > 1) {
+        console.log("in");
         let velocityInterval = setInterval(() => {
             velocity *= momentum;
             slider.style.left = parseInt(slider.style.left) - velocity + "px";
