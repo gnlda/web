@@ -15,7 +15,7 @@ let previousOffcet = 0;
 
 document.addEventListener("mouseup", e => {
     isTouch = false;
-    let innerVelocity = velocity *= 2;
+    let innerVelocity = velocity * 2;
     console.log(innerVelocity);
     if(e.target == sliderCover) {
         if (Math.abs(innerVelocity) > 1) {
@@ -24,7 +24,7 @@ document.addEventListener("mouseup", e => {
                 innerVelocity *= 0.99;
                 slider.style.left = parseInt(slider.style.left) + innerVelocity + "px";
                 console.log(`slider.style.left + innerVelocity = ${slider.style.left}, innerVelocity = ${innerVelocity}`);
-                if (Math.abs(innerVelocity) < 1) {
+                if (Math.abs(innerVelocity) < 0.1) {
                     console.log("bye");
                     clearInterval(velocityInterval);
                     previousOffcet = 0;
