@@ -384,13 +384,13 @@ img {
                 font-weight: 600;
                 line-height: 27px;
                 font-family: 'Graphik';
-                margin-right: 14px;
             }
             span {
+                margin-left: 14px;
                 @include font('Graphik', 18px, 400, 27px, $text-grey-60);
-                margin-right: 39px;
             }
             a {
+                margin-left: 39px;
                 @include font('Graphik', 16px, 400, 24px, $text-grey-40);
                 text-decoration: none;
             }
