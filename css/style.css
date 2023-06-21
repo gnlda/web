@@ -459,7 +459,7 @@ h3 {
 .features__text-container img {
   position: absolute;
   top: 277px;
-  left: 277px;
+  left: 100px;
   position: absolute;
   z-index: -1;
 }
