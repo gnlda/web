@@ -156,18 +156,24 @@ h3 {
         height: inherit;
         width: 89px;
         background: linear-gradient(270deg, $bg 0%, transparent 100%);
-        @include position-right(0, 0);
+        position: absolute;
+        top: 0;
+        right: 0;
         z-index: 2;
     }
     .slider__cover {
+        position: absolute;
         width: 100%;
         height: 100%;
-        @include position-left(0, 0);
+        top: 0;
+        left: 0;
         z-index: 2;
     }
 }
 .slider {
-    @include position-left(0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     width: fit-content;
     -moz-user-select: none;
