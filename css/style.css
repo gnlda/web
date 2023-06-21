@@ -376,8 +376,8 @@ img {
 .features__card-container .features__column:first-child {
   margin-right: 24px;
 }
-.features__card-container .features__column:first-child .features__card:first-child {
-  margin-bottom: 24px;
+.features__card-container .features__column:first-child .features__card:last-child {
+  margin-top: 24px;
 }
 .features__card-container .features__column:last-child {
   display: -webkit-box;
