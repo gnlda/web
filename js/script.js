@@ -168,3 +168,5 @@ function swap() {
         row2.innerHTML = our;
     }
 };
+
+const rate = 0.000035;
