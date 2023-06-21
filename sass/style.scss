@@ -302,7 +302,7 @@ img {
 .exchange {
     position: relative;
     .ellipse {
-        @include position-left(796x, 0);
+        @include position-left(100px, 0);
     }
 }
 
