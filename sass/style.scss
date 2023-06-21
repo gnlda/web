@@ -431,18 +431,19 @@ h3 {
     }
 }
 
+.about__image-container {
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
 .about__wrap {
     display: flex;
 }
 
-.about__content {
-    position: relative;
-    .about__line {
-        @include position-right(0, 0);
-        transform: translateX(100px);
-        overflow: hidden;
-        z-index: -1;
-    }
+.about__line {
+    @include position-right(0, 0);
+    overflow: hidden;
+    z-index: -1;
 }
 
 .about__img-block {
