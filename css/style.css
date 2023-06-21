@@ -540,7 +540,6 @@ img {
   margin-left: 36px;
 }
 .exchange__content .exchange-list__container .exchange__item {
-  margin-bottom: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -566,12 +565,14 @@ img {
   border-radius: 50%;
   margin-right: 32px;
 }
+.exchange__content .exchange-list__container .exchange__item:not(:first-child) {
+  margin-top: 32px;
+}
 .exchange__content .exchange-list__container .exchange__item:nth-child(2) {
   padding-left: 70px;
 }
 .exchange__content .exchange-list__container .exchange__item:nth-child(3) {
   padding-left: 140px;
-  margin-bottom: 0;
 }
 
 .exchange__converter-container .converter {

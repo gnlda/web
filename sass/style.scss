@@ -325,7 +325,6 @@ img {
     .exchange-list__container {
         margin-left: 36px;
         .exchange__item {
-            margin-bottom: 32px;
             display: flex;
             align-items: center;
             .exchange__img-block {
@@ -337,12 +336,14 @@ img {
                 border-radius: 50%;
                 margin-right: 32px;
             }
+            &:not(:first-child) {
+                margin-top: 32px;
+            }
             &:nth-child(2) {
                 padding-left: 70px;
             }
             &:nth-child(3) {
                 padding-left: 140px;
-                margin-bottom: 0;
             }
         }
     }
