@@ -450,7 +450,6 @@ img {
 }
 
 .about__img-block {
-    @include flex(center, center);
     // position: relative;
     transform: translateX(-42px);
     width: calc(581px - 42px);
