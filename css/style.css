@@ -682,6 +682,7 @@ h3 {
 
 .about {
   padding: 160px 0;
+  overflow: hidden;
 }
 .about h2 {
   width: 636px;
