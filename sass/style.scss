@@ -469,10 +469,10 @@ img {
             border-radius: 12px;
             background: $dark;
             backdrop-filter: blur(7px);
-            margin-right: 32px;
         }
         .about__text-block {
             width: 309px;
+            margin-left: 32px;
             h3 {
                 margin-bottom: 8px;
             }
