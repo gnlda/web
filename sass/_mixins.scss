@@ -18,3 +18,8 @@
     border: none;
     cursor: pointer;
 }
+@mixin position-left($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+}
