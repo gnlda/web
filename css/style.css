@@ -503,6 +503,8 @@ img {
 }
 .exchange .ellipse {
   position: absolute;
+  top: 72px;
+  left: 24px;
 }
 
 .exchange__wrap {
