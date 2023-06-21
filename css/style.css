@@ -633,6 +633,6 @@ h3 {
   width: 276px;
   border-right: 1px solid #34384C;
 }
-.exchange__converter-container .converter .converter__row:first-child {
-  margin-bottom: 56px;
+.exchange__converter-container .converter .converter__row:last-child {
+  margin-top: 24px;
 }
