@@ -458,9 +458,10 @@ h3 {
 }
 .features__text-container img {
   position: absolute;
-  z-index: -1;
-  left: 100px;
   top: 277px;
+  left: 277px;
+  position: absolute;
+  z-index: -1;
 }
 .features__text-container p {
   font-family: "Graphik";
@@ -707,9 +708,9 @@ h3 {
 }
 .about__content .about__line {
   position: absolute;
-  z-index: -1;
-  left: 0;
   top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .about__img-block {

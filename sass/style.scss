@@ -167,9 +167,7 @@ h3 {
     }
 }
 .slider {
-    position: absolute;
-    top: 0;
-    left: 0;
+    @include position-left(0, 0);
     display: flex;
     width: fit-content;
     -moz-user-select: none;
@@ -273,10 +271,9 @@ h3 {
     flex-direction: column;
     position: relative;
     img {
+        @include position-left(277px, 277px);
         position: absolute;
         z-index: -1;
-        left: 100px;
-        top: 277px;
     }
     p {
         @include font('Graphik', 16px, 400, 24px, $text-grey-20);
@@ -442,10 +439,8 @@ h3 {
 .about__content {
     position: relative;
     .about__line {
-        position: absolute;
+        @include position-left(0, 0);
         z-index: -1;
-        left: 0;
-        top: 0;
     }
 }
 
