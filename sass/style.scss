@@ -442,7 +442,13 @@ h3 {
 }
 
 .about__img-block {
-    @include flex(center, center);
+    // @include flex(center, center);
+    position: relative;
+    .hyperimg {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
 }
 
 .about__list {
