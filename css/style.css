@@ -566,9 +566,14 @@ h3 {
   border: none;
   outline: none;
 }
-.exchange__converter-container .converter .converter__choice button.active {
+.exchange__converter-container .converter .converter__choice button:first-child {
   border-right: 1px solid #34384C;
+}
+.exchange__converter-container .converter .converter__choice button.active {
   color: #246CF9;
+}
+.exchange__converter-container .converter .converter__choice button:hover {
+  cursor: pointer;
 }
 .exchange__converter-container .converter p {
   font-family: "Graphik";
@@ -662,6 +667,8 @@ h3 {
   border-radius: 100px;
   border: none;
   cursor: pointer;
+  width: 383px;
+  height: 65px;
   margin-top: 8px;
 }
 

@@ -126,7 +126,45 @@ document.addEventListener("touchend", documentMouseupHandler);
 const buttons = document.querySelector('.converter__choice');
 
 buttons.addEventListener('click', e => {
-    if (e.target.className === "convert") {
-        buttons.querySelectorAll("convert").classList.add("active");
+    if (e.target.classList.contains("convert") && !e.target.classList.contains("active")) {
+        const convertElements = buttons.querySelectorAll(".convert");
+        convertElements.forEach(element => {
+            element.classList.toggle("active");
+        });
+        swap();
     }
-})
+});
+
+function swap() {
+    const buy = document.querySelector("#buy");
+    const sell = document.querySelector("#sell");
+    const convertButton = document.querySelector(".converter__button");
+    const row1 = document.querySelector("#row1");
+    const row2 = document.querySelector("#row2");
+    const our = `<input type="text" value="4.000">
+    <div class="converter__item">
+        <img src="img/USD.svg" alt="USD">
+        <span>USD</span>
+    </div>
+    <div class="converter__arrow">
+        <img src="img/Arrow.svg" alt="Arrow">
+    </div>`
+    const crypto = `<input type="text" value="0.074153">
+    <div class="converter__item">
+        <img src="img/Bitcoin.svg" alt="Bitcoin">
+        <span>BTC</span>
+    </div>
+    <div class="converter__arrow">
+        <img src="img/Arrow.svg" alt="Arrow">
+    </div>`;
+
+    if (buy.classList.contains("active")) {
+        convertButton.innerHTML = "Buy Now";
+        row1.innerHTML = our;
+        row2.innerHTML = crypto;
+    } else {
+        convertButton.innerHTML = "Sell Now";
+        row1.innerHTML = crypto;
+        row2.innerHTML = our;
+    }
+};

@@ -353,9 +353,14 @@ h3 {
                 width: 50%;
                 border: none;
                 outline: none;
-                &.active {
+                &:first-child {
                     border-right: 1px solid $text-grey-80;
+                }
+                &.active {
                     color: $dark-blue;
+                }
+                &:hover {
+                    cursor: pointer;
                 }
             }
         }
@@ -408,6 +413,8 @@ h3 {
         .converter__button {
             @include font('Sofia Pro', 18px, 600, 160%, $white);
             @include button(18px, 156px);
+            width: 383px;
+            height: 65px;
             margin-top: 8px;
         }
     }
