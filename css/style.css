@@ -698,14 +698,17 @@ h3 {
 }
 
 .about__img-block {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 42px;
 }
-.about__img-block .hyperimg {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
 .about__list .about__item {
   display: -webkit-box;
   display: -ms-flexbox;
