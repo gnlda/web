@@ -440,6 +440,7 @@ h3 {
     .about__line {
         @include position-right(0, 0);
         transform: translateX(100px);
+        overflow: hidden;
         z-index: -1;
     }
 }
