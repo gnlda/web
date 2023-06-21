@@ -643,7 +643,10 @@ img {
   color: #A5ADCF;
   text-decoration: none;
 }
-.exchange__converter-container .converter .converter__row {
+.exchange__converter-container .converter .converter__row-container {
+  margin-top: 32px;
+}
+.exchange__converter-container .converter .converter__row-container .converter__row {
   margin-bottom: 24px;
   width: 100%;
   height: 60px;
@@ -658,7 +661,7 @@ img {
           align-items: center;
   border-bottom: 1px solid #34384C;
 }
-.exchange__converter-container .converter .converter__row input {
+.exchange__converter-container .converter .converter__row-container .converter__row input {
   font-family: "Graphik";
   font-size: 18px;
   font-weight: 400;
@@ -672,7 +675,7 @@ img {
   border-right: 1px solid #34384C;
   margin-right: 16px;
 }
-.exchange__converter-container .converter .converter__row .converter__item {
+.exchange__converter-container .converter .converter__row-container .converter__row .converter__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -684,10 +687,11 @@ img {
           align-items: center;
   margin-right: 8px;
 }
-.exchange__converter-container .converter .converter__row .converter__item img {
+.exchange__converter-container .converter .converter__row-container .converter__row .converter__item img {
   margin-right: 8px;
 }
 .exchange__converter-container .converter .converter__button {
+  margin-top: 32px;
   font-family: "Sofia Pro";
   font-size: 18px;
   font-weight: 600;
@@ -701,7 +705,6 @@ img {
   cursor: pointer;
   width: 383px;
   height: 65px;
-  margin-top: 8px;
 }
 
 .about {
