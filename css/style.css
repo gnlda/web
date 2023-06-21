@@ -664,3 +664,13 @@ h3 {
   cursor: pointer;
   margin-top: 8px;
 }
+
+.about {
+  padding: 160px 0;
+}
+
+.about__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
