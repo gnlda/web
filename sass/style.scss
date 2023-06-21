@@ -235,7 +235,7 @@ img {
     .features__column:last-child {
         margin-left: 24px;
     }
-    .features__card:last-child {
+    .features__card:not(:first-child) {
         margin-top: 24px;
     }
     .features__column:last-child {
