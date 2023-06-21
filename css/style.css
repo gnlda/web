@@ -202,11 +202,6 @@ h3 {
   line-height: 27px;
   color: #E5E6ED;
 }
-.hero__container .hero__image {
-  -webkit-transform: translateX(-100px);
-      -ms-transform: translateX(-100px);
-          transform: translateX(-100px);
-}
 
 .button {
   padding: 18px 75px;
