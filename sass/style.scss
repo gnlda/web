@@ -313,7 +313,6 @@ img {
 
 .exchange__content {
     width: 568px;
-    margin-right: 95px;
     p {
         margin-top: 25px;
         @include font('Graphik', 16px, 400, 24px, $text-grey-20);
@@ -349,6 +348,7 @@ img {
 }
 
 .exchange__converter-container {
+    margin-left: 95px;
     .converter {
         width: 450px;
         background: $dark;

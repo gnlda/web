@@ -522,7 +522,6 @@ img {
 
 .exchange__content {
   width: 568px;
-  margin-right: 95px;
 }
 .exchange__content p {
   margin-top: 25px;
@@ -574,6 +573,9 @@ img {
   padding-left: 140px;
 }
 
+.exchange__converter-container {
+  margin-left: 95px;
+}
 .exchange__converter-container .converter {
   width: 450px;
   background: rgba(47, 50, 65, 0.5019607843);
