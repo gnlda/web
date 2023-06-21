@@ -173,12 +173,6 @@ function swap() {
         row1.innerHTML = crypto;
         row2.innerHTML = our;
     }
-
-    inputRate.addEventListener("click", clearInput);
-
-    inputRate.addEventListener("input", convert);
-
-    output.addEventListener('mouseover', readOnly);
 }
 
 function convert() {
