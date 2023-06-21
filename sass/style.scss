@@ -57,53 +57,54 @@ h3 {
 .header__wrap {
     padding: 24px;
     @include flex(space-between, center);
-}
-.logo__header {
-    @include flex(start, center);
-    p {
-        @include font('Sora', 18px, 700, 23px, $white);
-        span {
-            color: $blue;
+    .logo__header {
+        @include flex(start, center);
+        p {
+            @include font('Sora', 18px, 700, 23px, $white);
+            span {
+                color: $blue;
+            }
+        }
+    }
+    .menu__header {
+        display: flex;
+        ul {
+            height: 100%;
+            @include flex(space-between, center)
+        }
+        li {
+            display: inline-block;
+            &:not(:first-child) {
+                margin-left: 48px;
+            }
+            a {
+                text-decoration: none;
+                color: $white;
+            }
+        }
+        .menu__button__container {
+            margin-left: 32px;
+            @include flex(start, center);
+            button {
+                height: 100%;
+                padding: 12px 24px;
+                border-radius: 100px;
+                color: $white;
+                @include font('Sofia Pro', 14px, 600, 22px, $white);
+                cursor: pointer;
+                &:first-child {
+                    background: transparent;
+                    border: 1px solid $white;
+                }
+                &:last-child {
+                    margin-left: 16px;
+                    @include button(12px, 24px);
+                }
+            }
         }
     }
 }
-.menu__header {
-    display: flex;
-    ul {
-        height: 100%;
-        @include flex(space-between, center)
-    }
-    li {
-        display: inline-block;
-        &:not(:first-child) {
-            margin-left: 48px;
-        }
-        a {
-            text-decoration: none;
-            color: $white;
-        }
-    }
-}
-.menu__button__container {
-    margin-left: 32px;
-    @include flex(start, center);
-    button {
-        height: 100%;
-        padding: 12px 24px;
-        border-radius: 100px;
-        color: $white;
-        @include font('Sofia Pro', 14px, 600, 22px, $white);
-        cursor: pointer;
-        &:first-child {
-            background: transparent;
-            border: 1px solid $white;
-        }
-        &:last-child {
-            margin-left: 16px;
-            @include button(12px, 24px);
-        }
-    }
-}
+
 
 /* Hero */
 .hero__wrap {
