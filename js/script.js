@@ -144,7 +144,6 @@ function selectConvert(e) {
 
 function swap() {
     const buy = document.querySelector("#buy");
-    const sell = document.querySelector("#sell");
     const convertButton = document.querySelector(".converter__button");
     let row1 = document.querySelector("#row1");
     let row2 = document.querySelector("#row2");
