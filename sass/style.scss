@@ -58,7 +58,7 @@ h3 {
 .header__wrap {
     padding: 24px;
     @include flex(space-between, center);
-    .logo__header {
+    .header__logo {
         @include flex(start, center);
         p {
             @include font('Sora', 18px, 700, 23px, $white);
@@ -67,7 +67,7 @@ h3 {
             }
         }
     }
-    .menu__header {
+    .header__menu {
         display: flex;
         ul {
             height: 100%;
