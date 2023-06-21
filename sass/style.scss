@@ -450,7 +450,7 @@ h3 {
 .about__img-block {
     @include flex(center, center);
     // position: relative;
-    margin-right: 42px;
+    transform: translateX(-42px);
     //.hyperimg {
         //@include position-left(0, 0);
     //}
