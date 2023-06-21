@@ -415,6 +415,9 @@ img {
                 .converter__item {
                     @include flex(start, center);
                     margin-left: 16px;
+                    span {
+                        margin-left: 8px;
+                    }
                 }
                 .converter__arrow {
                     margin-left: 8px;

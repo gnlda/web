@@ -685,6 +685,9 @@ img {
           align-items: center;
   margin-left: 16px;
 }
+.exchange__converter-container .converter .converter__row-container .converter__row .converter__item span {
+  margin-left: 8px;
+}
 .exchange__converter-container .converter .converter__row-container .converter__row .converter__arrow {
   margin-left: 8px;
 }
