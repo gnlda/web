@@ -125,7 +125,6 @@ document.addEventListener("touchend", documentMouseupHandler);
 
 const buttons = document.querySelector('.converter__choice');
 const rate = 0.0000345245;
-const inputRate = row1.querySelector("input");
 const output = row2.querySelector("input");
 
 
@@ -174,11 +173,13 @@ function swap() {
 }
 
 function convert() {
+    const inputRate = row1.querySelector("input");
     let converted = inputRate.value * rate;
     output.value = converted.toFixed(6);
 }
 
 function clearInput() {
+    const inputRate = row1.querySelector("input");
     inputRate.value = '';
     inputRate.removeEventListener('click', clearInput);
 }
@@ -189,4 +190,4 @@ inputRate.addEventListener("click", clearInput);
 
 inputRate.addEventListener("input", convert);
 
-row2.addEventListener('click', console.log(1))
+inputRate.addEventListener("click", console.log(1));
