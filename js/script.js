@@ -125,7 +125,7 @@ document.addEventListener("touchend", documentMouseupHandler);
 
 const buttons = document.querySelector('.converter__choice');
 
-buttons.addEventListener('click', e => {
+buttons.addEventListener("click", e => {
     if (e.target.classList.contains("convert") && !e.target.classList.contains("active")) {
         const convertElements = buttons.querySelectorAll(".convert");
         convertElements.forEach(element => {
@@ -170,3 +170,7 @@ function swap() {
 };
 
 const rate = 0.000035;
+
+const inputRate = row1.querySelector("input");
+
+inputRate.addEventListener("")
