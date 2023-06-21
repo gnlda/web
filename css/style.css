@@ -560,7 +560,9 @@ img {
   -webkit-backdrop-filter: blur(7px);
           backdrop-filter: blur(7px);
   border-radius: 50%;
-  margin-right: 32px;
+}
+.exchange__content .exchange-list__container .exchange__item h3 {
+  margin-left: 32px;
 }
 .exchange__content .exchange-list__container .exchange__item:not(:first-child) {
   margin-top: 32px;
