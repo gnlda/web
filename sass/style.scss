@@ -291,3 +291,15 @@ h3 {
     }
 }
 
+// Exchange
+
+.exchange {
+    position: relative;
+    .ellipse {
+        position: absolute;
+    }
+}
+
+.exchange__wrap {
+    display: flex;
+}

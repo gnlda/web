@@ -481,3 +481,16 @@ h3 {
   line-height: 160%;
   color: #ffffff;
 }
+
+.exchange {
+  position: relative;
+}
+.exchange .ellipse {
+  position: absolute;
+}
+
+.exchange__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
