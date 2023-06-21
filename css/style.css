@@ -216,6 +216,14 @@ h3 {
   height: 416px;
   position: relative;
 }
+.hero__container .hero__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
 
 /* Slider */
 .slider__main-container {

@@ -132,6 +132,12 @@ h3 {
         width: 560px;
         height: 416px;
         position: relative;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(-50%, -50%);
+        }
     }
 }
 
