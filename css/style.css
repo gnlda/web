@@ -520,9 +520,6 @@ img {
           align-items: start;
 }
 
-.exchange__content {
-  width: 568px;
-}
 .exchange__content p {
   margin-top: 25px;
   font-family: "Graphik";
