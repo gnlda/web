@@ -296,6 +296,7 @@ h3 {
 
 .exchange__wrap {
     display: flex;
+    @include flex(space-between, start);
 }
 
 .exchange__content {
