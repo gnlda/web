@@ -612,6 +612,7 @@ h3 {
   text-decoration: none;
 }
 .exchange__converter-container .converter .converter__row {
+  margin-bottom: 24px;
   width: 100%;
   height: 60px;
   display: -webkit-box;
@@ -626,13 +627,45 @@ h3 {
   border-bottom: 1px solid #34384C;
 }
 .exchange__converter-container .converter .converter__row input {
+  font-family: "Graphik";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #ffffff;
   background: none;
   border: none;
   outline: none;
   height: 32px;
   width: 276px;
   border-right: 1px solid #34384C;
+  margin-right: 16px;
 }
-.exchange__converter-container .converter .converter__row:last-child {
-  margin-top: 24px;
+.exchange__converter-container .converter .converter__row .converter__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 8px;
+}
+.exchange__converter-container .converter .converter__row .converter__item img {
+  margin-right: 8px;
+}
+.exchange__converter-container .converter .converter__button {
+  font-family: "Sofia Pro";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 160%;
+  color: #ffffff;
+  padding: 18px 156px;
+  background: -o-linear-gradient(184.44deg, #246CF9 -0.27%, #1E68F6 -0.26%, #0047D0 98.59%);
+  background: linear-gradient(265.56deg, #246CF9 -0.27%, #1E68F6 -0.26%, #0047D0 98.59%);
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  margin-top: 8px;
 }
