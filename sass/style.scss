@@ -58,7 +58,7 @@ h3 {
 .header__wrap {
     padding: 24px;
     @include flex(space-between, center);
-    .header__logo {
+    .logo__header {
         @include flex(start, center);
         p {
             @include font('Sora', 18px, 700, 23px, $white);
@@ -67,7 +67,7 @@ h3 {
             }
         }
     }
-    .header__menu {
+    .menu__header {
         display: flex;
         ul {
             height: 100%;
@@ -271,9 +271,10 @@ h3 {
     flex-direction: column;
     position: relative;
     img {
-        @include position-left(277px, 100px);
         position: absolute;
         z-index: -1;
+        left: 100px;
+        top: 277px;
     }
     p {
         @include font('Graphik', 16px, 400, 24px, $text-grey-20);
@@ -439,8 +440,10 @@ h3 {
 .about__content {
     position: relative;
     .about__line {
-        @include position-right(0, 0);
+        position: absolute;
         z-index: -1;
+        left: 0;
+        top: 0;
     }
 }
 
