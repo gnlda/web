@@ -536,6 +536,9 @@ img {
   margin-bottom: 40px;
   width: 500px;
 }
+.exchange__content .exchange-list__container {
+  margin-left: 36px;
+}
 .exchange__content .exchange-list__container .exchange__item {
   margin-bottom: 32px;
   display: -webkit-box;
