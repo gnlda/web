@@ -287,6 +287,17 @@ img {
 }
 
 // Exchange
+.exchange__container,
+.about__container {
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+.about__image-container {
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
 
 .exchange {
     position: relative;
@@ -433,11 +444,7 @@ img {
     }
 }
 
-.about__image-container {
-    width: 1440px;
-    margin: 0 auto;
-    position: relative;
-}
+
 .about__wrap {
     @include flex(space-between, center);
 }

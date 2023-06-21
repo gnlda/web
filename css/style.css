@@ -485,6 +485,19 @@ img {
   color: #ffffff;
 }
 
+.exchange__container,
+.about__container {
+  width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.about__image-container {
+  width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
 .exchange {
   position: relative;
 }
@@ -701,12 +714,6 @@ img {
   color: #E5E6ED;
   margin-top: 24px;
   width: 546px;
-}
-
-.about__image-container {
-  width: 1440px;
-  margin: 0 auto;
-  position: relative;
 }
 
 .about__wrap {
