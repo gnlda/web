@@ -583,3 +583,22 @@ h3 {
   color: #ffffff;
   margin-bottom: 8px;
 }
+.exchange__converter-container .converter .converter__rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.exchange__converter-container .converter .converter__rate h3 {
+  font-weight: 600;
+  line-height: 27px;
+  font-family: "Graphik";
+  margin-right: 14px;
+}
+.exchange__converter-container .converter .converter__rate span {
+  font-family: "Graphik";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #5D6588;
+  margin-right: 39px;
+}

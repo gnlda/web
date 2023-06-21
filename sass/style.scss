@@ -366,5 +366,18 @@ h3 {
             @include font('Graphik', 16px, 400, 24px, $white);
             margin-bottom: 8px;
         }
+        .converter__rate {
+            display: flex;
+            h3 {
+                font-weight: 600;
+                line-height: 27px;
+                font-family: 'Graphik';
+                margin-right: 14px;
+            }
+            span {
+                @include font('Graphik', 18px, 400, 27px, $text-grey-60);
+                margin-right: 39px;
+            }
+        }
     }
 }
