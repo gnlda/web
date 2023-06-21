@@ -355,7 +355,6 @@ img {
         border-radius: 20px;
         padding: 27px 32px 40px 32px;
         .converter__choice {
-            margin-bottom: 48px;
             display: flex;
             button {
                 @include font('Graphik', 20px, 600, 27px, $text-grey-60);
@@ -375,6 +374,7 @@ img {
             }
         }
         p {
+            margin-top: 48px;
             @include font('Graphik', 16px, 400, 24px, $white);
             margin-bottom: 8px;
         }

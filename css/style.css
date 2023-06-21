@@ -582,7 +582,6 @@ img {
   padding: 27px 32px 40px 32px;
 }
 .exchange__converter-container .converter .converter__choice {
-  margin-bottom: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -608,6 +607,7 @@ img {
   cursor: pointer;
 }
 .exchange__converter-container .converter p {
+  margin-top: 48px;
   font-family: "Graphik";
   font-size: 16px;
   font-weight: 400;
