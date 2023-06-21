@@ -130,7 +130,7 @@ h3 {
         position: relative;
         img {
             @include position-left(64%, 58%);
-            transform: translate(-50%, -50%); // так надо потому что ебучая тень не симметрична НАХУЙ
+            transform: translate(-50%, -50%);
         }
     }
 }
