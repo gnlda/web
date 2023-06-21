@@ -110,7 +110,7 @@ h3 {
     padding: 0 24px;
 }
 .hero__container {
-    @include flex(start, start);
+    @include flex(space-between, center);
     .hero__text {
         p {
             margin-top: 24px;
