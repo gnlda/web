@@ -536,7 +536,7 @@ img {
   margin-bottom: 40px;
   width: 500px;
 }
-.exchange__content .exchange__container .exchange__item {
+.exchange__content .exchange-list__container .exchange__item {
   margin-bottom: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -545,7 +545,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
-.exchange__content .exchange__container .exchange__item .exchange__img-block {
+.exchange__content .exchange-list__container .exchange__item .exchange__img-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -563,10 +563,10 @@ img {
   border-radius: 50%;
   margin-right: 32px;
 }
-.exchange__content .exchange__container .exchange__item:nth-child(2) {
+.exchange__content .exchange-list__container .exchange__item:nth-child(2) {
   padding-left: 70px;
 }
-.exchange__content .exchange__container .exchange__item:nth-child(3) {
+.exchange__content .exchange-list__container .exchange__item:nth-child(3) {
   padding-left: 140px;
   margin-bottom: 0;
 }
