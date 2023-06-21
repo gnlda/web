@@ -716,4 +716,10 @@ h3 {
   height: 110px;
   border-radius: 12px;
   background: rgba(47, 50, 65, 0.5019607843);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  margin-right: 32px;
+}
+.about__list .about__item .about__text-block {
+  width: 309px;
 }
