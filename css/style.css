@@ -373,10 +373,10 @@ img {
   display: flex;
   margin-right: 70px;
 }
-.features__card-container .features__column:first-child {
-  margin-right: 24px;
+.features__card-container .features__column:last-child {
+  margin-left: 24px;
 }
-.features__card-container .features__column:first-child .features__card:last-child {
+.features__card-container .features__column:last-child .features__card:last-child {
   margin-top: 24px;
 }
 .features__card-container .features__column:last-child {
