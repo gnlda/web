@@ -128,6 +128,11 @@ h3 {
             @include font('Graphik', 18px, 400, 27px, $text-grey-20);
         }
     }
+    .hero__image {
+        width: 560px;
+        height: 416px;
+        position: relative;
+    }
 }
 
 /* Slider */

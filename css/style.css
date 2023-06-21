@@ -211,6 +211,11 @@ h3 {
   line-height: 27px;
   color: #E5E6ED;
 }
+.hero__container .hero__image {
+  width: 560px;
+  height: 416px;
+  position: relative;
+}
 
 /* Slider */
 .slider__main-container {
