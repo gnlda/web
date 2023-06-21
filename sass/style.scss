@@ -314,16 +314,13 @@ img {
 .exchange__content {
     width: 568px;
     margin-right: 95px;
-    h2 {
-        margin-bottom: 25px;
-    }
     p {
+        margin-top: 25px;
         @include font('Graphik', 16px, 400, 24px, $text-grey-20);
-        margin-bottom: 40px;
         width: 500px;
     }
     .exchange-list__container {
-        margin-left: 36px;
+        margin: 40px 0 0 36px;
         .exchange__item {
             display: flex;
             align-items: center;

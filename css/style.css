@@ -524,20 +524,17 @@ img {
   width: 568px;
   margin-right: 95px;
 }
-.exchange__content h2 {
-  margin-bottom: 25px;
-}
 .exchange__content p {
+  margin-top: 25px;
   font-family: "Graphik";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: #E5E6ED;
-  margin-bottom: 40px;
   width: 500px;
 }
 .exchange__content .exchange-list__container {
-  margin-left: 36px;
+  margin: 40px 0 0 36px;
 }
 .exchange__content .exchange-list__container .exchange__item {
   display: -webkit-box;
