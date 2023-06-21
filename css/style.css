@@ -92,7 +92,7 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
 }
-.header__wrap .logo__header {
+.header__wrap .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,22 +103,22 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
 }
-.header__wrap .logo__header p {
+.header__wrap .header__logo p {
   font-family: "Sora";
   font-size: 18px;
   font-weight: 700;
   line-height: 23px;
   color: #ffffff;
 }
-.header__wrap .logo__header p span {
+.header__wrap .header__logo p span {
   color: #1A82FF;
 }
-.header__wrap .menu__header {
+.header__wrap .header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.header__wrap .menu__header ul {
+.header__wrap .header__menu ul {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,17 +130,17 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
 }
-.header__wrap .menu__header li {
+.header__wrap .header__menu li {
   display: inline-block;
 }
-.header__wrap .menu__header li:not(:first-child) {
+.header__wrap .header__menu li:not(:first-child) {
   margin-left: 48px;
 }
-.header__wrap .menu__header li a {
+.header__wrap .header__menu li a {
   text-decoration: none;
   color: #ffffff;
 }
-.header__wrap .menu__header .menu__button__container {
+.header__wrap .header__menu .menu__button__container {
   margin-left: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,7 +152,7 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
 }
-.header__wrap .menu__header .menu__button__container button {
+.header__wrap .header__menu .menu__button__container button {
   height: 100%;
   padding: 12px 24px;
   border-radius: 100px;
@@ -164,11 +164,11 @@ h3 {
   color: #ffffff;
   cursor: pointer;
 }
-.header__wrap .menu__header .menu__button__container button:first-child {
+.header__wrap .header__menu .menu__button__container button:first-child {
   background: transparent;
   border: 1px solid #ffffff;
 }
-.header__wrap .menu__header .menu__button__container button:last-child {
+.header__wrap .header__menu .menu__button__container button:last-child {
   margin-left: 16px;
   padding: 12px 24px;
   background: -o-linear-gradient(184.44deg, #246CF9 -0.27%, #1E68F6 -0.26%, #0047D0 98.59%);
