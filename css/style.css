@@ -739,6 +739,9 @@ h3 {
   -webkit-transform: translateX(-42px);
       -ms-transform: translateX(-42px);
           transform: translateX(-42px);
+  width: calc(-webkit-fit-content - 42px);
+  width: calc(-moz-fit-content - 42px);
+  width: calc(fit-content - 42px);
 }
 
 .about__list .about__item {

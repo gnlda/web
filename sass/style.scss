@@ -449,6 +449,7 @@ h3 {
     @include flex(center, center);
     // position: relative;
     transform: translateX(-42px);
+    width: calc(fit-content - 42px);
     //.hyperimg {
         //@include position-left(0, 0);
     //}
