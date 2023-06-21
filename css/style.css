@@ -709,7 +709,7 @@ h3 {
 .about__content .about__line {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: -1;
 }
 
