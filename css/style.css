@@ -619,7 +619,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 32px;
 }
 .exchange__converter-container .converter .converter__rate h3 {
   font-weight: 600;
