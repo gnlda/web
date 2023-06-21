@@ -368,6 +368,7 @@ h3 {
         }
         .converter__rate {
             display: flex;
+            margin-bottom: 32px;
             h3 {
                 font-weight: 600;
                 line-height: 27px;
@@ -379,11 +380,13 @@ h3 {
                 margin-right: 39px;
             }
             a {
-                
-                span {
-
-                }
+                @include font('Graphik', 16px, 400, 24px, $text-grey-40);
+                text-decoration: none;
             }
+        }
+        .converter__row {
+            width: 100%;
+            @include flex(space-between, center)
         }
     }
 }
