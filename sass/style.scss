@@ -43,12 +43,16 @@ h3 {
 .hero {
     position: relative;
     .grid__bg {
-        @include position-left(0, 50%);
+        position: absolute;
+        top: 0;
+        left: 50%;
         transform: translateX(-50%);
         z-index: -1;
     }
     .line__hero {
-        @include position-left(0, 50%);
+        position: absolute;
+        top: 0;
+        left: 50%;
         transform: translateX(-50%);
         z-index: -1;
     }
@@ -129,7 +133,9 @@ h3 {
         height: 416px;
         position: relative;
         img {
-            @include position-left(64%, 58%);
+            position: absolute;
+            top: 64%;
+            left: 58%;
             transform: translate(-50%, -50%);
         }
     }
