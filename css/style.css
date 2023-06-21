@@ -456,6 +456,8 @@ h3 {
 .features__text-container img {
   position: absolute;
   z-index: -1;
+  left: 100px;
+  top: 277px;
 }
 .features__text-container p {
   font-family: "Graphik";
