@@ -125,9 +125,12 @@ document.addEventListener("touchend", documentMouseupHandler);
 
 const buttons = document.querySelector('.converter__choice');
 const rate = 0.0000345245;
-const output = row2.querySelector("input");
+let output = row2.querySelector("input");
 let inputRate = row1.querySelector("input");
 
+function readOnly() {
+    output.setAttribute("readonly", "readonly");
+}
 
 function selectConvert(e) {
     if (e.target.classList.contains("convert") && !e.target.classList.contains("active")) {
@@ -143,8 +146,8 @@ function swap() {
     const buy = document.querySelector("#buy");
     const sell = document.querySelector("#sell");
     const convertButton = document.querySelector(".converter__button");
-    const row1 = document.querySelector("#row1");
-    const row2 = document.querySelector("#row2");
+    let row1 = document.querySelector("#row1");
+    let row2 = document.querySelector("#row2");
     const our = `<input type="text" value="4.000">
     <div class="converter__item">
     <img src="img/USD.svg" alt="USD">
@@ -166,12 +169,10 @@ function swap() {
         convertButton.innerHTML = "Buy Now";
         row1.innerHTML = our;
         row2.innerHTML = crypto;
-        inputRate = row1.querySelector("input");
     } else {
         convertButton.innerHTML = "Sell Now";
         row1.innerHTML = crypto;
         row2.innerHTML = our;
-        inputRate = row1.querySelector("input");
     }
 }
 
@@ -193,6 +194,4 @@ inputRate.addEventListener("click", clearInput);
 
 inputRate.addEventListener("input", convert);
 
-inputRate.addEventListener("click", e => {
-    console.log(1);
-});
+output.addEventListener('mouseover', readOnly);
