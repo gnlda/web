@@ -386,7 +386,12 @@ h3 {
         }
         .converter__row {
             width: 100%;
-            @include flex(space-between, center)
+            @include flex(start, center);
+            input {
+                background: none;
+                border: none;
+                outline: none;
+            }
         }
     }
 }
