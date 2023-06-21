@@ -32,6 +32,11 @@ h3 {
     margin: 0 auto;
 }
 
+.button {
+    @include button(18px, 75px);
+    @include font('Sofia Pro', 18px, 600, 160%, $white);
+}
+
 
 /* Hero section */
 
@@ -123,10 +128,6 @@ h3 {
             @include font('Graphik', 18px, 400, 27px, $text-grey-20);
         }
     }
-}
-.button {
-    @include button(18px, 75px);
-    @include font('Sofia Pro', 18px, 600, 160%, $white);
 }
 
 /* Slider */

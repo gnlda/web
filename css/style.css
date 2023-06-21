@@ -42,6 +42,20 @@ h3 {
   margin: 0 auto;
 }
 
+.button {
+  padding: 18px 75px;
+  background: -o-linear-gradient(184.44deg, #246CF9 -0.27%, #1E68F6 -0.26%, #0047D0 98.59%);
+  background: linear-gradient(265.56deg, #246CF9 -0.27%, #1E68F6 -0.26%, #0047D0 98.59%);
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  font-family: "Sofia Pro";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 160%;
+  color: #ffffff;
+}
+
 /* Hero section */
 .hero {
   position: relative;
@@ -196,20 +210,6 @@ h3 {
   font-weight: 400;
   line-height: 27px;
   color: #E5E6ED;
-}
-
-.button {
-  padding: 18px 75px;
-  background: -o-linear-gradient(184.44deg, #246CF9 -0.27%, #1E68F6 -0.26%, #0047D0 98.59%);
-  background: linear-gradient(265.56deg, #246CF9 -0.27%, #1E68F6 -0.26%, #0047D0 98.59%);
-  border-radius: 100px;
-  border: none;
-  cursor: pointer;
-  font-family: "Sofia Pro";
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 160%;
-  color: #ffffff;
 }
 
 /* Slider */
