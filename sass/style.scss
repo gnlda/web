@@ -234,9 +234,9 @@ img {
     margin-right: 70px;
     .features__column:last-child {
         margin-right: 24px;
-        .features__card:last-child {
-            margin-top: 24px;
-        }
+    }
+    .features__card:last-child {
+        margin-top: 24px;
     }
     .features__column:last-child {
         @include flex(center, center);
