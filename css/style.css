@@ -672,7 +672,6 @@ img {
   height: 32px;
   width: 276px;
   border-right: 1px solid #34384C;
-  margin-right: 16px;
 }
 .exchange__converter-container .converter .converter__row-container .converter__row .converter__item {
   display: -webkit-box;
@@ -684,6 +683,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 16px;
 }
 .exchange__converter-container .converter .converter__row-container .converter__row .converter__arrow {
   margin-left: 8px;

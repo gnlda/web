@@ -411,10 +411,10 @@ img {
                     height: 32px;
                     width: 276px;
                     border-right: 1px solid $text-grey-80;
-                    margin-right: 16px;
                 }
                 .converter__item {
                     @include flex(start, center);
+                    margin-left: 16px;
                 }
                 .converter__arrow {
                     margin-left: 8px;
