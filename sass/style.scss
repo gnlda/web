@@ -415,9 +415,8 @@ img {
                 }
                 .converter__item {
                     @include flex(start, center);
-                    margin-right: 8px;
-                    img {
-                        margin-right: 8px;
+                    .converter__arrow {
+                        margin-left: 8px;
                     }
                 }
             }
