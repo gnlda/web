@@ -339,3 +339,32 @@ h3 {
         }
     }
 }
+
+.exchange__converter-container {
+    .converter {
+        width: 450px;
+        background: $dark;
+        backdrop-filter: blur(6.5px);
+        border-radius: 20px;
+        padding: 27px 32px 40px 32px;
+        .converter__choice {
+            margin-bottom: 48px;
+            display: flex;
+            button {
+                @include font('Graphik', 20px, 600, 27px, $text-grey-60);
+                background: none;
+                width: 50%;
+                border: none;
+                outline: none;
+                &:first-child {
+                    border-right: 1px solid $text-grey-80;
+                    color: $dark-blue;
+                }
+            }
+        }
+        p {
+            @include font('Graphik', 16px, 400, 24px, $white);
+            margin-bottom: 8px;
+        }
+    }
+}

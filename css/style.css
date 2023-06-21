@@ -545,3 +545,41 @@ h3 {
   padding-left: 140px;
   margin-bottom: 0;
 }
+
+.exchange__converter-container .converter {
+  width: 450px;
+  background: rgba(47, 50, 65, 0.5019607843);
+  -webkit-backdrop-filter: blur(6.5px);
+          backdrop-filter: blur(6.5px);
+  border-radius: 20px;
+  padding: 27px 32px 40px 32px;
+}
+.exchange__converter-container .converter .converter__choice {
+  margin-bottom: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.exchange__converter-container .converter .converter__choice button {
+  font-family: "Graphik";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #5D6588;
+  background: none;
+  width: 50%;
+  border: none;
+  outline: none;
+}
+.exchange__converter-container .converter .converter__choice button:first-child {
+  border-right: 1px solid #34384C;
+  color: #246CF9;
+}
+.exchange__converter-container .converter p {
+  font-family: "Graphik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
