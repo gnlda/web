@@ -23,3 +23,8 @@
     top: $top;
     left: $left;
 }
+@mixin position-right($top, $right) {
+    position: absolute;
+    top: $top;
+    right: $right;
+}
