@@ -443,7 +443,7 @@ img {
 }
 
 .about__line {
-    @include position-right(0, 0);
+    @include position-right(48px, 0);
     overflow: hidden;
     z-index: -1;
 }

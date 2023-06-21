@@ -723,7 +723,7 @@ img {
 
 .about__line {
   position: absolute;
-  top: 0;
+  top: 48px;
   right: 0;
   overflow: hidden;
   z-index: -1;
