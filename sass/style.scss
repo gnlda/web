@@ -48,9 +48,7 @@ h3 {
         z-index: -1;
     }
     .line__hero {
-        position: absolute;
-        top: 0;
-        left: 50%;
+        @include position-left(0, 50%);
         transform: translateX(-50%);
         z-index: -1;
     }
@@ -131,9 +129,7 @@ h3 {
         height: 416px;
         position: relative;
         img {
-            position: absolute;
-            top: 64%;
-            left: 58%;
+            @include position-left(64%, 58%);
             transform: translate(-50%, -50%);
         }
     }
