@@ -126,6 +126,7 @@ document.addEventListener("touchend", documentMouseupHandler);
 const buttons = document.querySelector('.converter__choice');
 const rate = 0.0000345245;
 const output = row2.querySelector("input");
+let inputRate = row1.querySelector("input");
 
 
 function selectConvert(e) {
@@ -165,21 +166,23 @@ function swap() {
         convertButton.innerHTML = "Buy Now";
         row1.innerHTML = our;
         row2.innerHTML = crypto;
+        inputRate = row1.querySelector("input");
     } else {
         convertButton.innerHTML = "Sell Now";
         row1.innerHTML = crypto;
         row2.innerHTML = our;
+        inputRate = row1.querySelector("input");
     }
 }
 
 function convert() {
-    const inputRate = row1.querySelector("input");
+    inputRate = row1.querySelector("input");
     let converted = inputRate.value * rate;
     output.value = converted.toFixed(6);
 }
 
 function clearInput() {
-    const inputRate = row1.querySelector("input");
+    inputRate = row1.querySelector("input");
     inputRate.value = '';
     inputRate.removeEventListener('click', clearInput);
 }
@@ -190,4 +193,6 @@ inputRate.addEventListener("click", clearInput);
 
 inputRate.addEventListener("input", convert);
 
-inputRate.addEventListener("click", console.log(1));
+inputRate.addEventListener("click", e => {
+    console.log(1);
+});
