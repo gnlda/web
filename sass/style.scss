@@ -376,9 +376,9 @@ img {
         p {
             margin-top: 48px;
             @include font('Graphik', 16px, 400, 24px, $white);
-            margin-bottom: 8px;
         }
         .converter__rate {
+            margin-top: 8px;
             display: flex;
             margin-bottom: 32px;
             h3 {
