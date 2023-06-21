@@ -613,6 +613,7 @@ h3 {
 }
 .exchange__converter-container .converter .converter__row {
   width: 100%;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -622,9 +623,16 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 1px solid #34384C;
 }
 .exchange__converter-container .converter .converter__row input {
   background: none;
   border: none;
   outline: none;
+  height: 32px;
+  width: 276px;
+  border-right: 1px solid #34384C;
+}
+.exchange__converter-container .converter .converter__row:first-child {
+  margin-bottom: 56px;
 }
