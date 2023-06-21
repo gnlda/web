@@ -256,7 +256,9 @@ img {
             backdrop-filter: blur(7px);
             border-radius: 50%;
             @include flex(center, center);  
-            margin-bottom: 40px;
+        }
+        h3 {
+            margin-top: 40px;
         }
         p {
             @include font('Graphik', 16px, 400, 24px, $text-grey-40);
