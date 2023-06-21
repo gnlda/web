@@ -189,3 +189,4 @@ inputRate.addEventListener("click", clearInput);
 
 inputRate.addEventListener("input", convert);
 
+row2.addEventListener('click', console.log(1))
