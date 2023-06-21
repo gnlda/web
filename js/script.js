@@ -122,3 +122,11 @@ sliderCover.addEventListener("touchstart", mousedownHandler);
 sliderCover.addEventListener("touchend", mouseupHandler);
 sliderCover.addEventListener("touchmove", touchmoveHandler);
 document.addEventListener("touchend", documentMouseupHandler);
+
+const buttons = document.querySelector('.converter__choice');
+
+buttons.addEventListener('click', e => {
+    if (e.target.className === "convert") {
+        buttons.querySelectorAll("convert").classList.add("active");
+    }
+})

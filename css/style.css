@@ -566,7 +566,7 @@ h3 {
   border: none;
   outline: none;
 }
-.exchange__converter-container .converter .converter__choice button:first-child {
+.exchange__converter-container .converter .converter__choice button.active {
   border-right: 1px solid #34384C;
   color: #246CF9;
 }
