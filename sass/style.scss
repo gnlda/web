@@ -438,7 +438,7 @@ h3 {
 .about__content {
     position: relative;
     .about__line {
-        @include position-left(0, 0);
+        @include position-right(0, 0);
         z-index: -1;
     }
 }
