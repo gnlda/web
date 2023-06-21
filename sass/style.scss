@@ -303,3 +303,15 @@ h3 {
 .exchange__wrap {
     display: flex;
 }
+
+.exchange__content {
+    width: 568px;
+    margin-right: 95px;
+    h2 {
+        margin-bottom: 25px;
+    }
+    p {
+        @include font('Graphik', 16px, 400, 24px, $text-grey-20);
+        margin-bottom: 40px;
+    }
+}
