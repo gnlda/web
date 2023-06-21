@@ -124,8 +124,12 @@ sliderCover.addEventListener("touchmove", touchmoveHandler);
 document.addEventListener("touchend", documentMouseupHandler);
 
 const buttons = document.querySelector('.converter__choice');
+const rate = 0.0000345245;
+const inputRate = row1.querySelector("input");
+const output = row2.querySelector("input");
 
-buttons.addEventListener("click", e => {
+
+function selectConvert(e) {
     if (e.target.classList.contains("convert") && !e.target.classList.contains("active")) {
         const convertElements = buttons.querySelectorAll(".convert");
         convertElements.forEach(element => {
@@ -133,7 +137,7 @@ buttons.addEventListener("click", e => {
         });
         swap();
     }
-});
+}
 
 function swap() {
     const buy = document.querySelector("#buy");
@@ -143,21 +147,21 @@ function swap() {
     const row2 = document.querySelector("#row2");
     const our = `<input type="text" value="4.000">
     <div class="converter__item">
-        <img src="img/USD.svg" alt="USD">
-        <span>USD</span>
+    <img src="img/USD.svg" alt="USD">
+    <span>USD</span>
     </div>
     <div class="converter__arrow">
-        <img src="img/Arrow.svg" alt="Arrow">
+    <img src="img/Arrow.svg" alt="Arrow">
     </div>`
     const crypto = `<input type="text" value="0.000138">
     <div class="converter__item">
-        <img src="img/Bitcoin.svg" alt="Bitcoin">
-        <span>BTC</span>
+    <img src="img/Bitcoin.svg" alt="Bitcoin">
+    <span>BTC</span>
     </div>
     <div class="converter__arrow">
-        <img src="img/Arrow.svg" alt="Arrow">
+    <img src="img/Arrow.svg" alt="Arrow">
     </div>`;
-
+    
     if (buy.classList.contains("active")) {
         convertButton.innerHTML = "Buy Now";
         row1.innerHTML = our;
@@ -167,20 +171,21 @@ function swap() {
         row1.innerHTML = crypto;
         row2.innerHTML = our;
     }
-};
+}
 
-const rate = 0.0000345245;
-
-const inputRate = row1.querySelector("input");
-const output = row2.querySelector("input");
-
-inputRate.addEventListener("click", e => {
-    if (inputRate.value === "4.000") {
-        inputRate.value = '';
-    }
-})
-
-inputRate.addEventListener("input", e => {
+function convert() {
     let converted = inputRate.value * rate;
     output.value = converted.toFixed(6);
-});
+}
+
+function clearInput() {
+    inputRate.value = '';
+    inputRate.removeEventListener('click', clearInput);
+}
+
+buttons.addEventListener("click", selectConvert);
+
+inputRate.addEventListener("click", clearInput);
+
+inputRate.addEventListener("input", convert);
+
