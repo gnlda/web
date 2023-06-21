@@ -156,9 +156,7 @@ h3 {
         height: inherit;
         width: 89px;
         background: linear-gradient(270deg, $bg 0%, transparent 100%);
-        position: absolute;
-        top: 0;
-        right: 0;
+        @include position-right(0, 0);
         z-index: 2;
     }
     .slider__cover {
