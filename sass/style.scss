@@ -460,7 +460,6 @@ img {
 .about__list {
     .about__item {
         display: flex;
-        margin-bottom: 32px;
         .about__item__img-block {
             @include flex(center, center);
             width: 110px;
@@ -481,8 +480,8 @@ img {
                 color: $text-grey-40;
             }
         }
-        &:last-child {
-            margin-bottom: 0;
+        &:not(:first-child) {
+            margin-top: 32px;
         }
     }
 }

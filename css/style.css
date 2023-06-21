@@ -740,7 +740,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 32px;
 }
 .about__list .about__item .about__item__img-block {
   display: -webkit-box;
@@ -771,6 +770,6 @@ img {
   margin: 0;
   color: #A5ADCF;
 }
-.about__list .about__item:last-child {
-  margin-bottom: 0;
+.about__list .about__item:not(:first-child) {
+  margin-top: 32px;
 }
