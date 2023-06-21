@@ -437,7 +437,7 @@ h3 {
     position: relative;
 }
 .about__wrap {
-    display: flex;
+    @include flex(space-between, start);
 }
 
 .about__line {
