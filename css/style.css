@@ -464,6 +464,9 @@ img {
   left: 100px;
   z-index: -1;
 }
+.features__text-container h2 {
+  margin-top: 32px;
+}
 .features__text-container p {
   font-family: "Graphik";
   font-size: 16px;

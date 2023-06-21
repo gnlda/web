@@ -277,6 +277,9 @@ img {
         @include position-left(277px, 100px);
         z-index: -1;
     }
+    h2 {
+        margin-top: 32px;
+    }
     p {
         @include font('Graphik', 16px, 400, 24px, $text-grey-20);
         margin: 24px 0 32px 0;
