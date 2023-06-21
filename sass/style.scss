@@ -27,6 +27,10 @@ h3 {
     @include font('Sofia Pro', 25px, 700, 120%, $white);
 }
 
+img {
+    display: block;
+}
+
 .wrapper {
     width: 1110px;
     margin: 0 auto;
