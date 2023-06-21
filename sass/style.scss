@@ -109,9 +109,6 @@ h3 {
 
 
 /* Hero */
-.hero__wrap {
-    padding: 0 24px;
-}
 .hero__container {
     @include flex(space-between, center);
     .hero__text {
