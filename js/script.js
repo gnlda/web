@@ -149,7 +149,7 @@ function swap() {
     <div class="converter__arrow">
         <img src="img/Arrow.svg" alt="Arrow">
     </div>`
-    const crypto = `<input type="text" value="0.074153">
+    const crypto = `<input type="text" value="0.000138">
     <div class="converter__item">
         <img src="img/Bitcoin.svg" alt="Bitcoin">
         <span>BTC</span>
@@ -169,8 +169,18 @@ function swap() {
     }
 };
 
-const rate = 0.000035;
+const rate = 0.0000345245;
 
 const inputRate = row1.querySelector("input");
+const output = row2.querySelector("input");
 
-inputRate.addEventListener("")
+inputRate.addEventListener("click", e => {
+    if (inputRate.value === "4.000") {
+        inputRate.value = '';
+    }
+})
+
+inputRate.addEventListener("input", e => {
+    let converted = inputRate.value * rate;
+    output.value = converted.toFixed(6);
+});
