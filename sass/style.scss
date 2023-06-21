@@ -246,7 +246,7 @@ h3 {
     }
     .features__card {
         width: 285px;
-        background: rgba(47, 50, 65, 0.5);
+        background: $dark;
         backdrop-filter: blur(2px);
         border-radius: 12px;
         @include flex(center, center);
@@ -313,5 +313,29 @@ h3 {
     p {
         @include font('Graphik', 16px, 400, 24px, $text-grey-20);
         margin-bottom: 40px;
+        width: 500px;
+    }
+    .exchange__container {
+        .exchange__item {
+            margin-bottom: 32px;
+            display: flex;
+            align-items: center;
+            .exchange__img-block {
+                @include flex(center, center);
+                width: 90px;
+                height: 90px;
+                background: $dark;
+                backdrop-filter: blur(7px);
+                border-radius: 50%;
+                margin-right: 32px;
+            }
+            &:nth-child(2) {
+                padding-left: 70px;
+            }
+            &:nth-child(3) {
+                padding-left: 140px;
+                margin-bottom: 0;
+            }
+        }
     }
 }
