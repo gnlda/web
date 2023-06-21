@@ -439,6 +439,7 @@ h3 {
     position: relative;
     .about__line {
         @include position-right(0, 0);
+        transform: translateX(100px);
         z-index: -1;
     }
 }
