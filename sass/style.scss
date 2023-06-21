@@ -451,7 +451,7 @@ img {
 
 .about__img-block {
     // position: relative;
-    transform: translateX(-42px);
+    transform: translateX(calc(-42px * 2));
     width: calc(581px - 42px);
     //.hyperimg {
         //@include position-left(0, 0);

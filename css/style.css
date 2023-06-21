@@ -731,9 +731,9 @@ img {
 }
 
 .about__img-block {
-  -webkit-transform: translateX(-42px);
-      -ms-transform: translateX(-42px);
-          transform: translateX(-42px);
+  -webkit-transform: translateX(-84px);
+      -ms-transform: translateX(-84px);
+          transform: translateX(-84px);
   width: 539px;
 }
 
