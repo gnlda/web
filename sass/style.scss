@@ -423,7 +423,7 @@ h3 {
     padding: 160px 0;
     overflow: hidden;
     h2 {
-        width: 636px;
+        width: 100%;
     }
     p {
         @include font('Graphik', 16px, 400, 24px, $text-grey-20);

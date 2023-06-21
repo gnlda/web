@@ -685,7 +685,7 @@ h3 {
   overflow: hidden;
 }
 .about h2 {
-  width: 636px;
+  width: 100%;
 }
 .about p {
   font-family: "Graphik";
