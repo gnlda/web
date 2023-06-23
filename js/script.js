@@ -123,6 +123,9 @@ sliderCover.addEventListener("touchend", mouseupHandler);
 sliderCover.addEventListener("touchmove", touchmoveHandler);
 document.addEventListener("touchend", documentMouseupHandler);
 
+
+
+
 const buttons = document.querySelector('.converter__choice');
 const rate = 0.0000345245;
 let output = row2.querySelector("input");
