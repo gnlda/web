@@ -831,6 +831,14 @@ img {
   line-height: 27px;
   color: #A5ADCF;
 }
+.media__text-container .media__content-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 .media__text-container .media__content-slider-item {
   height: 100%;
   width: 100%;
