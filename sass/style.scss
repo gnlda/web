@@ -551,6 +551,7 @@ img {
         position: absolute;
         border-radius: 50%;
         background: var($dark);
+        @include flex(center, center);
         &:nth-child(1) {
             height: 245px;
             width: 245px;
