@@ -209,13 +209,13 @@ let mediaSliderLeft = 0;
 
 const mediaSliderToLeft = () => {
     if (mediaSliderLeft + mediaSliderItem.offsetWidth <= 0) {
-        mediaSliderLeft = parseInt(styles.left) + mediaSliderItem.offsetWidth;
+        mediaSliderLeft = mediaSliderLeft + mediaSliderItem.offsetWidth;
         mediaSlider.style.left = `${mediaSliderLeft}px`;
     }
 }
 const mediaSliderToRight = () => {
     if (mediaSliderLeft - mediaSliderItem.offsetWidth >= -3 * mediaSliderItem.offsetWidth) {
-        mediaSliderLeft = parseInt(styles.left) - mediaSliderItem.offsetWidth;
+        mediaSliderLeft = mediaSliderLeft - mediaSliderItem.offsetWidth;
         mediaSlider.style.left = `${mediaSliderLeft}px`;
     }
 }
