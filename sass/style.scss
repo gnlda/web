@@ -512,13 +512,16 @@ img {
         margin-top: 16px;
         @include font('Graphik', 18px, 600, 27px, $text-grey-40);
     }
-    .media__content-slider {
-        display: flex;
-        width: fit-content;
-    }
-    .media__content-slider-item {
-        height: 100%;
-        width: 100%;
+    .media__content {
+
+        .media__slider {
+            display: flex;
+            width: fit-content;
+            .media__slider-item {
+                height: 100%;
+                width: 100%;
+            }
+        }
     }
 
 
