@@ -207,7 +207,7 @@ let companyCircles = document.querySelectorAll(".media__company-circle");
 let styles = window.getComputedStyle(mediaSlider);
 let mediaSliderLeft = 0;
 let currentCompany = 0;
-let previousCompany = 3;
+let previousCompany;
 
 
 
@@ -224,13 +224,10 @@ const mediaSliderToRight = () => {
     if (mediaSliderLeft - mediaSliderItem.offsetWidth >= -3 * mediaSliderItem.offsetWidth) {
         mediaSliderLeft -= mediaSliderItem.offsetWidth;
         mediaSlider.style.left = `${mediaSliderLeft}px`;
+        previousCompany = currentCompany;
         currentCompany++;
-        previousCompany++;
         if(currentCompany == companyCircles.length) {
             currentCompany = 0;
-        }
-        if(previousCompany == companyCircles.length) {
-            previousCompany = 0;
         }
         console.log(`previousCompany = ${previousCompany}`);
         console.log(`currentCompany = ${currentCompany}`);
