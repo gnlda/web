@@ -215,6 +215,7 @@ const mediaSliderToLeft = () => {
         mediaSliderLeft += mediaSliderItem.offsetWidth;
         mediaSlider.style.left = `${mediaSliderLeft}px`;
         currentCompany--;
+        console.log(companyCircles[currentCompany]);
         companyCircles[currentCompany].style.color = "$text-red2";
     }
 }
@@ -223,6 +224,7 @@ const mediaSliderToRight = () => {
         mediaSliderLeft -= mediaSliderItem.offsetWidth;
         mediaSlider.style.left = `${mediaSliderLeft}px`;
         currentCompany++;
+        console.log(companyCircles[currentCompany]);
         companyCircles[currentCompany].style.color = "$text-red2";
     }
 }
