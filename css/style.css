@@ -833,6 +833,7 @@ img {
 }
 .media__text-container .media__content {
   position: relative;
+  height: 100px;
 }
 .media__text-container .media__content .media__slider {
   display: -webkit-box;
