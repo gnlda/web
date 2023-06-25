@@ -216,7 +216,7 @@ const mediaSliderToLeft = () => {
         mediaSlider.style.left = `${mediaSliderLeft}px`;
         currentCompany--;
         console.log(companyCircles[currentCompany]);
-        companyCircles[currentCompany].style.color = "$text-red2";
+        companyCircles[currentCompany].style.color = "#CC2229";
     }
 }
 const mediaSliderToRight = () => {
@@ -225,6 +225,6 @@ const mediaSliderToRight = () => {
         mediaSlider.style.left = `${mediaSliderLeft}px`;
         currentCompany++;
         console.log(companyCircles[currentCompany]);
-        companyCircles[currentCompany].style.color = "$text-red2";
+        companyCircles[currentCompany].style.color = "#CC2229";
     }
 }
