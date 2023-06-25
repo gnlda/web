@@ -204,7 +204,7 @@ output.addEventListener('mouseover', readOnly);
 let mediaSlider = document.querySelector(".media__slider");
 let mediaSliderItem = document.querySelector(".media__slider-item");
 let styles = window.getComputedStyle(mediaSlider);
-let mediaSliderLeft = parseInt(styles.left);
+let mediaSliderLeft = 0;
 
 
 const mediaSliderToLeft = () => {
