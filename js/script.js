@@ -207,8 +207,8 @@ let styles = window.getComputedStyle(mediaSlider);
 
 
 const mediaSliderToLeft = () => {
-    mediaSlider.style.left = `${parseInt(styles.left) - mediaSliderItem.offsetWidth}px`;
+    mediaSlider.style.left = `${parseInt(styles.left) + mediaSliderItem.offsetWidth}px`;
 }
 const mediaSliderToRight = () => {
-    mediaSlider.style.left = `${parseInt(styles.left) + mediaSliderItem.offsetWidth}px`;
+    mediaSlider.style.left = `${parseInt(styles.left) - mediaSliderItem.offsetWidth}px`;
 }
