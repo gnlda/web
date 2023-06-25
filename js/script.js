@@ -206,8 +206,8 @@ let mediaSliderItem = document.querySelector(".media__slider-item");
 
 
 const mediaSliderToLeft = () => {
-    mediaSlider.style.left = `${parseInt(mediaSlider.style.left) + mediaSliderItem.offsetWidth}px`
+    mediaSlider.style.left = `${parseInt(mediaSlider.style.left) + mediaSliderItem.offsetWidth}px`;
 }
 const mediaSliderToRight = () => {
-    
+    mediaSlider.style.left = `${parseInt(mediaSlider.style.left) - mediaSliderItem.offsetWidth}px`;
 }
