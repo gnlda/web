@@ -898,6 +898,7 @@ img {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+  color: #CC2229;
 }
 .media_image-container .media__company-circle:nth-child(2) {
   height: 111px;
