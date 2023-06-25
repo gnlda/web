@@ -203,8 +203,11 @@ output.addEventListener('mouseover', readOnly);
 
 let mediaSlider = document.querySelector(".media__slider");
 let mediaSliderItem = document.querySelector(".media__slider-item");
+let companyCircles = document.querySelectorAll(".media__company-circle");
 let styles = window.getComputedStyle(mediaSlider);
 let mediaSliderLeft = 0;
+let currentCompany = 0;
+
 
 
 const mediaSliderToLeft = () => {
