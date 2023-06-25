@@ -818,7 +818,7 @@ img {
 .media__text-container .media__content {
   margin-top: 40px;
   position: relative;
-  height: 161px;
+  height: 120px;
 }
 .media__text-container .media__content .media__slider {
   display: -webkit-box;
@@ -842,7 +842,7 @@ img {
   color: #E5E6ED;
 }
 .media__text-container #author {
-  margin-top: 120px;
+  margin-top: 16px;
   font-family: "Graphik";
   font-size: 18px;
   font-weight: 600;

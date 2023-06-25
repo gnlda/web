@@ -507,7 +507,7 @@ img {
     .media__content {
         margin-top: 40px;
         position: relative;
-        height: 161px;
+        height: 120px;
         .media__slider {
             display: flex;
             height: 100%;
@@ -524,7 +524,7 @@ img {
         @include font('Graphik', 25px, 400, 27px, $text-grey-20);
     }
     #author {
-        margin-top: 120px;
+        margin-top: 16px;
         @include font('Graphik', 18px, 600, 27px, $text-grey-40);
     }
 
