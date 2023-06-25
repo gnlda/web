@@ -196,3 +196,17 @@ inputRate.addEventListener("click", clearInput);
 inputRate.addEventListener("input", convert);
 
 output.addEventListener('mouseover', readOnly);
+
+
+
+
+
+let mediaSlider = document.querySelector(".media__slider");
+let mediaSliderItems = document.querySelectorAll(".media__slider-item");
+
+const mediaSliderToLeft = () => {
+    alert("left");
+}
+const mediaSliderToRight = () => {
+    alert("right");
+}
