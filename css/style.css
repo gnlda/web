@@ -800,9 +800,9 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .media__text-container {
@@ -831,6 +831,9 @@ img {
   line-height: 27px;
   color: #A5ADCF;
 }
+.media__text-container .media__content {
+  position: relative;
+}
 .media__text-container .media__content .media__slider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -838,6 +841,9 @@ img {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .media__text-container .media__content .media__slider .media__slider-item {
   height: 100%;

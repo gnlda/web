@@ -497,7 +497,7 @@ img {
 
 /* Media */
 .media__wrap {
-    @include flex(space-between, center);
+    @include flex(space-between, start);
 }
 .media__text-container {
     width: 539px;
@@ -513,10 +513,11 @@ img {
         @include font('Graphik', 18px, 600, 27px, $text-grey-40);
     }
     .media__content {
-
+        position: relative;
         .media__slider {
             display: flex;
             width: fit-content;
+            @include position-left(0, 0);
             .media__slider-item {
                 height: 100%;
                 width: 100%;
