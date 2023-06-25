@@ -14,7 +14,6 @@ let previousOffset = 0;
 let velocityInterval;
 let autoscrollInterval;
 
-console.log(sliderLength);
 
 const mousedownHandler = (e) => {
     isTouch = true;
