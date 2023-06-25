@@ -212,5 +212,7 @@ const mediaSliderToLeft = () => {
     }
 }
 const mediaSliderToRight = () => {
-    mediaSlider.style.left = `${parseInt(styles.left) - mediaSliderItem.offsetWidth}px`;
+    if (parseInt(styles.left) - mediaSliderItem.offsetWidth >= -3 * mediaSliderItem.offsetWidth) {
+        mediaSlider.style.left = `${parseInt(styles.left) - mediaSliderItem.offsetWidth}px`;
+    }
 }
