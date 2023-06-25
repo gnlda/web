@@ -351,96 +351,96 @@ img {
 
 .exchange__converter-container {
     margin-left: 95px;
-    .converter {
-        width: 450px;
-        background: $dark;
-        backdrop-filter: blur(6.5px);
-        border-radius: 20px;
-        padding: 27px 32px 40px 32px;
-        .converter__choice {
-            display: flex;
-            button {
-                @include font('Graphik', 20px, 600, 27px, $text-grey-60);
+    
+}
+.converter {
+    width: 450px;
+    background: $dark;
+    backdrop-filter: blur(6.5px);
+    border-radius: 20px;
+    padding: 27px 32px 40px 32px;
+    .converter__choice {
+        display: flex;
+        button {
+            @include font('Graphik', 20px, 600, 27px, $text-grey-60);
+            background: none;
+            width: 50%;
+            border: none;
+            outline: none;
+            &:first-child {
+                border-right: 1px solid $text-grey-80;
+            }
+            &.active {
+                color: $dark-blue;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    p {
+        margin-top: 48px;
+        @include font('Graphik', 16px, 400, 24px, $white);
+    }
+    .converter__rate {
+        margin-top: 8px;
+        display: flex;
+        h3 {
+            font-weight: 600;
+            line-height: 27px;
+            font-family: 'Graphik';
+        }
+        span {
+            margin-left: 14px;
+            @include font('Graphik', 18px, 400, 27px, $text-grey-60);
+        }
+        a {
+            margin-left: 39px;
+            @include font('Graphik', 16px, 400, 24px, $text-grey-40);
+            text-decoration: none;
+        }
+    }
+    .converter__row-container {
+        margin-top: 32px;
+        .converter__row {
+            margin-bottom: 24px;
+            width: 100%;
+            height: 60px;
+            @include flex(start, center);
+            border-bottom: 1px solid $text-grey-80;
+            input {
+                @include font('Graphik', 18px, 400, 27px, $white);
                 background: none;
-                width: 50%;
                 border: none;
                 outline: none;
-                &:first-child {
-                    border-right: 1px solid $text-grey-80;
-                }
-                &.active {
-                    color: $dark-blue;
-                }
-                &:hover {
-                    cursor: pointer;
-                }
+                height: 32px;
+                width: 276px;
+                border-right: 1px solid $text-grey-80;
             }
-        }
-        p {
-            margin-top: 48px;
-            @include font('Graphik', 16px, 400, 24px, $white);
-        }
-        .converter__rate {
-            margin-top: 8px;
-            display: flex;
-            h3 {
-                font-weight: 600;
-                line-height: 27px;
-                font-family: 'Graphik';
-            }
-            span {
-                margin-left: 14px;
-                @include font('Graphik', 18px, 400, 27px, $text-grey-60);
-            }
-            a {
-                margin-left: 39px;
-                @include font('Graphik', 16px, 400, 24px, $text-grey-40);
-                text-decoration: none;
-            }
-        }
-        .converter__row-container {
-            margin-top: 32px;
-            .converter__row {
-                margin-bottom: 24px;
-                width: 100%;
-                height: 60px;
+            .converter__item {
                 @include flex(start, center);
-                border-bottom: 1px solid $text-grey-80;
-                input {
-                    @include font('Graphik', 18px, 400, 27px, $white);
-                    background: none;
-                    border: none;
-                    outline: none;
-                    height: 32px;
-                    width: 276px;
-                    border-right: 1px solid $text-grey-80;
-                }
-                .converter__item {
-                    @include flex(start, center);
-                    margin-left: 16px;
-                    span {
-                        margin-left: 8px;
-                    }
-                }
-                .converter__arrow {
+                margin-left: 16px;
+                span {
                     margin-left: 8px;
                 }
             }
-        }
-        .converter__button {
-            margin-top: 32px;
-            @include font('Sofia Pro', 18px, 600, 160%, $white);
-            @include button(18px, 156px);
-            width: 383px;
-            height: 65px;
+            .converter__arrow {
+                margin-left: 8px;
+            }
         }
     }
+    .converter__button {
+        margin-top: 32px;
+        @include font('Sofia Pro', 18px, 600, 160%, $white);
+        @include button(18px, 156px);
+        width: 383px;
+        height: 65px;
+    }
 }
-
 // About
 
 .about {
-    padding: 160px 0;
+padding: 160px 0;
     h2 {
         width: 100%;
     }
