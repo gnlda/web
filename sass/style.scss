@@ -501,4 +501,7 @@ img {
 }
 .media__text-container {
     width: 539px;
+    h2 {
+        @include font('Sofia Pro', 49px, 700, 110%, $white);
+    }
 }

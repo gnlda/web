@@ -808,3 +808,10 @@ img {
 .media__text-container {
   width: 539px;
 }
+.media__text-container h2 {
+  font-family: "Sofia Pro";
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 110%;
+  color: #ffffff;
+}
