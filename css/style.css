@@ -827,6 +827,9 @@ img {
   display: flex;
   height: 100%;
   width: 400%;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
   position: absolute;
   top: 0;
   left: 0;
