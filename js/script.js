@@ -207,7 +207,7 @@ let styles = window.getComputedStyle(mediaSlider);
 
 
 const mediaSliderToLeft = () => {
-    if (parseInt(styles.left) + mediaSliderItem.offsetWidth < 0) {
+    if (parseInt(styles.left) + mediaSliderItem.offsetWidth <= 0) {
         mediaSlider.style.left = `${parseInt(styles.left) + mediaSliderItem.offsetWidth}px`;
     }
 }
