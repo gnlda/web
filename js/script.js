@@ -207,6 +207,7 @@ let companyCircles = document.querySelectorAll(".media__company-circle");
 let styles = window.getComputedStyle(mediaSlider);
 let mediaSliderLeft = 0;
 let currentCompany = 0;
+let previousCompany = 3;
 
 
 
@@ -224,6 +225,7 @@ const mediaSliderToRight = () => {
         mediaSliderLeft -= mediaSliderItem.offsetWidth;
         mediaSlider.style.left = `${mediaSliderLeft}px`;
         currentCompany++;
+        if(currentCompany == )
         console.log(companyCircles[currentCompany]);
         companyCircles[currentCompany].style.color = "#CC2229";
     }
