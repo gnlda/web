@@ -819,6 +819,7 @@ img {
   margin-top: 40px;
   position: relative;
   height: 120px;
+  overflow: hidden;
 }
 .media__text-container .media__content .media__slider {
   display: -webkit-box;
