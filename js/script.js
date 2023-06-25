@@ -229,9 +229,11 @@ const mediaSliderToRight = () => {
         if(currentCompany == companyCircles.length) {
             currentCompany = 0;
         }
-        if(previousCompany == previousCompany.length) {
+        if(previousCompany == companyCircles.length) {
             previousCompany = 0;
         }
+        console.log(`previousCompany = ${previousCompany}`);
+        console.log(`currentCompany = ${currentCompany}`);
         companyCircles[currentCompany].style.color = "#CC2229";
         companyCircles[previousCompany].style.color = "#7D7D7D";
     }
