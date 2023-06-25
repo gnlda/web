@@ -839,9 +839,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  height: 100%;
+  width: 400%;
   position: absolute;
   top: 0;
   left: 0;

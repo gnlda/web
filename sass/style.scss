@@ -517,7 +517,8 @@ img {
         height: 100px;
         .media__slider {
             display: flex;
-            width: fit-content;
+            height: 100%;
+            width: 400%;
             @include position-left(0, 0);
             .media__slider-item {
                 height: 100%;
