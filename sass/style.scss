@@ -504,8 +504,12 @@ img {
     h2 {
         @include font('Sofia Pro', 49px, 700, 110%, $white);
     }
-    p {
+    #feedback {
         margin-top: 40px;
         @include font('Graphik', 25px, 400, 27px, $text-grey-20);
+    }
+    #author {
+        margin-top: 16px;
+        @include font('Graphik', 18px, 600, 27px, $text-grey-40);
     }
 }

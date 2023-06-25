@@ -815,11 +815,19 @@ img {
   line-height: 110%;
   color: #ffffff;
 }
-.media__text-container p {
+.media__text-container #feedback {
   margin-top: 40px;
   font-family: "Graphik";
   font-size: 25px;
   font-weight: 400;
   line-height: 27px;
   color: #E5E6ED;
+}
+.media__text-container #author {
+  margin-top: 16px;
+  font-family: "Graphik";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #A5ADCF;
 }
