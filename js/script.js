@@ -204,15 +204,18 @@ output.addEventListener('mouseover', readOnly);
 let mediaSlider = document.querySelector(".media__slider");
 let mediaSliderItem = document.querySelector(".media__slider-item");
 let styles = window.getComputedStyle(mediaSlider);
+let mediaSliderLeft = parseInt(styles.left);
 
 
 const mediaSliderToLeft = () => {
-    if (parseInt(styles.left) + mediaSliderItem.offsetWidth <= 0) {
-        mediaSlider.style.left = `${parseInt(styles.left) + mediaSliderItem.offsetWidth}px`;
+    if (mediaSliderLeft + mediaSliderItem.offsetWidth <= 0) {
+        mediaSliderLeft = parseInt(styles.left) + mediaSliderItem.offsetWidth;
+        mediaSlider.style.left = `${mediaSliderLeft}px`;
     }
 }
 const mediaSliderToRight = () => {
-    if (parseInt(styles.left) - mediaSliderItem.offsetWidth >= -3 * mediaSliderItem.offsetWidth) {
-        mediaSlider.style.left = `${parseInt(styles.left) - mediaSliderItem.offsetWidth}px`;
+    if (mediaSliderLeft - mediaSliderItem.offsetWidth >= -3 * mediaSliderItem.offsetWidth) {
+        mediaSliderLeft = parseInt(styles.left) - mediaSliderItem.offsetWidth;
+        mediaSlider.style.left = `${mediaSliderLeft}px`;
     }
 }
