@@ -550,7 +550,7 @@ img {
     .media__company-circle {
         position: absolute;
         border-radius: 50%;
-        background: var($dark);
+        background: $dark;
         @include flex(center, center);
         &:nth-child(1) {
             height: 245px;

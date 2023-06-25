@@ -874,7 +874,7 @@ img {
 .media_image-container .media__company-circle {
   position: absolute;
   border-radius: 50%;
-  background: var(rgba(47, 50, 65, 0.5019607843));
+  background: rgba(47, 50, 65, 0.5019607843);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
