@@ -548,6 +548,9 @@ img {
     width: 512px;
     height: 380px;
     .media__company-circle {
+        position: absolute;
+        border-radius: 50%;
+        background: var($dark);
         &:nth-child(1) {
             height: 245px;
             width: 245px;
