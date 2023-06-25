@@ -815,23 +815,8 @@ img {
   line-height: 110%;
   color: #ffffff;
 }
-.media__text-container #feedback {
-  margin-top: 40px;
-  font-family: "Graphik";
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 27px;
-  color: #E5E6ED;
-}
-.media__text-container #author {
-  margin-top: 16px;
-  font-family: "Graphik";
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 27px;
-  color: #A5ADCF;
-}
 .media__text-container .media__content {
+  margin-top: 40px;
   position: relative;
   height: 161px;
 }
@@ -848,6 +833,21 @@ img {
 .media__text-container .media__content .media__slider .media__slider-item {
   height: 100%;
   width: 100%;
+}
+.media__text-container #feedback {
+  font-family: "Graphik";
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #E5E6ED;
+}
+.media__text-container #author {
+  margin-top: 120px;
+  font-family: "Graphik";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #A5ADCF;
 }
 .media__text-container .media__button-container {
   margin-top: 40px;
