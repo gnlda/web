@@ -562,9 +562,9 @@ img {
         &:nth-child(2) {
             height: 111px;
             width: 111px;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
         }
         &:nth-child(3) {
             height: 185px;
@@ -576,9 +576,9 @@ img {
         &:nth-child(4) {
             height: 93px;
             width: 93px;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
+            left: 53%;
+            bottom: 0;
+            transform: translateX(-50%);
         }
     }
 }
