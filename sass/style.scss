@@ -517,7 +517,7 @@ img {
         button:not(:first-child) {
             margin-left: 24px;
             background: transparent;
-            border: 1px solid $white;
+            border: none;
         }
     }
 }
