@@ -225,8 +225,14 @@ const mediaSliderToRight = () => {
         mediaSliderLeft -= mediaSliderItem.offsetWidth;
         mediaSlider.style.left = `${mediaSliderLeft}px`;
         currentCompany++;
-        if(currentCompany == )
-        console.log(companyCircles[currentCompany]);
+        previousCompany++;
+        if(currentCompany == companyCircles.length) {
+            currentCompany = 0;
+        }
+        if(previousCompany == previousCompany.length) {
+            previousCompany = 0;
+        }
         companyCircles[currentCompany].style.color = "#CC2229";
+        companyCircles[previousCompany].style.color = "#7D7D7D";
     }
 }
