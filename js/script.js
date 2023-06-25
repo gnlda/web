@@ -220,7 +220,9 @@ const mediaSliderToLeft = () => {
         console.log(`previousCompany = ${previousCompany}`);
         console.log(`currentCompany = ${currentCompany}`);
         companyCircles[currentCompany].style.color = "#CC2229";
+        companyCircles[currentCompany].style.border = "2px solid 1A82FF";
         companyCircles[previousCompany].style.color = "#7D7D7D";
+        companyCircles[previousCompany].style.border = "none";
     }
 }
 const mediaSliderToRight = () => {
@@ -235,6 +237,8 @@ const mediaSliderToRight = () => {
         console.log(`previousCompany = ${previousCompany}`);
         console.log(`currentCompany = ${currentCompany}`);
         companyCircles[currentCompany].style.color = "#CC2229";
+        companyCircles[currentCompany].style.border = "2px solid 1A82FF";
         companyCircles[previousCompany].style.color = "#7D7D7D";
+        companyCircles[previousCompany].style.border = "none";
     }
 }
