@@ -836,4 +836,6 @@ img {
 }
 .media__text-container .media__button-container button:not(:first-child) {
   margin-left: 24px;
+  background: transparent;
+  border: 1px solid #ffffff;
 }
