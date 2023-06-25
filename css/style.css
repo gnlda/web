@@ -831,6 +831,10 @@ img {
   line-height: 27px;
   color: #A5ADCF;
 }
+.media__text-container .media__content-slider-item {
+  height: 100%;
+  width: 100%;
+}
 .media__text-container .media__button-container {
   margin-top: 40px;
 }
