@@ -512,4 +512,10 @@ img {
         margin-top: 16px;
         @include font('Graphik', 18px, 600, 27px, $text-grey-40);
     }
+    .media__button-container {
+        margin-top: 40px;
+        button:not(:first-child) {
+            margin-left: 24px;
+        }
+    }
 }
