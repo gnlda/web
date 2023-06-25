@@ -499,3 +499,6 @@ img {
 .media__wrap {
     @include flex(space-between, center);
 }
+.media__text-container {
+    width: 539px;
+}

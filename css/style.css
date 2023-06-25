@@ -804,3 +804,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.media__text-container {
+  width: 539px;
+}
