@@ -842,3 +842,10 @@ img {
 .media__text-container .media__button-container button:not(:first-child) {
   margin-left: 24px;
 }
+
+.media_image-container {
+  position: relative;
+  height: 100%;
+  width: 512px;
+  height: 380px;
+}
