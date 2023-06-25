@@ -222,5 +222,7 @@ const mediaSliderToRight = () => {
     if (mediaSliderLeft - mediaSliderItem.offsetWidth >= -3 * mediaSliderItem.offsetWidth) {
         mediaSliderLeft -= mediaSliderItem.offsetWidth;
         mediaSlider.style.left = `${mediaSliderLeft}px`;
+        currentCompany++;
+        companyCircles[currentCompany].style.color = "$text-red2";
     }
 }
