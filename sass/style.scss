@@ -555,18 +555,30 @@ img {
         &:nth-child(1) {
             height: 245px;
             width: 245px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
         }
         &:nth-child(2) {
             height: 111px;
             width: 111px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
         }
         &:nth-child(3) {
             height: 185px;
             width: 185px;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
         }
         &:nth-child(4) {
             height: 93px;
             width: 93px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
         }
     }
 }
