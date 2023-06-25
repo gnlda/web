@@ -514,10 +514,13 @@ img {
     }
     .media__button-container {
         margin-top: 40px;
-        button:not(:first-child) {
-            margin-left: 24px;
+        button {
             background: transparent;
             border: none;
+            cursor: pointer;
+            &:not(:first-child) {
+                margin-left: 24px;
+            }
         }
     }
 }
