@@ -815,3 +815,11 @@ img {
   line-height: 110%;
   color: #ffffff;
 }
+.media__text-container p {
+  margin-top: 40px;
+  font-family: "Graphik";
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #E5E6ED;
+}

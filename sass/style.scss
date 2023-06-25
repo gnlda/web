@@ -504,4 +504,8 @@ img {
     h2 {
         @include font('Sofia Pro', 49px, 700, 110%, $white);
     }
+    p {
+        margin-top: 40px;
+        @include font('Graphik', 25px, 400, 27px, $text-grey-20);
+    }
 }
