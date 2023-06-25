@@ -203,10 +203,12 @@ output.addEventListener('mouseover', readOnly);
 
 let mediaSlider = document.querySelector(".media__slider");
 let mediaSliderItem = document.querySelector(".media__slider-item");
+let styles = window.getComputedStyle(mediaSlider);
 
 
 const mediaSliderToLeft = () => {
-    console.log(`${mediaSliderItem.offsetWidth}px`);
+    console.log(styles.left);
+    //console.log(`${parseInt(mediaSlider.style.left) + mediaSliderItem.offsetWidth}px`);
     mediaSlider.style.left = `${parseInt(mediaSlider.style.left) + mediaSliderItem.offsetWidth}px`;
 }
 const mediaSliderToRight = () => {
