@@ -560,6 +560,7 @@ img {
             top: 50%;
             transform: translateY(-50%);
             color: $text-red2;
+            border: 2px solid $blue;
         }
         &:nth-child(2) {
             height: 111px;
