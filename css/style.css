@@ -933,6 +933,19 @@ img {
   font-size: 15px;
 }
 
+.mobile {
+  position: relative;
+}
+.mobile .grid__bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -1;
+}
+
 .mobile__wrap {
   display: -webkit-box;
   display: -ms-flexbox;

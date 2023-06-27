@@ -592,9 +592,19 @@ padding: 160px 0;
 // Mobile
 
 .mobile {
-
+    position: relative;
+    .grid__bg {
+        @include position-left(0, 50%);
+        transform: translateX(-50%);
+        z-index: -1;
+    }
 }
 
 .mobile__wrap {
     display: flex;
 }
+
+.mobile__content {
+    
+}
+
