@@ -978,3 +978,33 @@ img {
   color: #ffffff;
   margin-bottom: 24px;
 }
+.mobile__content .mobile__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mobile__content .mobile__buttons button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 184px;
+  height: 37px;
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+  background: transparent;
+}
+.mobile__content .mobile__buttons button:first-child {
+  margin-right: 16px;
+}

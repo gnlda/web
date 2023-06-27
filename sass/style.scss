@@ -617,5 +617,19 @@ padding: 160px 0;
         @include font('Graphik', 16px, 600, 24px, $white);
         margin-bottom: 24px;
     }
+    .mobile__buttons {
+        @include flex(start, center);
+        button {
+            @include flex(center, center);
+            width: 184px;
+            height: 37px;
+            border: 1px solid $white;
+            border-radius: 100px;
+            background: transparent;
+            &:first-child {
+                margin-right: 16px;
+            }
+        }
+    }
 }
 
