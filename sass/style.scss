@@ -604,6 +604,8 @@ padding: 160px 0;
 
 .mobile__wrap {
     @include flex(start, center);
+    height: 825px;
+
 }
 
 .mobile__img-block {
