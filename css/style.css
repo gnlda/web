@@ -950,4 +950,31 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile__img-block {
+  width: 549px;
+}
+
+.mobile__content .mobile__paragraph {
+  font-family: "Graphik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #E5E6ED;
+  margin: 24px 0 48px 0;
+}
+.mobile__content .mobile__get-app {
+  font-family: "Graphik";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 24px;
 }
