@@ -593,6 +593,7 @@ padding: 160px 0;
 
 .mobile {
     position: relative;
+
     .grid__bg {
         @include position-left(0, 50%);
         transform: translateX(-50%);
