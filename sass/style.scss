@@ -606,12 +606,14 @@ padding: 160px 0;
 
 .mobile__img-block {
     width: 549px;
+    margin-right: 100px;
 }
 
 .mobile__content {
     .mobile__paragraph {
         @include font('Graphik', 16px, 400, 24px, $text-grey-20);
         margin: 24px 0 48px 0;
+        width: 402px;
     }
     .mobile__get-app {
         @include font('Graphik', 16px, 600, 24px, $white);

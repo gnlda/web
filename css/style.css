@@ -960,6 +960,7 @@ img {
 
 .mobile__img-block {
   width: 549px;
+  margin-right: 100px;
 }
 
 .mobile__content .mobile__paragraph {
@@ -969,6 +970,7 @@ img {
   line-height: 24px;
   color: #E5E6ED;
   margin: 24px 0 48px 0;
+  width: 402px;
 }
 .mobile__content .mobile__get-app {
   font-family: "Graphik";
