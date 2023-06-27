@@ -999,15 +999,12 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 184px;
+  height: 37px;
   padding: 16px 32px;
-  gap: 24px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 0px;
-          flex: 1 0 0;
   border: 1px solid #ffffff;
   border-radius: 100px;
   background: transparent;
-  padding: 16px 32px;
 }
 .mobile__content .mobile__buttons button:first-child {
   margin-right: 16px;

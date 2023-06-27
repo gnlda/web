@@ -621,13 +621,12 @@ padding: 160px 0;
         @include flex(start, center);
         button {
             @include flex(center, center);
+            width: 184px;
+            height: 37px;
             padding: 16px 32px;
-            gap: 24px;
-            flex: 1 0 0;
             border: 1px solid $white;
             border-radius: 100px;
             background: transparent;
-            padding: 16px 32px;
             &:first-child {
                 margin-right: 16px;
             }
