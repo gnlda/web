@@ -463,8 +463,8 @@ padding: 160px 0;
 }
 
 .about__img-block {
-    transform: translateX(66px);
-    // width: 581px;
+    transform: translateX(calc(-42px * 3));
+    width: 581px;
 }
 
 .about__list {
@@ -587,4 +587,15 @@ padding: 160px 0;
             font-size: 15px;
         }
     }
+}
+
+// Mobile
+
+.mobile {
+
+}
+
+.mobile__wrap {
+    display: flex;
+    background-image: url(img/bg);
 }

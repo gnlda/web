@@ -749,9 +749,10 @@ img {
 }
 
 .about__img-block {
-  -webkit-transform: translateX(66px);
-      -ms-transform: translateX(66px);
-          transform: translateX(66px);
+  -webkit-transform: translateX(-126px);
+      -ms-transform: translateX(-126px);
+          transform: translateX(-126px);
+  width: 581px;
 }
 
 .about__list {
@@ -930,4 +931,11 @@ img {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   font-size: 15px;
+}
+
+.mobile__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(img/bg);
 }
