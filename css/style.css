@@ -999,13 +999,30 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 184px;
-  height: 37px;
-  padding: 16px 32px;
+  width: 248px;
+  height: 69px;
+  gap: 24px;
   border: 1px solid #ffffff;
   border-radius: 100px;
   background: transparent;
 }
 .mobile__content .mobile__buttons button:first-child {
   margin-right: 16px;
+}
+.mobile__content .mobile__buttons button .mobile__button__txt-block {
+  text-align: left;
+}
+.mobile__content .mobile__buttons button .mobile__button__txt-block .button__first-txt {
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #ffffff;
+}
+.mobile__content .mobile__buttons button .mobile__button__txt-block .button__second-txt {
+  font-family: "Sofia";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  color: #ffffff;
 }

@@ -621,14 +621,23 @@ padding: 160px 0;
         @include flex(start, center);
         button {
             @include flex(center, center);
-            width: 184px;
-            height: 37px;
-            padding: 16px 32px;
+            width: 248px;
+            height: 69px;
+            gap: 24px;
             border: 1px solid $white;
             border-radius: 100px;
             background: transparent;
             &:first-child {
                 margin-right: 16px;
+            }
+            .mobile__button__txt-block {
+                text-align: left;
+                .button__first-txt {
+                    @include font('Inter', 12px, 400, 150%, $white);
+                }
+                .button__second-txt {
+                    @include font('Sofia', 16px, 400, 120%, $white);
+                }
             }
         }
     }
