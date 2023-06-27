@@ -944,7 +944,12 @@ img {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: -1;
-  width: 1110px;
+}
+.mobile .vector111 {
+  position: absolute;
+  top: -15%;
+  left: 62%;
+  z-index: -1;
 }
 
 .mobile__wrap {

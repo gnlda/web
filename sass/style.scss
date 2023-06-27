@@ -593,12 +593,15 @@ padding: 160px 0;
 
 .mobile {
     position: relative;
-
     .grid__bg {
         @include position-left(0, 50%);
         transform: translateX(-50%);
         z-index: -1;
-        width: 1110px;
+    }
+    .vector111 {
+        @include position-left(-15%, 62%);
+        z-index: -1;
+
     }
 }
 
