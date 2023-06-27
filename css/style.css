@@ -944,6 +944,7 @@ img {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: -1;
+  width: 1110px;
 }
 
 .mobile__wrap {
@@ -958,11 +959,13 @@ img {
           align-items: center;
 }
 
-.mobile__img-block {
+.mobile__img-block img {
   width: 549px;
-  margin-right: 100px;
 }
 
+.mobile__content {
+  width: 511px;
+}
 .mobile__content .mobile__paragraph {
   font-family: "Graphik";
   font-size: 16px;

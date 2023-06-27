@@ -597,6 +597,7 @@ padding: 160px 0;
         @include position-left(0, 50%);
         transform: translateX(-50%);
         z-index: -1;
+        width: 1110px;
     }
 }
 
@@ -605,11 +606,13 @@ padding: 160px 0;
 }
 
 .mobile__img-block {
-    width: 549px;
-    margin-right: 100px;
+    img {
+        width: 549px;
+    }
 }
 
 .mobile__content {
+    width: 511px;
     .mobile__paragraph {
         @include font('Graphik', 16px, 400, 24px, $text-grey-20);
         margin: 24px 0 48px 0;
