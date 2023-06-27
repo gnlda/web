@@ -749,10 +749,9 @@ img {
 }
 
 .about__img-block {
-  -webkit-transform: translateX(-126px);
-      -ms-transform: translateX(-126px);
-          transform: translateX(-126px);
-  width: 581px;
+  -webkit-transform: translateX(66px);
+      -ms-transform: translateX(66px);
+          transform: translateX(66px);
 }
 
 .about__list {
