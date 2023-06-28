@@ -406,7 +406,7 @@ img {
             margin-bottom: 24px;
             width: 100%;
             height: 60px;
-            @include flex(start, center);
+            @include flex(space-between, center);
             border-bottom: 1px solid $text-grey-80;
             .converter_wallet {
                 @include flex(space-between, center);
