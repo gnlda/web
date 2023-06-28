@@ -203,8 +203,6 @@ const mediaSliderToLeft = () => {
         mediaSlider.style.left = `${mediaSliderLeft}px`;
         previousCompany = currentCompany;
         currentCompany--;
-        console.log(`previousCompany = ${previousCompany}`);
-        console.log(`currentCompany = ${currentCompany}`);
         companyCircles[currentCompany].style.color = "#CC2229";
         companyCircles[currentCompany].style.border = "2px solid 1A82FF";
         companyCircles[previousCompany].style.color = "#7D7D7D";
@@ -220,8 +218,6 @@ const mediaSliderToRight = () => {
         if(currentCompany == companyCircles.length) {
             currentCompany = 0;
         }
-        console.log(`previousCompany = ${previousCompany}`);
-        console.log(`currentCompany = ${currentCompany}`);
         companyCircles[currentCompany].style.color = "#CC2229";
         companyCircles[currentCompany].style.border = "2px solid 1A82FF";
         companyCircles[previousCompany].style.color = "#7D7D7D";
