@@ -557,11 +557,12 @@ padding: 160px 0;
             @include flex(center, center);
             background: $dark-hex;
             border-radius: 50%;
-            transition: all .2s;
+            transition: all .3s;
         } 
         position: absolute;
         border-radius: 50%;
         background: $blue;
+        transition: all .3s;
         @include font('Sofia Pro', 40px, 700, 110%, $text-grey-100);
         @include flex(center, center);
         &:nth-child(1) {
