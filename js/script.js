@@ -149,6 +149,7 @@ const buyButtonClickHandler = () => {
         row2.querySelector("#wallet__logo").src = "img/Bitcoin.svg";
         row2.querySelector("span").innerHTML = "BTC";
         converterButton.innerHTML = "Buy Now";
+        rate = 0.0000345245;
 
         //row1.innerHTML = our;
         //row2.innerHTML = crypto;
@@ -169,7 +170,7 @@ const sellButtonClickHandler = () => {
         row2.querySelector("#wallet__logo").src = "img/USD.svg";
         row2.querySelector("span").innerHTML = "USD";
         converterButton.innerHTML = "Sell Now";
-        rate = 0.0000345245;
+        rate = 28.964;
         //row1.innerHTML = crypto;
         //row2.innerHTML = our;
         //console.log(row1.querySelector("input"));
