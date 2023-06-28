@@ -92,7 +92,7 @@ const velocityFunction = () => {
 
     if (left >= -offset) {
         left -= sliderLength;
-        slider.style.left = `${left}px`;
+        slider.style.left = `${left}px`;q
     } else if (left <= -sliderLength -offset) {
         left += sliderLength;
         slider.style.left = `${left}px`;
@@ -197,9 +197,10 @@ const mediaSliderToLeft = () => {
         previousCompany = currentCompany;
         currentCompany--;
         companyCircles[currentCompany].style.color = "#CC2229";
-        companyCircles[currentCompany].style.border = "2px solid 1A82FF";
         companyCircles[previousCompany].style.color = "#7D7D7D";
-        companyCircles[previousCompany].style.border = "none";
+        companyCircles[currentCompany].querySelector(".media__company-inner-circle").style.width = "calc(100% - 4px)";
+        companyCircles[currentCompany].querySelector(".media__company-inner-circle").style.height = "calc(100% - 4px)";
+        companyCircles[previousCompany].style.color = "#7D7D7D";
     }
 }
 const mediaSliderToRight = () => {
@@ -212,8 +213,6 @@ const mediaSliderToRight = () => {
             currentCompany = 0;
         }
         companyCircles[currentCompany].style.color = "#CC2229";
-        companyCircles[currentCompany].style.border = "2px solid 1A82FF";
         companyCircles[previousCompany].style.color = "#7D7D7D";
-        companyCircles[previousCompany].style.border = "none";
     }
 }
