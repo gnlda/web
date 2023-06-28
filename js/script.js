@@ -203,8 +203,8 @@ const mediaSliderToLeft = () => {
         companyCircles[currentCompany].querySelector(".media__company-inner-circle").style.width = "calc(100% - 4px)";
         companyCircles[currentCompany].querySelector(".media__company-inner-circle").style.height = "calc(100% - 4px)";
         companyCircles[previousCompany].style.color = "#7D7D7D";
-        companyCircles[previousCompany].querySelector(".media__company-inner-circle").style.width = "100%";
-        companyCircles[previousCompany].querySelector(".media__company-inner-circle").style.height = "100%";
+        companyCircles[previousCompany].querySelector(".media__company-inner-circle").style.width = "101%";
+        companyCircles[previousCompany].querySelector(".media__company-inner-circle").style.height = "101%";
     }
 }
 const mediaSliderToRight = () => {
@@ -221,7 +221,7 @@ const mediaSliderToRight = () => {
         companyCircles[currentCompany].querySelector(".media__company-inner-circle").style.width = "calc(100% - 4px)";
         companyCircles[currentCompany].querySelector(".media__company-inner-circle").style.height = "calc(100% - 4px)";
         companyCircles[previousCompany].style.color = "#7D7D7D";
-        companyCircles[previousCompany].querySelector(".media__company-inner-circle").style.width = "100%";
-        companyCircles[previousCompany].querySelector(".media__company-inner-circle").style.height = "100%";
+        companyCircles[previousCompany].querySelector(".media__company-inner-circle").style.width = "101%";
+        companyCircles[previousCompany].querySelector(".media__company-inner-circle").style.height = "101%";
     }
 }
