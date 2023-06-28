@@ -566,6 +566,10 @@ padding: 160px 0;
         @include font('Sofia Pro', 40px, 700, 110%, $text-grey-100);
         @include flex(center, center);
         &:nth-child(1) {
+            .media__company-inner-circle {
+                width: calc(100% - 4px);
+                height: calc(100% - 4px);
+            }
             height: 245px;
             width: 245px;
             left: 0;
