@@ -915,6 +915,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   background: rgba(47, 50, 65, 0.5019607843);
+  border-radius: 50%;
 }
 .media_image-container .media__company-circle:nth-child(1) {
   height: 245px;

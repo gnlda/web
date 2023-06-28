@@ -556,6 +556,7 @@ padding: 160px 0;
             height: 100%;
             @include flex(center, center);
             background: $dark;
+            border-radius: 50%;
         } 
         position: absolute;
         border-radius: 50%;
