@@ -916,6 +916,9 @@ img {
           align-items: center;
   background: rgba(47, 50, 65, 0.5019607843);
   border-radius: 50%;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .media_image-container .media__company-circle:nth-child(1) {
   height: 245px;
@@ -926,7 +929,6 @@ img {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   color: #CC2229;
-  border: 2px solid #1A82FF;
 }
 .media_image-container .media__company-circle:nth-child(2) {
   height: 111px;

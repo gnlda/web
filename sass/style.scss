@@ -557,6 +557,7 @@ padding: 160px 0;
             @include flex(center, center);
             background: $dark;
             border-radius: 50%;
+            transition: all .2s;
         } 
         position: absolute;
         border-radius: 50%;
@@ -570,7 +571,6 @@ padding: 160px 0;
             top: 50%;
             transform: translateY(-50%);
             color: $text-red2;
-            border: 2px solid $blue;
         }
         &:nth-child(2) {
             height: 111px;
