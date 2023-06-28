@@ -124,78 +124,89 @@ document.addEventListener("touchend", documentMouseupHandler);
 
 
 
+let buyButton = document.querySelector("#buy");
+let sellButton = document.querySelector("#sell");
 
-const buttons = document.querySelector('.converter__choice');
-const rate = 0.0000345245;
-let output = row2.querySelector("input");
-let inputRate = row1.querySelector("input");
 
-function readOnly() {
-    output.setAttribute("readonly", "readonly");
-}
+buyButton.addEventListener("click", (e) => {
 
-function selectConvert(e) {
-    if (e.target.classList.contains("convert") && !e.target.classList.contains("active")) {
-        const convertElements = buttons.querySelectorAll(".convert");
-        convertElements.forEach(element => {
-            element.classList.toggle("active");
-        });
-        swap();
-    }
-}
+});
 
-function swap() {
-    const buy = document.querySelector("#buy");
-    const convertButton = document.querySelector(".converter__button");
-    let row1 = document.querySelector("#row1");
-    let row2 = document.querySelector("#row2");
-    const our = `<input type="text" value="4.000">
-    <div class="converter__item">
-    <img src="img/USD.svg" alt="USD">
-    <span>USD</span>
-    </div>
-    <div class="converter__arrow">
-    <img src="img/Arrow.svg" alt="Arrow">
-    </div>`
-    const crypto = `<input type="text" value="0.000138">
-    <div class="converter__item">
-    <img src="img/Bitcoin.svg" alt="Bitcoin">
-    <span>BTC</span>
-    </div>
-    <div class="converter__arrow">
-    <img src="img/Arrow.svg" alt="Arrow">
-    </div>`;
+sellButton.addEventListener("click", (e) => {
     
-    if (buy.classList.contains("active")) {
-        convertButton.innerHTML = "Buy Now";
-        row1.innerHTML = our;
-        row2.innerHTML = crypto;
-    } else {
-        convertButton.innerHTML = "Sell Now";
-        row1.innerHTML = crypto;
-        row2.innerHTML = our;
-    }
-}
+});
 
-function convert() {
-    inputRate = row1.querySelector("input");
-    let converted = inputRate.value * rate;
-    output.value = converted.toFixed(6);
-}
+// const buttons = document.querySelector('.converter__choice');
+// const rate = 0.0000345245;
+// let output = row2.querySelector("input");
+// let inputRate = row1.querySelector("input");
 
-function clearInput() {
-    inputRate = row1.querySelector("input");
-    inputRate.value = '';
-    inputRate.removeEventListener('click', clearInput);
-}
+// function readOnly() {
+//     output.setAttribute("readonly", "readonly");
+// }
 
-buttons.addEventListener("click", selectConvert);
+// function selectConvert(e) {
+//     if (e.target.classList.contains("convert") && !e.target.classList.contains("active")) {
+//         const convertElements = buttons.querySelectorAll(".convert");
+//         convertElements.forEach(element => {
+//             element.classList.toggle("active");
+//         });
+//         swap();
+//     }
+// }
 
-inputRate.addEventListener("click", clearInput);
+// function swap() {
+//     const buy = document.querySelector("#buy");
+//     const convertButton = document.querySelector(".converter__button");
+//     let row1 = document.querySelector("#row1");
+//     let row2 = document.querySelector("#row2");
+//     const our = `<input type="text" value="4.000">
+//     <div class="converter__item">
+//     <img src="img/USD.svg" alt="USD">
+//     <span>USD</span>
+//     </div>
+//     <div class="converter__arrow">
+//     <img src="img/Arrow.svg" alt="Arrow">
+//     </div>`
+//     const crypto = `<input type="text" value="0.000138">
+//     <div class="converter__item">
+//     <img src="img/Bitcoin.svg" alt="Bitcoin">
+//     <span>BTC</span>
+//     </div>
+//     <div class="converter__arrow">
+//     <img src="img/Arrow.svg" alt="Arrow">
+//     </div>`;
+    
+//     if (buy.classList.contains("active")) {
+//         convertButton.innerHTML = "Buy Now";
+//         row1.innerHTML = our;
+//         row2.innerHTML = crypto;
+//     } else {
+//         convertButton.innerHTML = "Sell Now";
+//         row1.innerHTML = crypto;
+//         row2.innerHTML = our;
+//     }
+// }
 
-inputRate.addEventListener("input", convert);
+// function convert() {
+//     inputRate = row1.querySelector("input");
+//     let converted = inputRate.value * rate;
+//     output.value = converted.toFixed(6);
+// }
 
-output.addEventListener('mouseover', readOnly);
+// function clearInput() {
+//     inputRate = row1.querySelector("input");
+//     inputRate.value = '';
+//     inputRate.removeEventListener('click', clearInput);
+// }
+
+// buttons.addEventListener("click", selectConvert);
+
+// inputRate.addEventListener("click", clearInput);
+
+// inputRate.addEventListener("input", convert);
+
+// output.addEventListener('mouseover', readOnly);
 
 
 
