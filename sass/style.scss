@@ -559,7 +559,7 @@ padding: 160px 0;
         } 
         position: absolute;
         border-radius: 50%;
-        background: $dark;
+        background: $blue;
         @include font('Sofia Pro', 40px, 700, 110%, $text-grey-100);
         @include flex(center, center);
         &:nth-child(1) {
