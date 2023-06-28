@@ -163,12 +163,15 @@ const buyButtonClickHandler = () => {
         currentState = true;
         sellButton.classList.toggle("active");
         buyButton.classList.toggle("active");
-        row1.innerHTML = our;
-        row2.innerHTML = crypto;
+        console.log(row1.querySelector("img"));
+
+
+        //row1.innerHTML = our;
+        //row2.innerHTML = crypto;
         //console.log(row1.querySelector("input"));
         //console.log(row2.querySelector("input"));
-        input1 = row1.querySelector("input");
-        input2 = row2.querySelector("input");
+        //input1 = row1.querySelector("input");
+        //input2 = row2.querySelector("input");
     }
 }
 
@@ -177,8 +180,8 @@ const sellButtonClickHandler = () => {
         currentState = false;
         sellButton.classList.toggle("active");
         buyButton.classList.toggle("active");
-        row1.innerHTML = crypto;
-        row2.innerHTML = our;
+        //row1.innerHTML = crypto;
+        //row2.innerHTML = our;
         //console.log(row1.querySelector("input"));
         //console.log(row2.querySelector("input"));
     }
