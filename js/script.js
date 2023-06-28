@@ -133,8 +133,6 @@ let buyButton = document.querySelector("#buy");
 let sellButton = document.querySelector("#sell");
 let currentState = true; // true = buy, false = sell
 let row1 = document.querySelector("#row1");
-
-
 let row2 = document.querySelector("#row2");
 const our = `<input type="text" value="4.000">
 <div class="converter__item">
@@ -153,12 +151,15 @@ const crypto = `<input type="text" value="0.000138">
 <img src="img/Arrow.svg" alt="Arrow">
 </div>`;
 
+
 const buyButtonClickHandler = () => {
     if (!currentState) {
         sellButton.classList.toggle("active");
         buyButton.classList.toggle("active");
         row1.innerHTML = our;
         row2.innerHTML = crypto;
+        console.log(`row1 = ${row1.querySelector("input")}`);
+        console.log(`row2 = ${row2.querySelector("input")}`);
         currentState = true;
     }
 }
@@ -169,6 +170,8 @@ const sellButtonClickHandler = () => {
         buyButton.classList.toggle("active");
         row1.innerHTML = crypto;
         row2.innerHTML = our;
+        console.log(`row1 = ${row1.querySelector("input")}`);
+        console.log(`row2 = ${row2.querySelector("input")}`);
         currentState = false;
     }
 }
