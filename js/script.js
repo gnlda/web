@@ -142,8 +142,8 @@ let converterButton = document.querySelector(".converter__button");
 const buyButtonClickHandler = () => {
     if (!currentState) {
         currentState = true;
-        input1.value = "";
-        input2.value = "";
+        input1.value = 0;
+        input2.value = 0;
         sellButton.classList.toggle("active");
         buyButton.classList.toggle("active");
         row1.querySelector("#wallet__logo").src = "img/USD.svg";
@@ -165,8 +165,8 @@ const buyButtonClickHandler = () => {
 const sellButtonClickHandler = () => {
     if (currentState) {
         currentState = false;
-        input1.value = "";
-        input2.value = "";
+        input1.value = 0;
+        input2.value = 0;
         sellButton.classList.toggle("active");
         buyButton.classList.toggle("active");
         row1.querySelector("#wallet__logo").src = "img/Bitcoin.svg";
