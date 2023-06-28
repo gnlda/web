@@ -145,6 +145,7 @@ const our = `<input type="text" value="4.000">
 </div>
 </div>`;
 const crypto = `<input type="text" value="0.000138">
+<div class="converter_wallet">
 <div class="converter__item">
 <img src="img/Bitcoin.svg" alt="Bitcoin">
 <span>BTC</span>
