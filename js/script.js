@@ -126,15 +126,22 @@ document.addEventListener("touchend", documentMouseupHandler);
 
 let buyButton = document.querySelector("#buy");
 let sellButton = document.querySelector("#sell");
+let currentState = true; // true = buy, false = sell
+
+const buyButtonClickHandler = () => {
+    if (!currentState) {
+        sellButton.classList.toggle("active");
+        buyButton.classList.toggle("active");
+    }
+}
+
+const sellButtonClickHandler = () => {
+
+}
 
 
-buyButton.addEventListener("click", (e) => {
-
-});
-
-sellButton.addEventListener("click", (e) => {
-    
-});
+buyButton.addEventListener("click", buyButtonClickHandler);
+sellButton.addEventListener("click", sellButtonClickHandler);
 
 // const buttons = document.querySelector('.converter__choice');
 // const rate = 0.0000345245;
