@@ -933,6 +933,10 @@ img {
           transform: translateY(-50%);
   color: #CC2229;
 }
+.media_image-container .media__company-circle:nth-child(1) .media__company-inner-circle {
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
 .media_image-container .media__company-circle:nth-child(2) {
   height: 111px;
   width: 111px;
