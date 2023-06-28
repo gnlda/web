@@ -18,7 +18,6 @@ let autoscrollInterval;
 const mousedownHandler = (e) => {
     isTouch = true;
     clearInterval(velocityInterval);
-    console.log(`left = ${left}, isTouch = ${isTouch}`);
 }
 
 const mouseupHandler = (e) => {
@@ -68,7 +67,6 @@ const touchmoveHandler = (e) => {
         left += sliderLength;
         slider.style.left = `${left}px`;
     }
-    console.log(`delta = ${delta}`);
     previousOffset = e.touches[0].clientX;
 }
 
@@ -76,11 +74,11 @@ const autoScroll = () => {
     if (isTouch === false) {
         let left = parseInt(slider.style.left) - 1;
         slider.style.left = `${left}px`;
-
-        if (left >= -offset) {
+        if (left < -offset && left > -sliderLength - offset) {
+            slider.style.left = `${left}px`;
+        } else if (left >= -offset) {
             left -= sliderLength;
             slider.style.left = `${left}px`;
-            console.log(slider.style.left);
         } else if (left <= -sliderLength -offset) {
             left += sliderLength;
             slider.style.left = `${left}px`;
@@ -93,12 +91,10 @@ const velocityFunction = () => {
     velocity *= velocityMultiplier;
     left = parseInt(slider.style.left) + velocity;
     slider.style.left = `${left}px`;
-    console.log(`velocity = ${velocity}`);
 
     if (left >= -offset) {
         left -= sliderLength;
-        slider.style.left = `${left}px`;
-        console.log(slider.style.left);
+        slider.style.left = `${left}px`;q
     } else if (left <= -sliderLength -offset) {
         left += sliderLength;
         slider.style.left = `${left}px`;
@@ -106,7 +102,6 @@ const velocityFunction = () => {
         
     if (Math.abs(velocity) < 2) {
         clearInterval(velocityInterval);
-        console.log("completed");
         return 0;
     }
 };
@@ -125,77 +120,63 @@ document.addEventListener("touchend", documentMouseupHandler);
 
 
 
-const buttons = document.querySelector('.converter__choice');
-const rate = 0.0000345245;
-let output = row2.querySelector("input");
-let inputRate = row1.querySelector("input");
 
-function readOnly() {
-    output.setAttribute("readonly", "readonly");
-}
 
-function selectConvert(e) {
-    if (e.target.classList.contains("convert") && !e.target.classList.contains("active")) {
-        const convertElements = buttons.querySelectorAll(".convert");
-        convertElements.forEach(element => {
-            element.classList.toggle("active");
-        });
-        swap();
+
+let rate = 0.0000345245;
+let buyButton = document.querySelector("#buy");
+let sellButton = document.querySelector("#sell");
+let currentState = true; // true = buy, false = sell
+let row1 = document.querySelector("#row1");
+let row2 = document.querySelector("#row2");
+let input1 = row1.querySelector("input");
+let input2 = row2.querySelector("input");
+let converterButton = document.querySelector(".converter__button");
+
+
+const buyButtonClickHandler = () => {
+    if (!currentState) {
+        currentState = true;
+        rate = 0.0000345245;
+        input1.value = 4;
+        input2.value = input1.value * rate;
+        sellButton.classList.toggle("active");
+        buyButton.classList.toggle("active");
+        row1.querySelector("#wallet__logo").src = "img/USD.svg";
+        row1.querySelector("span").innerHTML = "USD";
+        row2.querySelector("#wallet__logo").src = "img/Bitcoin.svg";
+        row2.querySelector("span").innerHTML = "BTC";
+        converterButton.innerHTML = "Buy Now";
     }
 }
 
-function swap() {
-    const buy = document.querySelector("#buy");
-    const convertButton = document.querySelector(".converter__button");
-    let row1 = document.querySelector("#row1");
-    let row2 = document.querySelector("#row2");
-    const our = `<input type="text" value="4.000">
-    <div class="converter__item">
-    <img src="img/USD.svg" alt="USD">
-    <span>USD</span>
-    </div>
-    <div class="converter__arrow">
-    <img src="img/Arrow.svg" alt="Arrow">
-    </div>`
-    const crypto = `<input type="text" value="0.000138">
-    <div class="converter__item">
-    <img src="img/Bitcoin.svg" alt="Bitcoin">
-    <span>BTC</span>
-    </div>
-    <div class="converter__arrow">
-    <img src="img/Arrow.svg" alt="Arrow">
-    </div>`;
-    
-    if (buy.classList.contains("active")) {
-        convertButton.innerHTML = "Buy Now";
-        row1.innerHTML = our;
-        row2.innerHTML = crypto;
-    } else {
-        convertButton.innerHTML = "Sell Now";
-        row1.innerHTML = crypto;
-        row2.innerHTML = our;
+const sellButtonClickHandler = () => {
+    if (currentState) {
+        currentState = false;
+        rate = 28964.9;
+        input1.value = 1;
+        input2.value = input1.value * rate;
+        sellButton.classList.toggle("active");
+        buyButton.classList.toggle("active");
+        row1.querySelector("#wallet__logo").src = "img/Bitcoin.svg";
+        row1.querySelector("span").innerHTML = "BTC";
+        row2.querySelector("#wallet__logo").src = "img/USD.svg";
+        row2.querySelector("span").innerHTML = "USD";
+        converterButton.innerHTML = "Sell Now";
     }
 }
 
-function convert() {
-    inputRate = row1.querySelector("input");
-    let converted = inputRate.value * rate;
-    output.value = converted.toFixed(6);
+const valueInputHandler = () => {
+    input2.value = input1.value * rate;
 }
 
-function clearInput() {
-    inputRate = row1.querySelector("input");
-    inputRate.value = '';
-    inputRate.removeEventListener('click', clearInput);
-}
 
-buttons.addEventListener("click", selectConvert);
+buyButton.addEventListener("click", buyButtonClickHandler);
+sellButton.addEventListener("click", sellButtonClickHandler);
+input1.addEventListener("input", valueInputHandler)
 
-inputRate.addEventListener("click", clearInput);
 
-inputRate.addEventListener("input", convert);
 
-output.addEventListener('mouseover', readOnly);
 
 
 
@@ -217,12 +198,13 @@ const mediaSliderToLeft = () => {
         mediaSlider.style.left = `${mediaSliderLeft}px`;
         previousCompany = currentCompany;
         currentCompany--;
-        console.log(`previousCompany = ${previousCompany}`);
-        console.log(`currentCompany = ${currentCompany}`);
         companyCircles[currentCompany].style.color = "#CC2229";
-        companyCircles[currentCompany].style.border = "2px solid 1A82FF";
         companyCircles[previousCompany].style.color = "#7D7D7D";
-        companyCircles[previousCompany].style.border = "none";
+        companyCircles[currentCompany].querySelector(".media__company-inner-circle").style.width = "calc(100% - 4px)";
+        companyCircles[currentCompany].querySelector(".media__company-inner-circle").style.height = "calc(100% - 4px)";
+        companyCircles[previousCompany].style.color = "#7D7D7D";
+        companyCircles[previousCompany].querySelector(".media__company-inner-circle").style.width = "102%";
+        companyCircles[previousCompany].querySelector(".media__company-inner-circle").style.height = "102%";
     }
 }
 const mediaSliderToRight = () => {
@@ -234,11 +216,12 @@ const mediaSliderToRight = () => {
         if(currentCompany == companyCircles.length) {
             currentCompany = 0;
         }
-        console.log(`previousCompany = ${previousCompany}`);
-        console.log(`currentCompany = ${currentCompany}`);
         companyCircles[currentCompany].style.color = "#CC2229";
-        companyCircles[currentCompany].style.border = "2px solid 1A82FF";
         companyCircles[previousCompany].style.color = "#7D7D7D";
-        companyCircles[previousCompany].style.border = "none";
+        companyCircles[currentCompany].querySelector(".media__company-inner-circle").style.width = "calc(100% - 4px)";
+        companyCircles[currentCompany].querySelector(".media__company-inner-circle").style.height = "calc(100% - 4px)";
+        companyCircles[previousCompany].style.color = "#7D7D7D";
+        companyCircles[previousCompany].querySelector(".media__company-inner-circle").style.width = "102%";
+        companyCircles[previousCompany].querySelector(".media__company-inner-circle").style.height = "102%";
     }
 }

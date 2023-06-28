@@ -406,8 +406,11 @@ img {
             margin-bottom: 24px;
             width: 100%;
             height: 60px;
-            @include flex(start, center);
+            @include flex(space-between, center);
             border-bottom: 1px solid $text-grey-80;
+            .converter_wallet {
+                @include flex(space-between, center);
+            }
             input {
                 @include font('Graphik', 18px, 400, 27px, $white);
                 background: none;
@@ -548,19 +551,32 @@ padding: 160px 0;
     width: 512px;
     height: 380px;
     .media__company-circle {
+        .media__company-inner-circle {
+            width: 102%;
+            height: 102%;
+            @include flex(center, center);
+            background: $dark-hex;
+            border-radius: 50%;
+            transition: all .2s;
+        } 
         position: absolute;
         border-radius: 50%;
-        background: $dark;
+        background: $blue;
+        overflow: hidden;
+        transition: all .2s;
         @include font('Sofia Pro', 40px, 700, 110%, $text-grey-100);
         @include flex(center, center);
         &:nth-child(1) {
+            .media__company-inner-circle {
+                width: calc(100% - 4px);
+                height: calc(100% - 4px);
+            }
             height: 245px;
             width: 245px;
             left: 0;
             top: 50%;
             transform: translateY(-50%);
             color: $text-red2;
-            border: 2px solid $blue;
         }
         &:nth-child(2) {
             height: 111px;
