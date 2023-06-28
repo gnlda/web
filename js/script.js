@@ -18,7 +18,6 @@ let autoscrollInterval;
 const mousedownHandler = (e) => {
     isTouch = true;
     clearInterval(velocityInterval);
-    console.log(`left = ${left}, isTouch = ${isTouch}`);
 }
 
 const mouseupHandler = (e) => {
@@ -68,7 +67,6 @@ const touchmoveHandler = (e) => {
         left += sliderLength;
         slider.style.left = `${left}px`;
     }
-    console.log(`delta = ${delta}`);
     previousOffset = e.touches[0].clientX;
 }
 
@@ -80,10 +78,8 @@ const autoScroll = () => {
         if (left >= -offset) {
             left -= sliderLength;
             slider.style.left = `${left}px`;
-            console.log(slider.style.left);
         } else if (left <= -sliderLength -offset) {
             left += sliderLength;
-            slider.style.left = `${left}px`;
         }
     }
 };
@@ -93,12 +89,10 @@ const velocityFunction = () => {
     velocity *= velocityMultiplier;
     left = parseInt(slider.style.left) + velocity;
     slider.style.left = `${left}px`;
-    console.log(`velocity = ${velocity}`);
 
     if (left >= -offset) {
         left -= sliderLength;
         slider.style.left = `${left}px`;
-        console.log(slider.style.left);
     } else if (left <= -sliderLength -offset) {
         left += sliderLength;
         slider.style.left = `${left}px`;
@@ -106,7 +100,6 @@ const velocityFunction = () => {
         
     if (Math.abs(velocity) < 2) {
         clearInterval(velocityInterval);
-        console.log("completed");
         return 0;
     }
 };
