@@ -132,6 +132,8 @@ const buyButtonClickHandler = () => {
     if (!currentState) {
         sellButton.classList.toggle("active");
         buyButton.classList.toggle("active");
+
+        currentState = true;
     }
 }
 
@@ -139,6 +141,8 @@ const sellButtonClickHandler = () => {
     if (currentState) {
         sellButton.classList.toggle("active");
         buyButton.classList.toggle("active");
+
+        currentState = false;
     }
 }
 
