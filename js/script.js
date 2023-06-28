@@ -136,6 +136,7 @@ let row1 = document.querySelector("#row1");
 let row2 = document.querySelector("#row2");
 let input1 = row1.querySelector("input");
 let input2 = row2.querySelector("input");
+let converterButton = document.querySelector(".converter__button");
 
 
 const buyButtonClickHandler = () => {
