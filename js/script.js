@@ -136,7 +136,10 @@ const buyButtonClickHandler = () => {
 }
 
 const sellButtonClickHandler = () => {
-
+    if (currentState) {
+        sellButton.classList.toggle("active");
+        buyButton.classList.toggle("active");
+    }
 }
 
 
