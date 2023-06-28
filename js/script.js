@@ -9,6 +9,7 @@ let isTouch = false;
 const offset = 20;
 let velocity = 0;
 const velocityMultiplier = 0.9;
+const velocityMode = 3;
 let delta = 0;
 let previousOffset = 0;
 let velocityInterval;
@@ -23,7 +24,7 @@ const mousedownHandler = (e) => {
 const mouseupHandler = (e) => {
     isTouch = false;
     if (delta != 0) {
-        velocity = delta * 3;
+        velocity = delta * velocityMode;
         while(Math.abs(velocity) > 1000) {
             velocity /= 10;
         }
