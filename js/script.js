@@ -163,7 +163,7 @@ const buyButtonClickHandler = () => {
         currentState = true;
         sellButton.classList.toggle("active");
         buyButton.classList.toggle("active");
-        console.log(row1.querySelector("img").src = "img/Bitcoin.svg");
+        row1.querySelector("img").src = "img/Bitcoin.svg";
 
 
         //row1.innerHTML = our;
