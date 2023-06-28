@@ -166,7 +166,7 @@ const sellButtonClickHandler = () => {
         row1.querySelector("#wallet__logo").src = "img/Bitcoin.svg";
         row1.querySelector("span").innerHTML = "BTC";
         row2.querySelector("#wallet__logo").src = "img/USD.svg";
-        row2.querySelector("span").innerHTML = "UfdsfdfSD";
+        row2.querySelector("span").innerHTML = "Ufdsfdf SD";
         //row1.innerHTML = crypto;
         //row2.innerHTML = our;
         //console.log(row1.querySelector("input"));
