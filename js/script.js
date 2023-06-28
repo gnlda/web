@@ -134,26 +134,6 @@ let sellButton = document.querySelector("#sell");
 let currentState = true; // true = buy, false = sell
 let row1 = document.querySelector("#row1");
 let row2 = document.querySelector("#row2");
-const our = `<input type="text" value="4.000">
-            <div class="converter_wallet">
-                <div class="converter__item">
-                    <img src="img/USD.svg" alt="USD">
-                    <span>USD</span>
-                </div>
-                <div class="converter__arrow">
-                    <img src="img/Arrow.svg" alt="Arrow">
-                </div>
-            </div>`;
-const crypto = `<input type="text" value="0.000138">
-                <div class="converter_wallet">
-                    <div class="converter__item">
-                        <img src="img/Bitcoin.svg" alt="Bitcoin">
-                        <span>BTC</span>
-                    </div>
-                    <div class="converter__arrow">
-                        <img src="img/Arrow.svg" alt="Arrow">
-                    </div>
-                </div>`;
 let input1 = row1.querySelector("input");
 let input2 = row2.querySelector("input");
 
@@ -163,7 +143,8 @@ const buyButtonClickHandler = () => {
         currentState = true;
         sellButton.classList.toggle("active");
         buyButton.classList.toggle("active");
-        row1.querySelector("img").src = "img/Bitcoin.svg";
+        row1.querySelector("#wallet__logo").src = "img/Bitcoin.svg";
+        row1.querySelector("span").innerHTML = "BTC";
 
 
         //row1.innerHTML = our;
