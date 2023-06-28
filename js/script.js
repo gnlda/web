@@ -170,7 +170,7 @@ const sellButtonClickHandler = () => {
         row2.querySelector("#wallet__logo").src = "img/USD.svg";
         row2.querySelector("span").innerHTML = "USD";
         converterButton.innerHTML = "Sell Now";
-        rate = 28.964;
+        rate = 28964.9;
         //row1.innerHTML = crypto;
         //row2.innerHTML = our;
         //console.log(row1.querySelector("input"));
