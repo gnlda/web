@@ -152,13 +152,6 @@ const buyButtonClickHandler = () => {
         row2.querySelector("span").innerHTML = "BTC";
         converterButton.innerHTML = "Buy Now";
         rate = 0.0000345245;
-
-        //row1.innerHTML = our;
-        //row2.innerHTML = crypto;
-        //console.log(row1.querySelector("input"));
-        //console.log(row2.querySelector("input"));
-        //input1 = row1.querySelector("input");
-        //input2 = row2.querySelector("input");
     }
 }
 
@@ -175,10 +168,6 @@ const sellButtonClickHandler = () => {
         row2.querySelector("span").innerHTML = "USD";
         converterButton.innerHTML = "Sell Now";
         rate = 28964.9;
-        //row1.innerHTML = crypto;
-        //row2.innerHTML = our;
-        //console.log(row1.querySelector("input"));
-        //console.log(row2.querySelector("input"));
     }
 }
 
