@@ -150,8 +150,8 @@ const crypto = `<input type="text" value="0.000138">
 <div class="converter__arrow">
 <img src="img/Arrow.svg" alt="Arrow">
 </div>`;
-let input1;
-let input2;
+let input1 = row1.querySelector("input");
+let input2 = row2.querySelector("input");
 
 
 const buyButtonClickHandler = () => {
