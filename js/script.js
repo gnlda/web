@@ -128,7 +128,7 @@ document.addEventListener("touchend", documentMouseupHandler);
 
 
 
-
+const rate = 0.0000345245;
 let buyButton = document.querySelector("#buy");
 let sellButton = document.querySelector("#sell");
 let currentState = true; // true = buy, false = sell
@@ -150,35 +150,46 @@ const crypto = `<input type="text" value="0.000138">
 <div class="converter__arrow">
 <img src="img/Arrow.svg" alt="Arrow">
 </div>`;
+let input1;
+let input2;
 
 
 const buyButtonClickHandler = () => {
     if (!currentState) {
+        currentState = true;
         sellButton.classList.toggle("active");
         buyButton.classList.toggle("active");
         row1.innerHTML = our;
         row2.innerHTML = crypto;
-        console.log(row1.querySelector("input"));
-        console.log(row2.querySelector("input"));
-        currentState = true;
+        //console.log(row1.querySelector("input"));
+        //console.log(row2.querySelector("input"));
+        input1 = row1.querySelector("input");
+        input2 = row2.querySelector("input");
     }
 }
 
 const sellButtonClickHandler = () => {
     if (currentState) {
+        currentState = false;
         sellButton.classList.toggle("active");
         buyButton.classList.toggle("active");
         row1.innerHTML = crypto;
         row2.innerHTML = our;
-        console.log(row1.querySelector("input"));
-        console.log(row2.querySelector("input"));
-        currentState = false;
+        //console.log(row1.querySelector("input"));
+        //console.log(row2.querySelector("input"));
     }
+}
+
+const valueInputHandler = () => {
+    input2.value = input1.value * rate;
 }
 
 
 buyButton.addEventListener("click", buyButtonClickHandler);
 sellButton.addEventListener("click", sellButtonClickHandler);
+input1.addEventListener("input", valueInputHandler)
+
+
 
 // const buttons = document.querySelector('.converter__choice');
 // const rate = 0.0000345245;
