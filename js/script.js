@@ -23,7 +23,7 @@ const mousedownHandler = (e) => {
 const mouseupHandler = (e) => {
     isTouch = false;
     if (delta != 0) {
-        velocity = delta * 10;
+        velocity = delta * 3;
         while(Math.abs(velocity) > 1000) {
             velocity /= 10;
         }
