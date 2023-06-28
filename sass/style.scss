@@ -607,7 +607,9 @@ padding: 160px 0;
 
 // Mobile
 
-.mobile {
+.mobile__container {
+    width: 1440px;
+    margin: 0 auto;
     position: relative;
     .grid__bg {
         @include position-left(0, 50%);
