@@ -887,6 +887,7 @@ img {
   position: absolute;
   border-radius: 50%;
   background: #1A82FF;
+  overflow: hidden;
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
@@ -906,8 +907,8 @@ img {
           align-items: center;
 }
 .media_image-container .media__company-circle .media__company-inner-circle {
-  width: 100%;
-  height: 100%;
+  width: 102%;
+  height: 102%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -968,10 +969,12 @@ img {
   font-size: 15px;
 }
 
-.mobile {
+.mobile__container {
+  width: 1440px;
+  margin: 0 auto;
   position: relative;
 }
-.mobile .grid__bg {
+.mobile__container .grid__bg {
   position: absolute;
   top: 0;
   left: 50%;
@@ -980,7 +983,7 @@ img {
           transform: translateX(-50%);
   z-index: -1;
 }
-.mobile .vector111 {
+.mobile__container .vector111 {
   position: absolute;
   top: -15%;
   left: 62%;
