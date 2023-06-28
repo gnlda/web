@@ -664,6 +664,17 @@ img {
           align-items: center;
   border-bottom: 1px solid #34384C;
 }
+.converter .converter__row-container .converter__row .converter_wallet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .converter .converter__row-container .converter__row input {
   font-family: "Graphik";
   font-size: 18px;
