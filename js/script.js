@@ -137,8 +137,9 @@ let converterButton = document.querySelector(".converter__button");
 const buyButtonClickHandler = () => {
     if (!currentState) {
         currentState = true;
-        input1.value = 0;
-        input2.value = 0;
+        rate = 0.0000345245;
+        input1.value = 100;
+        input2.value = input1.value * rate;
         sellButton.classList.toggle("active");
         buyButton.classList.toggle("active");
         row1.querySelector("#wallet__logo").src = "img/USD.svg";
@@ -146,15 +147,15 @@ const buyButtonClickHandler = () => {
         row2.querySelector("#wallet__logo").src = "img/Bitcoin.svg";
         row2.querySelector("span").innerHTML = "BTC";
         converterButton.innerHTML = "Buy Now";
-        rate = 0.0000345245;
     }
 }
 
 const sellButtonClickHandler = () => {
     if (currentState) {
         currentState = false;
-        input1.value = 0;
-        input2.value = 0;
+        rate = 28964.9;
+        input1.value = 1;
+        input2.value = input1.value * rate;
         sellButton.classList.toggle("active");
         buyButton.classList.toggle("active");
         row1.querySelector("#wallet__logo").src = "img/Bitcoin.svg";
@@ -162,7 +163,6 @@ const sellButtonClickHandler = () => {
         row2.querySelector("#wallet__logo").src = "img/USD.svg";
         row2.querySelector("span").innerHTML = "USD";
         converterButton.innerHTML = "Sell Now";
-        rate = 28964.9;
     }
 }
 
