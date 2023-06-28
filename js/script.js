@@ -158,8 +158,8 @@ const buyButtonClickHandler = () => {
         buyButton.classList.toggle("active");
         row1.innerHTML = our;
         row2.innerHTML = crypto;
-        console.log(`row1 = ${row1.querySelector("input")}`);
-        console.log(`row2 = ${row2.querySelector("input")}`);
+        console.log(row1.querySelector("input"));
+        console.log(row2.querySelector("input"));
         currentState = true;
     }
 }
