@@ -128,7 +128,7 @@ document.addEventListener("touchend", documentMouseupHandler);
 
 
 
-const rate = 0.0000345245;
+let rate = 0.0000345245;
 let buyButton = document.querySelector("#buy");
 let sellButton = document.querySelector("#sell");
 let currentState = true; // true = buy, false = sell
