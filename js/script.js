@@ -143,8 +143,10 @@ const buyButtonClickHandler = () => {
         currentState = true;
         sellButton.classList.toggle("active");
         buyButton.classList.toggle("active");
-        row1.querySelector("#wallet__logo").src = "img/Bitcoin.svg";
-        row1.querySelector("span").innerHTML = "BTC";
+        row1.querySelector("#wallet__logo").src = "img/USD.svg";
+        row1.querySelector("span").innerHTML = "USD";
+        row2.querySelector("#wallet__logo").src = "img/Bitcoin.svg";
+        row2.querySelector("span").innerHTML = "BTC";
 
 
         //row1.innerHTML = our;
@@ -161,6 +163,10 @@ const sellButtonClickHandler = () => {
         currentState = false;
         sellButton.classList.toggle("active");
         buyButton.classList.toggle("active");
+        row1.querySelector("#wallet__logo").src = "img/Bitcoin.svg";
+        row1.querySelector("span").innerHTML = "BTC";
+        row2.querySelector("#wallet__logo").src = "img/USD.svg";
+        row2.querySelector("span").innerHTML = "UfdsfdfSD";
         //row1.innerHTML = crypto;
         //row2.innerHTML = our;
         //console.log(row1.querySelector("input"));
