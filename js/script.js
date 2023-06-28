@@ -124,6 +124,11 @@ document.addEventListener("touchend", documentMouseupHandler);
 
 
 
+
+
+
+
+
 let buyButton = document.querySelector("#buy");
 let sellButton = document.querySelector("#sell");
 let currentState = true; // true = buy, false = sell
@@ -221,6 +226,10 @@ sellButton.addEventListener("click", sellButtonClickHandler);
 // inputRate.addEventListener("input", convert);
 
 // output.addEventListener('mouseover', readOnly);
+
+
+
+
 
 
 
