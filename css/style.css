@@ -914,7 +914,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: rgba(47, 50, 65, 0.5019607843);
+  background: #21232B;
   border-radius: 50%;
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;

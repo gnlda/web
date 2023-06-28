@@ -555,7 +555,7 @@ padding: 160px 0;
             width: 100%;
             height: 100%;
             @include flex(center, center);
-            background: $dark;
+            background: $dark-hex;
             border-radius: 50%;
             transition: all .2s;
         } 
