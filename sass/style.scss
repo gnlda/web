@@ -682,6 +682,7 @@ padding: 160px 0;
         @include font('Graphik', 20px, 400, 27px, $text-grey-20);
     }
     h2 {
+        margin-top: 16px;
         @include font('Sofia Pro', 49px, 700, 110%, $white);
     }
     form {

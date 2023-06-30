@@ -1091,6 +1091,7 @@ img {
   color: #E5E6ED;
 }
 .contact__container h2 {
+  margin-top: 16px;
   font-family: "Sofia Pro";
   font-size: 49px;
   font-weight: 700;
