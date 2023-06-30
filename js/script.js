@@ -95,7 +95,7 @@ const velocityFunction = () => {
 
     if (left >= -offset) {
         left -= sliderLength;
-        slider.style.left = `${left}px`;q
+        slider.style.left = `${left}px`;
     } else if (left <= -sliderLength -offset) {
         left += sliderLength;
         slider.style.left = `${left}px`;
