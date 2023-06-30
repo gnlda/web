@@ -1237,6 +1237,13 @@ a {
 .footer__wrap .footer__main-container .footer__item:nth-child(2) .footer__links-container .footer__links-col:not(:first-child) {
   margin-left: 100px;
 }
+.footer__wrap .footer__main-container .footer__item:nth-child(2) .footer__links-container .footer__links-col a {
+  font-family: "Graphik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #A5ADCF;
+}
 .footer__wrap .footer__main-container .footer__item:nth-child(2) .footer__links-container .footer__links-col a:not(:first-child) {
   margin-top: 24px;
 }

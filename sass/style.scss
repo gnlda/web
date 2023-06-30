@@ -761,7 +761,7 @@ padding: 160px 0;
                             margin-left: 100px;
                         }
                         a {
-
+                            @include font('Graphik', 16px, 400, 24px, $text-grey-40);
                             &:not(:first-child) {
                                 margin-top: 24px;
                             }
