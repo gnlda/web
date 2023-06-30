@@ -750,6 +750,13 @@ padding: 160px 0;
                 .footer__links-container {
                     margin-top: 24px;
                     @include flex ();
+                    .footer__links-col {
+                        @include flex();
+                        flex-direction: column;
+                        a:not(:first-child) {
+                            margin-top: 24px;
+                        }
+                    }
                 }
             }
         }
