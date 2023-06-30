@@ -681,21 +681,23 @@ padding: 160px 0;
     .contact__form {
         width: 462px;
         height: 67px;
-        padding: 0 8px 0 0;
+        padding: 4px 8px 4px 0;
         border: 1px solid $text-grey-80;
         border-radius: 100px;
         @include flex(center, center);
-        button {
-            @include button(16px, 32px);
-            @include font('Sofia Pro', 16px, 600, 160%, $white);
-        }
         input {
-            padding: 8px 0 8px 32px;
+            padding-left: 32px;
+            height: 100%;
             width: 262px;
             background: transparent;
             outline: none;
             border: none;
             @include font('Graphik', 16px, 400, 24px, $white);
+        }
+        button {
+            margin-left: 10px;
+            @include button(16px, 32px);
+            @include font('Sofia Pro', 16px, 600, 160%, $white);
         }
     }
 }

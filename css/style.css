@@ -1086,7 +1086,7 @@ img {
 .contact__container .contact__form {
   width: 462px;
   height: 67px;
-  padding: 0 8px 0 0;
+  padding: 4px 8px 4px 0;
   border: 1px solid #34384C;
   border-radius: 100px;
   display: -webkit-box;
@@ -1099,7 +1099,21 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
+.contact__container .contact__form input {
+  padding-left: 32px;
+  height: 100%;
+  width: 262px;
+  background: transparent;
+  outline: none;
+  border: none;
+  font-family: "Graphik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #ffffff;
+}
 .contact__container .contact__form button {
+  margin-left: 10px;
   padding: 16px 32px;
   background: -o-linear-gradient(184.44deg, #246CF9 -0.27%, #1E68F6 -0.26%, #0047D0 98.59%);
   background: linear-gradient(265.56deg, #246CF9 -0.27%, #1E68F6 -0.26%, #0047D0 98.59%);
@@ -1110,17 +1124,5 @@ img {
   font-size: 16px;
   font-weight: 600;
   line-height: 160%;
-  color: #ffffff;
-}
-.contact__container .contact__form input {
-  padding: 8px 0 8px 32px;
-  width: 262px;
-  background: transparent;
-  outline: none;
-  border: none;
-  font-family: "Graphik";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
   color: #ffffff;
 }
