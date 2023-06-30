@@ -1083,6 +1083,11 @@ img {
   margin: 35px auto 0;
   position: relative;
 }
+.contact__container .contact__line-bg {
+  position: absolute;
+  top: 106px;
+  left: 0;
+}
 .contact__container .contact__contant-container {
   display: -webkit-box;
   display: -ms-flexbox;

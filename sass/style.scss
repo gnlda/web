@@ -678,6 +678,9 @@ padding: 160px 0;
     width: 1440px;
     margin: 35px auto 0;
     position: relative;
+    .contact__line-bg {
+        @include position-left(106px, 0);
+    }
     .contact__contant-container {
         @include flex(space-between, center);
         flex-direction: column;
