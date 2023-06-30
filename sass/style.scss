@@ -681,7 +681,7 @@ padding: 160px 0;
     .contact__form {
         width: 462px;
         height: 67px;
-        padding: 0 8px 0 32px;
+        padding: 0 8px 0 0;
         border: 1px solid $text-grey-80;
         border-radius: 100px;
         @include flex(space-between, center);
@@ -690,6 +690,7 @@ padding: 160px 0;
             @include font('Sofia Pro', 16px, 600, 160%, $white);
         }
         input {
+            padding: 8px 0 8px 32px;
             width: 262px;
             background: transparent;
             outline: none;
