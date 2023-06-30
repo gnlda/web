@@ -1086,7 +1086,7 @@ img {
 .contact__container .contact__form {
   width: 462px;
   height: 67px;
-  padding: 8px 32px;
+  padding: 0 8px 0 32px;
   border: 1px solid #34384C;
   border-radius: 100px;
   display: -webkit-box;
