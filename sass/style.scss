@@ -746,6 +746,12 @@ padding: 160px 0;
                     }
                 }
             }
+            &:nth-child(2) {
+                .footer__links-container {
+                    margin-top: 24px;
+                    @include flex (start, start)
+                }
+            }
         }
     }
 }

@@ -1203,3 +1203,15 @@ img {
 .footer__wrap .footer__main-container .footer__item:nth-child(1) .footer__socials a:not(:first-child) {
   margin-left: 44px;
 }
+.footer__wrap .footer__main-container .footer__item:nth-child(2) .footer__links-container {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
