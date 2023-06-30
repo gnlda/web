@@ -769,6 +769,11 @@ padding: 160px 0;
                     }
                 }
             }
+            &:nth-child(3) {
+                & > p {
+                    margin-top: 24px;
+                }
+            }
         }
     }
 }

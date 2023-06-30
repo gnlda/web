@@ -1247,3 +1247,6 @@ a {
 .footer__wrap .footer__main-container .footer__item:nth-child(2) .footer__links-container .footer__links-col a:not(:first-child) {
   margin-top: 24px;
 }
+.footer__wrap .footer__main-container .footer__item:nth-child(3) > p {
+  margin-top: 24px;
+}
