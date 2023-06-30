@@ -1083,3 +1083,11 @@ img {
   margin: 0 auto;
   position: relative;
 }
+.contact__container .contact__form button {
+  padding: 16px 32px;
+  background: -o-linear-gradient(184.44deg, #246CF9 -0.27%, #1E68F6 -0.26%, #0047D0 98.59%);
+  background: linear-gradient(265.56deg, #246CF9 -0.27%, #1E68F6 -0.26%, #0047D0 98.59%);
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+}

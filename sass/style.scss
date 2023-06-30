@@ -678,4 +678,7 @@ padding: 160px 0;
     width: 1440px;
     margin: 0 auto;
     position: relative;
+    .contact__form button {
+        @include button(16px, 32px);
+    }
 }
