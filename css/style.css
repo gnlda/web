@@ -1195,6 +1195,7 @@ img {
   color: #ffffff;
 }
 .footer__wrap .footer__main-container .footer__item:nth-child(1) .footer__socials {
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
