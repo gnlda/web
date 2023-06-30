@@ -167,7 +167,7 @@ const sellButtonClickHandler = () => {
     }
 }
 
-const valueInputHandler = () => {
+const valueIweFnputHandler = () => {
     input2.value = input1.value * rate;
 }
 
