@@ -818,7 +818,7 @@ padding: 160px 0;
         }
         .copyright__left {
             @include flex();
-            gap: 24px;
+            gap: 20px;
             .vertical-line {
                 height: 100%;
                 width: 1px;

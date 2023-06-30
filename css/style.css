@@ -1342,7 +1342,7 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  gap: 24px;
+  gap: 20px;
 }
 .footer__wrap .footer__copyright .copyright__left .vertical-line {
   height: 100%;
