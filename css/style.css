@@ -1313,6 +1313,7 @@ a {
   color: #ffffff;
 }
 .footer__wrap .footer__copyright {
+  margin-top: 85px;
   padding: 32px 0;
   border-top: 1px solid #5D6588;
   display: -webkit-box;
