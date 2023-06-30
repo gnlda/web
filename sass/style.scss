@@ -678,12 +678,17 @@ padding: 160px 0;
     width: 1440px;
     margin: 0 auto;
     position: relative;
+    .contact__contant-container {
+        @include flex(space-between, center);
+        flex-direction: column;
+    }
     p {
         @include font('Graphik', 20px, 400, 27px, $text-grey-20);
     }
     h2 {
         margin-top: 16px;
         width: 841px;
+        text-align: center;
         @include font('Sofia Pro', 49px, 700, 110%, $white);
     }
     form {
