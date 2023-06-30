@@ -681,6 +681,7 @@ padding: 160px 0;
     .contact__form {
         button {
             @include button(16px, 32px);
+            @include font('Sofia Pro', 16px, 600, 160%, $white);
         }
     }
 }

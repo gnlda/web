@@ -1090,4 +1090,9 @@ img {
   border-radius: 100px;
   border: none;
   cursor: pointer;
+  font-family: "Sofia Pro";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 160%;
+  color: #ffffff;
 }
