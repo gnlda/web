@@ -810,8 +810,20 @@ padding: 160px 0;
         }
     }
     .footer__copyright {
+        padding: 32px 0;
+        border-top: 1px solid $text-grey-60;
+        @include flex(space-between, center);
         p {
             @include font('Graphik', 16px, 400, 24px, $text-grey-60);
+        }
+        .copyright__left {
+            @include flex();
+            gap: 24px;
+            .vertical-line {
+                height: 100%;
+                width: 1px;
+                background: $text-grey-60;
+            }
         }
     }
 }
