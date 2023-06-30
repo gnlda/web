@@ -692,10 +692,8 @@ padding: 160px 0;
         input {
             width: 262px;
             background: transparent;
+            outline: none;
             border: none;
-            &:focus {
-                border: none;
-            }
         }
     }
 }
