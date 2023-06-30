@@ -1194,3 +1194,6 @@ img {
   line-height: 27px;
   color: #ffffff;
 }
+.footer__wrap .footer__main-container .footer__item:nth-child(1) .footer__socials img:not(:first-child) {
+  margin-left: 44px;
+}
