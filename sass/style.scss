@@ -689,5 +689,8 @@ padding: 160px 0;
             @include button(16px, 32px);
             @include font('Sofia Pro', 16px, 600, 160%, $white);
         }
+        input {
+            width: 100%;
+        }
     }
 }
