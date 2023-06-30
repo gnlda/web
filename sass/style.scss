@@ -817,10 +817,10 @@ padding: 160px 0;
             @include font('Graphik', 16px, 400, 24px, $text-grey-60);
         }
         .copyright__left {
-            @include flex();
+            @include flex(start, center);
             gap: 20px;
             .vertical-line {
-                height: 100%;
+                height: 24px;
                 width: 1px;
                 background: $text-grey-60;
             }
