@@ -809,4 +809,9 @@ padding: 160px 0;
             }
         }
     }
+    .footer__copyright {
+        p {
+            @include font('Graphik', 16px, 400, 24px, $text-grey-60);
+        }
+    }
 }
