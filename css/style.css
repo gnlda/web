@@ -1230,6 +1230,9 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.footer__wrap .footer__main-container .footer__item:nth-child(2) .footer__links-container .footer__links-col:not(:first-child) {
+  margin-left: 100px;
+}
 .footer__wrap .footer__main-container .footer__item:nth-child(2) .footer__links-container .footer__links-col a:not(:first-child) {
   margin-top: 24px;
 }
