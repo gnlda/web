@@ -684,7 +684,7 @@ padding: 160px 0;
         padding: 4px 8px 4px 0;
         border: 1px solid $text-grey-80;
         border-radius: 100px;
-        @include flex(center, center);
+        @include flex(space-between, center);
         input {
             padding-left: 32px;
             height: 100%;
