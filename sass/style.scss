@@ -31,6 +31,10 @@ img {
     display: block;
 }
 
+a {
+    text-decoration: none;
+}
+
 .wrapper {
     width: 1110px;
     margin: 0 auto;
@@ -756,8 +760,11 @@ padding: 160px 0;
                         &:not(:first-child) {
                             margin-left: 100px;
                         }
-                        a:not(:first-child) {
-                            margin-top: 24px;
+                        a {
+
+                            &:not(:first-child) {
+                                margin-top: 24px;
+                            }
                         }
                     }
                 }

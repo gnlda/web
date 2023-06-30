@@ -41,6 +41,10 @@ img {
   display: block;
 }
 
+a {
+  text-decoration: none;
+}
+
 .wrapper {
   width: 1110px;
   margin: 0 auto;
