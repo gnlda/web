@@ -678,6 +678,15 @@ padding: 160px 0;
     width: 1440px;
     margin: 0 auto;
     position: relative;
+    p {
+        @include font('Graphik', 20px, 400, 27px, $text-grey-20);
+    }
+    h2 {
+
+    }
+    form {
+        margin-top: 40px;
+    }
     .contact__form {
         width: 462px;
         height: 67px;

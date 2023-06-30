@@ -1083,6 +1083,16 @@ img {
   margin: 0 auto;
   position: relative;
 }
+.contact__container p {
+  font-family: "Graphik";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #E5E6ED;
+}
+.contact__container form {
+  margin-top: 40px;
+}
 .contact__container .contact__form {
   width: 462px;
   height: 67px;
