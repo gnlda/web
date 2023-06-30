@@ -1080,7 +1080,7 @@ img {
 /* Contact */
 .contact__container {
   width: 1440px;
-  margin: 0 auto;
+  margin: 20px auto 0;
   position: relative;
 }
 .contact__container .contact__contant-container {
