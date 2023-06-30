@@ -62,7 +62,7 @@ img {
 .header__wrap {
     padding: 24px 0;
     @include flex(space-between, center);
-    .header__logo {
+    .logo {
         @include flex(start, center);
         p {
             @include font('Sora', 18px, 700, 23px, $white);
