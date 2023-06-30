@@ -778,6 +778,34 @@ padding: 160px 0;
                     width: 354px;
                     @include font('Graphik', 16px, 400, 24px, $text-grey-40);
                 }
+                form {
+                    margin-top: 24px;
+                }
+                .contact__form {
+                    width: 354px;
+                    height: 63px;
+                    padding: 8px 8px 8px 0;
+                    border: 1px solid $text-grey-80;
+                    border-radius: 100px;
+                    @include flex(space-between, center);
+                    input {
+                        padding-left: 24px;
+                        height: 100%;
+                        width: 231px;
+                        background: transparent;
+                        outline: none;
+                        border: none;
+                        @include font('Graphik', 14px, 400, 22.4px, $white);
+                        &::-webkit-input-placeholder {
+                            color: $text-grey-60;
+                        }
+                    }
+                    button {
+                        margin-left: 10px;
+                        @include button(16px, 32px);
+                        @include font('Sofia Pro', 16px, 600, 160%, $white);
+                    }
+                }
             }
         }
     }
