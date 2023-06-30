@@ -40,6 +40,15 @@ img {
     @include button(18px, 75px);
     @include font('Sofia Pro', 18px, 600, 160%, $white);
 }
+.logo {
+    @include flex(start, center);
+    p {
+        @include font('Sora', 18px, 700, 23px, $white);
+        span {
+            color: $blue;
+        }
+    }
+}
 
 
 /* Hero section */
@@ -62,15 +71,6 @@ img {
 .header__wrap {
     padding: 24px 0;
     @include flex(space-between, center);
-    .logo {
-        @include flex(start, center);
-        p {
-            @include font('Sora', 18px, 700, 23px, $white);
-            span {
-                color: $blue;
-            }
-        }
-    }
     .header__menu {
         display: flex;
         ul {

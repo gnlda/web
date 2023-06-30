@@ -60,6 +60,28 @@ img {
   color: #ffffff;
 }
 
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.logo p {
+  font-family: "Sora";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #ffffff;
+}
+.logo p span {
+  color: #1A82FF;
+}
+
 /* Hero section */
 .hero {
   position: relative;
@@ -95,27 +117,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.header__wrap .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.header__wrap .logo p {
-  font-family: "Sora";
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 23px;
-  color: #ffffff;
-}
-.header__wrap .logo p span {
-  color: #1A82FF;
 }
 .header__wrap .header__menu {
   display: -webkit-box;
