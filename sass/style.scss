@@ -693,6 +693,9 @@ padding: 160px 0;
             outline: none;
             border: none;
             @include font('Graphik', 16px, 400, 24px, $white);
+            &::-webkit-input-placeholder {
+                color: $text-grey-60;
+            }
         }
         button {
             margin-left: 10px;

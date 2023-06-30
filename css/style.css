@@ -1112,6 +1112,9 @@ img {
   line-height: 24px;
   color: #ffffff;
 }
+.contact__container .contact__form input::-webkit-input-placeholder {
+  color: #5D6588;
+}
 .contact__container .contact__form button {
   margin-left: 10px;
   padding: 16px 32px;
