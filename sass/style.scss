@@ -802,8 +802,8 @@ padding: 160px 0;
                     }
                     button {
                         margin-left: 10px;
-                        @include button(16px, 32px);
-                        @include font('Sofia Pro', 16px, 600, 160%, $white);
+                        @include button(12px, 24px);
+                        @include font('Sofia Pro', 14px, 600, 22.4px, $white);
                     }
                 }
             }
