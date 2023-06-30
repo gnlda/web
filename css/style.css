@@ -1256,6 +1256,7 @@ a {
 }
 .footer__wrap .footer__main-container .footer__item:nth-child(3) > p {
   margin-top: 24px;
+  width: 354px;
   font-family: "Graphik";
   font-size: 16px;
   font-weight: 400;

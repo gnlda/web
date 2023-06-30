@@ -775,6 +775,7 @@ padding: 160px 0;
                 }
                 & > p {
                     margin-top: 24px;
+                    width: 354px;
                     @include font('Graphik', 16px, 400, 24px, $text-grey-40);
                 }
             }
