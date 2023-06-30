@@ -1090,6 +1090,13 @@ img {
   line-height: 27px;
   color: #E5E6ED;
 }
+.contact__container h2 {
+  font-family: "Sofia Pro";
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 110%;
+  color: #ffffff;
+}
 .contact__container form {
   margin-top: 40px;
 }
