@@ -681,6 +681,10 @@ padding: 160px 0;
     .contact__form {
         width: 462px;
         height: 67px;
+        padding: 8px 32px;
+        border: 1px solid $text-grey-80;
+        border-radius: 100px;
+        @include flex(space-between, center);
         button {
             @include button(16px, 32px);
             @include font('Sofia Pro', 16px, 600, 160%, $white);
