@@ -1175,3 +1175,22 @@ img {
 .footer__wrap {
   margin-top: 100px;
 }
+.footer__wrap .footer__main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.footer__wrap .footer__main-container .footer__item:nth-child(1) > p {
+  margin-top: 12px;
+  font-family: "Graphik";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #ffffff;
+}
