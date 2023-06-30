@@ -770,8 +770,12 @@ padding: 160px 0;
                 }
             }
             &:nth-child(3) {
+                & > h4 {
+                    @include font('Sofia Pro', 20px, 700, 120%, $white);
+                }
                 & > p {
                     margin-top: 24px;
+                    @include font('Graphik', 16px, 400, 24px, $text-grey-40);
                 }
             }
         }
