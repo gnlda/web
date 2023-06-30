@@ -1170,3 +1170,8 @@ img {
   line-height: 160%;
   color: #ffffff;
 }
+
+/* Footer */
+.footer__wrap {
+  margin-top: 100px;
+}
