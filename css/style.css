@@ -1114,4 +1114,9 @@ img {
 }
 .contact__container .contact__form input {
   width: 262px;
+  background: transparent;
+  border: none;
+}
+.contact__container .contact__form input:focus {
+  border: none;
 }

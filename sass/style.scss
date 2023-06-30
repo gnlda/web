@@ -691,6 +691,11 @@ padding: 160px 0;
         }
         input {
             width: 262px;
+            background: transparent;
+            border: none;
+            &:focus {
+                border: none;
+            }
         }
     }
 }
